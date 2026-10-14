@@ -20,4 +20,4 @@ It's not a 1:1 replica, just as close as I could make it. For personal use to sh
 
 
 **You can also access the default KOReader settings menu by clicking the cogwheel "All Settings".** 
-For example, to enable or disable plugins, go into All `Settings > Tools > More tools > Plugin management`.
+For example, to enable or disable plugins, go into `All Settings > Tools > More tools > Plugin management`.

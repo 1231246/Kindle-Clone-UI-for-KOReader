@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / Downloaded 100</title>
+    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-100*100" transform="translate(-351.000000, -344.000000)">
+            <g id="Icon-/-Downloaded-100" transform="translate(351.000000, 344.000000)">
+                <g id="Icon-/-Downloaded">
+                    <path d="M100,50 C100,77.615 77.615,100 50,100 C22.385,100 0,77.615 0,50 C0,22.385 22.385,0 50,0 C77.615,0 100,22.385 100,50" id="Fill-1" fill="#1D1D1D"/>
+                    <polygon id="Fill-3" fill="#FFFFFF" points="45.3125 56.9444444 31.7708333 43.0555556 25 50 45.3125 70.8333333 79.1666667 36.1111111 72.3958333 29.1666667"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

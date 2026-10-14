@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Airplane mode - OFF</title>
+    <g id="Quick-Actions-Specs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Quick-Settings---Muscat-Icewine" transform="translate(-65.000000, -104.000000)">
+            <g id="Airplane-mode---OFF" transform="translate(65.000000, 104.000000)">
+                <circle id="Oval" stroke="#000000" stroke-width="2" cx="28" cy="28" r="27"></circle>
+                <g id="Airplane-Mode---Off" stroke-width="1" fill-rule="evenodd" transform="translate(13.000000, 12.000000)" fill="#000000">
+                    <path d="M15.0957353,0 C16.6583824,0 17.2058824,1.6840881 17.2058824,3.34211766 L17.2058824,10.8513927 L30,17.9852482 L30,21.3644662 L17.2058824,17.8911725 L17.2058824,25.2127378 L21.1764706,28.2165361 L21.1764706,30 L14.7794118,28.6855898 L8.38235294,30 L8.38235294,28.2165361 L12.3529412,25.2127378 L12.3529412,17.8911725 L0,21.3644662 L0,17.9852482 L12.3529412,10.8513927 L12.3529412,3.34211766 C12.3529412,1.6840881 13.3455882,0 14.9082353,0 L15.0957353,0 Z" id="Fill-127-Copy-5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

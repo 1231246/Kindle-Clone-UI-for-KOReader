@@ -1,6 +1,6 @@
-# Kindle Clone UI for KOReader (for personal use)
+# Kindle Clone UI for KOReader
 
-Makes KOReader look and feel like a Kindle. 
+Makes KOReader look and work like a Kindle. 
 
 It's not a 1:1 replica, just as close as I could make it. For personal use to share with friends/family, cuz we love Kindle sooo much. LMK if you encounter issues.
 

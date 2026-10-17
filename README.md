@@ -16,7 +16,6 @@ It's not a 1:1 replica, just as close as I could make it. For personal use to sh
 
 - **Auto warmth** schedule (sunrise/sunset) - comes with KOReader.
 - **[LocalSend](https://github.com/kaikozlov/localsend.koplugin)** - installed separately.
-- **[Airplane mode](https://github.com/kodermike/airplanemode.koplugin)** - installed separately.
 
 
 **You can also access the default KOReader settings menu by clicking the cogwheel "All Settings".** 

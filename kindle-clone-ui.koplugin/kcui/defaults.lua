@@ -22,7 +22,8 @@ local Defaults = {}
 
 local LEGACY_APPLIED = "kcui_defaults_applied"
 local RESTYLED = "kcui_styles_version"
-local STYLES_VERSION = 3
+local STYLES_VERSION = 4
+local FONT_RESET_VERSION = 3
 local PREVIOUS_BOTTOM = 32
 local ROOT = debug.getinfo(1, "S").source:match("^@(.*)/kcui/defaults%.lua$")
 local WALLPAPERS = ROOT .. "/wallpapers"
@@ -38,10 +39,11 @@ local STATUS_BAR = {
     progress_margin_width = 10,
     initial_marker = false,
     toc_markers = false,
-    text_font_size = 13,
+    text_font_size = 12.5,
     text_font_bold = true,
 }
-local PREVIOUS_STATUS_FONT_SIZE = 12
+local STATUS_FONT_VERSION = 2
+local PREVIOUS_STATUS_FONT_SIZES = { [12] = true, [13] = true }
 
 local STATUS_BAR_ITEMS = {
     "page_progress", "pages_left_book", "time", "pages_left", "battery", "percentage", "book_time_to_read",
@@ -250,9 +252,13 @@ end
 
 function Defaults.refreshBookStyles(ui)
     local doc_settings = ui.rolling and ui.doc_settings
-    if not doc_settings or (tonumber(doc_settings:readSetting(RESTYLED)) or 0) >= STYLES_VERSION then return end
+    if not doc_settings then return end
+    local restyled = tonumber(doc_settings:readSetting(RESTYLED)) or 0
+    if restyled >= STYLES_VERSION then return end
     replacePreviousStyles(doc_settings)
-    resetFont(doc_settings)
+    if restyled < FONT_RESET_VERSION then
+        resetFont(doc_settings)
+    end
     doc_settings:saveSetting(RESTYLED, STYLES_VERSION)
 end
 
@@ -287,6 +293,28 @@ function Defaults.applyBookStyles(ui, quiet)
         text = T(N_("Page styles updated for 1 book.", "Page styles updated for %1 books.", count), count),
         timeout = 3,
     })
+end
+
+function Defaults.resetBook(ui)
+    local file = ui.document and ui.document.file
+    if not (file and isReflowable(file)) then return end
+    local styles = kindleStyles()
+    styles.font_face = Themes.defaultFont()
+    ui:reloadDocument(function(path)
+        local doc_settings = DocSettings:open(path)
+        local stale = {}
+        for key in pairs(doc_settings.data) do
+            if key:sub(1, 5) == "copt_" or key == "font_face" then
+                table.insert(stale, key)
+            end
+        end
+        for _i, key in ipairs(stale) do
+            doc_settings:delSetting(key)
+        end
+        saveStyles(doc_settings, styles)
+        doc_settings:saveSetting(RESTYLED, STYLES_VERSION)
+        doc_settings:flush()
+    end)
 end
 
 function Defaults.confirmReset(ui)
@@ -545,13 +573,13 @@ function Defaults.apply()
         applyStatusBar()
         applied.status_bar_defaults = true
     end
-    if not applied.status_font_size then
+    if (tonumber(applied.status_font_version) or 0) < STATUS_FONT_VERSION then
         local footer = G_reader_settings:readSetting("footer")
-        if footer and footer.text_font_size == PREVIOUS_STATUS_FONT_SIZE then
+        if footer and PREVIOUS_STATUS_FONT_SIZES[footer.text_font_size] then
             footer.text_font_size = STATUS_BAR.text_font_size
             G_reader_settings:saveSetting("footer", footer)
         end
-        applied.status_font_size = true
+        applied.status_font_version = STATUS_FONT_VERSION
     end
     if (tonumber(applied.styles_version) or 0) < STYLES_VERSION then
         replacePreviousStyles(G_reader_settings)

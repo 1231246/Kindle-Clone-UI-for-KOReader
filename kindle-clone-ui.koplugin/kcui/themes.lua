@@ -33,6 +33,7 @@ local COLUMNS = 2
 local THEMES_TAB = 1
 local FONT_TAB = 2
 local LAYOUT_TAB = 3
+local RESET_TAB = 4
 local BODY_FONT = 16
 local TITLE_FONT = 23
 local INPUT_FONT = 20
@@ -41,6 +42,7 @@ local NUMBER_FONT = 14
 local SAMPLE_FONT = 41
 local NAME_FONT = 16
 local LABEL_X = 99
+local SUFFIX_GAP = 10
 local LAYOUT_COLUMNS = { 80, 544 }
 local OPTION_GAP = 29
 local SIZES ={ 31, 33, 35, 39, 44, 49, 55, 62, 69, 78, 87, 98, 110, 123 }
@@ -49,8 +51,10 @@ local TIGHT, NORMAL, WIDE = 1, 2, 3
 local NORMAL_SPACING = { [5] = 123, [7] = 117 }
 local LEFT_ALIGN = "text_align_most_left"
 local SMALL_SCREEN_INCHES = 6.5
-local LARGE_PAGE = { margins = { 83, 140, 200 }, top = 66, bottom = 16 }
-local SMALL_PAGE = { margins = { 45, 102, 162 }, top = 45, bottom = 45 }
+local LARGE_PAGE = { margins = { 83, 140, 200 }, top = 66 }
+local SMALL_PAGE = { margins = { 45, 102, 162 }, top = 45 }
+local BOTTOM_MARGIN = 14
+local PREVIOUS_BOTTOMS = { 16, 45 }
 local WORD_SPACING = { 100, 75 }
 local DEFAULT_THEME = { name = _("Small"), size = 2, spacing = NORMAL, lines = { count = 4, first = 20, pitch = 12.67, weight = 2, inset = 16 } }
 local BUILT_IN = {
@@ -59,7 +63,7 @@ local BUILT_IN = {
     { name = _("Compact"), size = 3, spacing = TIGHT, lines = { count = 5, first = 18, pitch = 10.75, weight = 2, inset = 16 } },
     { name = _("Standard"), size = 5, spacing = NORMAL, lines = { count = 3, first = 20, pitch = 18, weight = 5, inset = 14 } },
 }
-local TABS = { _("Themes"), _("Font"), _("Layout"), _("More") }
+local TABS = { _("Themes"), _("Font"), _("Layout"), _("Reset"), _("More") }
 
 local Themes = {}
 
@@ -107,7 +111,7 @@ local function builtInValues(theme)
         line_spacing = spacings(theme.size)[theme.spacing],
         h_page_margins = { option(page.margins[1]), option(page.margins[1]) },
         t_page_margin = option(page.top),
-        b_page_margin = option(page.bottom),
+        b_page_margin = BOTTOM_MARGIN,
         word_spacing = { WORD_SPACING[1], WORD_SPACING[2] },
     }
 end
@@ -210,7 +214,7 @@ local function savedThemes()
     local page = pageLayout()
     for _i, theme in ipairs(saved) do
         theme.values.t_page_margin = option(page.top)
-        theme.values.b_page_margin = option(page.bottom)
+        theme.values.b_page_margin = BOTTOM_MARGIN
         theme.values.word_spacing = { WORD_SPACING[1], WORD_SPACING[2] }
     end
     return saved
@@ -221,8 +225,8 @@ local function capTop(widget, face, cap_center)
     return cap_center - math.floor(cap / 2) - (widget:getBaseline() - cap)
 end
 
-local function frame(bb, rect, border, radius)
-    bb:paintRoundedRect(rect.x, rect.y, rect.w, rect.h, BLACK, radius)
+local function frame(bb, rect, border, radius, color)
+    bb:paintRoundedRect(rect.x, rect.y, rect.w, rect.h, color or BLACK, radius)
     bb:paintRoundedRect(rect.x + border, rect.y + border, rect.w - 2 * border, rect.h - 2 * border, WHITE, math.max(0, radius - border))
 end
 
@@ -263,7 +267,8 @@ function Sheet:init()
     self.avatar = icon("themes/person", R(40), R(38))
     self.trash = icon("delete", R(44), R(44))
     self.letter = TextWidget:new{ text = "A", face = self.letter_face }
-    self.fixed = { self.check, self.chevron, self.back, self.avatar, self.trash, self.letter }
+    self.dim_letter = TextWidget:new{ text = "A", face = self.letter_face, fgcolor = Gray.inactive }
+    self.fixed = { self.check, self.chevron, self.back, self.avatar, self.trash, self.letter, self.dim_letter }
     self:build()
     self.ges_events = {
         TapSheet = { GestureRange:new{ ges = "tap", range = self.dimen } },
@@ -320,11 +325,17 @@ function Sheet:buildThemes()
     for i, entry in ipairs(self.entries) do
         local column, row = (i - 1) % COLUMNS, math.floor((i - 1) / COLUMNS)
         local current = entry == self.selected
+        entry.disabled = entry.kind == "custom" and not current
         entry.x = R(82) + column * column_w
         entry.y = self.top + R(181) + row * R(149)
         entry.rect = Geom:new{ x = entry.x - R(20), y = entry.y - R(20), w = column_w, h = R(118) }
-        entry.label = self:text(entry.is_default and T(_("%1 - default"), entry.name) or entry.name, current)
-        entry.label:setMaxWidth(column_w - R(125))
+        local label_w = column_w - R(125)
+        entry.label = self:text(entry.name, current, nil, entry.disabled and Gray.inactive or nil)
+        if entry.is_default then
+            entry.suffix = self:text(_("- default"), false, self.italic)
+            label_w = label_w - entry.suffix:getSize().w - R(SUFFIX_GAP)
+        end
+        entry.label:setMaxWidth(label_w)
         if current then
             entry.note = self:text(_("Current Theme"), false, self.italic)
         end
@@ -549,14 +560,15 @@ end
 
 function Sheet:paintIcon(bb, entry)
     local x, y, size = entry.x, entry.y, R(78)
-    frame(bb, Geom:new{ x = x, y = y, w = size, h = size }, R(4), R(10))
+    frame(bb, Geom:new{ x = x, y = y, w = size, h = size }, R(4), R(10), entry.disabled and Gray.inactive or nil)
     if entry == self.selected then
         bb:paintRect(x - R(1), y - R(1), R(34), R(32), WHITE)
         self.check:paintTo(bb, x - R(17), y - R(17))
     end
     if entry.kind == "custom" then
-        local letter = self.letter:getSize()
-        self.letter:paintTo(bb, x + math.floor((size - letter.w) / 2), capTop(self.letter, self.letter_face, y + R(39)))
+        local letter_widget = entry.disabled and self.dim_letter or self.letter
+        local letter = letter_widget:getSize()
+        letter_widget:paintTo(bb, x + math.floor((size - letter.w) / 2), capTop(letter_widget, self.letter_face, y + R(39)))
     elseif entry.kind == "saved" then
         local avatar = self.avatar:getSize()
         self.avatar:paintTo(bb, x + math.floor((size - avatar.w) / 2), y + math.floor((size - avatar.h) / 2))
@@ -574,11 +586,13 @@ function Sheet:paintThemes(bb)
         self:paintIcon(bb, entry)
         local label_x = entry.x + R(LABEL_X)
         local center = entry.y + R(38)
+        local label_center = entry.note and center - R(21.5) or center
+        entry.label:paintTo(bb, label_x, capTop(entry.label, self.face, label_center))
+        if entry.suffix then
+            entry.suffix:paintTo(bb, label_x + entry.label:getSize().w + R(SUFFIX_GAP), capTop(entry.suffix, self.italic, label_center))
+        end
         if entry.note then
-            entry.label:paintTo(bb, label_x, capTop(entry.label, self.face, center - R(21.5)))
             entry.note:paintTo(bb, label_x, capTop(entry.note, self.italic, center + R(21.5)))
-        else
-            entry.label:paintTo(bb, label_x, capTop(entry.label, self.face, center))
         end
     end
     local button = self.save_rect
@@ -774,7 +788,7 @@ function Sheet:chooseFont()
 end
 
 function Sheet:choose(entry)
-    if entry == self.selected or not entry.values then return end
+    if entry == self.selected or entry.disabled or not entry.values then return end
     apply(self.ui, entry.values)
     self:refresh()
 end
@@ -821,6 +835,29 @@ function Sheet:tapList(pos)
     end
 end
 
+local function viewModePanel(options)
+    for index, panel in ipairs(options or {}) do
+        for _i, setting in ipairs(panel.options or {}) do
+            if setting.name == "view_mode" then
+                return index
+            end
+        end
+    end
+end
+
+function Sheet:confirmReset()
+    local ui = self.ui
+    UIManager:show(ConfirmBox:new{
+        text = _("Reset styles for this book?"),
+        ok_text = _("Yes"),
+        cancel_text = _("No"),
+        ok_callback = function()
+            UIManager:close(self)
+            require("kcui/defaults").resetBook(ui)
+        end,
+    })
+end
+
 function Sheet:tapTabs(pos)
     for i, tab in ipairs(self.tabs) do
         if pos.x >= tab.x - R(22) and pos.x < tab.x + tab.w + R(22) then
@@ -829,9 +866,12 @@ function Sheet:tapTabs(pos)
                     self.tab = i
                     self:refresh()
                 end
+            elseif i == RESET_TAB then
+                self:confirmReset()
             else
                 local ui = self.ui
                 UIManager:close(self)
+                ui.config.last_panel_index = viewModePanel(ui.config.options) or ui.config.last_panel_index
                 ui:handleEvent(Event:new("ShowConfigMenu"))
             end
             return
@@ -1096,8 +1136,10 @@ function Themes.marginChanges()
     local to = pageLayout()
     local changes = {
         { key = "copt_t_page_margin", from = option(LARGE_PAGE.top), to = option(to.top) },
-        { key = "copt_b_page_margin", from = option(LARGE_PAGE.bottom), to = option(to.bottom) },
     }
+    for _i, bottom in ipairs(PREVIOUS_BOTTOMS) do
+        table.insert(changes, { key = "copt_b_page_margin", from = option(bottom), to = BOTTOM_MARGIN })
+    end
     for level, margin in ipairs(LARGE_PAGE.margins) do
         table.insert(changes, {
             key = "copt_h_page_margins",

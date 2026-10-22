@@ -318,7 +318,13 @@ local function decorate(menu, active, orig_init)
         for _i in pairs(ReadCollection.coll[name] or {}) do count = count + 1 end
         local title = menu._manager:getCollectionTitle(name)
         header = Toolbar.titleHeader(Screen:getWidth(), title, count,
-            function() menu.close_callback() end,
+            function()
+                if menu._manager.coll_list then
+                    menu.close_callback()
+                else
+                    menu:onReturn()
+                end
+            end,
             nil,
             function(anchor)
                 Toolbar.present(function() menu._manager:showCollDialog() end, anchor)
@@ -405,7 +411,7 @@ function KindleCloneUI:init()
         require("kcui/goto").Bookmarks.register(ui)
         require("kcui/themes").register(ui)
         require("kcui/restyle").refreshStatusBar(ui)
-        require("kcui/restyle").registerStatusTap(ui)
+        require("kcui/restyle").registerTapZones(ui)
     end
     UIManager:nextTick(function()
         require("kcui/warmth").installSchedule(ui)

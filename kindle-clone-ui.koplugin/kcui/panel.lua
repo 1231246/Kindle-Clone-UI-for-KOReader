@@ -38,6 +38,7 @@ local PROGRESS_BAR = "kcui_progress_bar"
 local DEFAULT_PROGRESS = "page"
 local TIMED_PROGRESS = "chapter_time"
 local DEFAULT_POSITION = "percentage"
+local CHARGING_RECHECK = 5
 local PROGRESS_OPTIONS = {
     { id = "chapter_time", text = _("Time left in chapter"), timed = true },
     { id = "book_time", text = _("Time left in book"), timed = true },
@@ -156,13 +157,16 @@ local function status(face, hide_network, color, ui, hide_localsend)
     local widget = HorizontalGroup:new{ align = "center" }
     return {
         widget = widget,
-        update = function()
+        update = function(charging)
             local powerd = Device:getPowerDevice()
             local has_battery = Device:hasBattery()
             local capacity = has_battery and powerd:getCapacity() or 0
+            if charging == nil then
+                charging = powerd:isCharging()
+            end
             text:setText(has_battery and capacity .. "%" or "")
             icon.capacity = capacity
-            icon.charging = has_battery and powerd:isCharging()
+            icon.charging = has_battery and charging
             icon.low = has_battery and not icon.charging and capacity <= 10
             widget:clear()
             if not hide_network and not hide_localsend and localSendRunning(ui) then
@@ -198,6 +202,18 @@ end
 local function keepCurrent(bar, window, update)
     local scheduled, painted = false, false
     local tick
+    local function redraw(charging)
+        update(charging)
+        UIManager:setDirty(window(), "ui", bar.dimen)
+    end
+    local function recheck()
+        redraw()
+    end
+    local function chargingChanged(charging)
+        redraw(charging)
+        UIManager:unschedule(recheck)
+        UIManager:scheduleIn(CHARGING_RECHECK, recheck)
+    end
     local function schedule()
         scheduled = true
         UIManager:scheduleIn(60 - os.date("*t").sec, tick)
@@ -206,9 +222,14 @@ local function keepCurrent(bar, window, update)
         scheduled = false
         if not painted then return end
         painted = false
-        update()
-        UIManager:setDirty(window(), "ui", bar.dimen)
+        redraw()
         schedule()
+    end
+    function bar:onCharging()
+        chargingChanged(true)
+    end
+    function bar:onNotCharging()
+        chargingChanged(false)
     end
     local paintTo = bar.paintTo
     function bar:paintTo(bb, x, y)
@@ -226,6 +247,7 @@ local function keepCurrent(bar, window, update)
     end
     function bar:onCloseWidget()
         UIManager:unschedule(tick)
+        UIManager:unschedule(recheck)
         scheduled = false
     end
     update()
@@ -295,9 +317,9 @@ function TopBar.new(ui, window, no_chevron, hide_network, hide_localsend)
         },
     }
 
-    local function update()
+    local function update(charging)
         for _i, item in ipairs(all_items) do
-            item.update()
+            item.update(charging)
         end
         left:resetLayout()
         right:resetLayout()
@@ -317,8 +339,6 @@ function TopBar.new(ui, window, no_chevron, hide_network, hide_localsend)
 
     bar.onNetworkConnected = refresh
     bar.onNetworkDisconnected = refresh
-    bar.onCharging = refresh
-    bar.onNotCharging = refresh
     bar.onLocalSendChanged = refresh
 
     keepCurrent(bar, window, update)
@@ -398,16 +418,19 @@ function TopBar.expanded(ui, window)
         dimen = Geom:new{ w = w, h = header.height },
         header,
     }
-    local function update()
+    local function update(charging)
         local now = os.time()
         local date = Dates.day(now)
         header.when:setText(Dates.time(now))
         header.date:setText(date)
         local powerd = Device:getPowerDevice()
         local capacity = Device:hasBattery() and powerd:getCapacity() or 0
+        if charging == nil then
+            charging = powerd:isCharging()
+        end
         header.pct:setText(Device:hasBattery() and capacity .. "%" or "")
         header.battery.capacity = capacity
-        header.battery.charging = Device:hasBattery() and powerd:isCharging()
+        header.battery.charging = Device:hasBattery() and charging
         header.battery.low = not header.battery.charging and capacity <= 10
     end
     keepCurrent(bar, window, update)

@@ -846,8 +846,49 @@ local StatusRow = Widget:extend{
     footer = nil,
 }
 
+local STATUS_SAMPLE = "Page of hrs mins left in chapter book 0123456789%."
+local STATUS_REFERENCE_SIZE = 13
+local INK_THRESHOLD = 0xF0
+local status_metrics = {}
+
+local function statusMetrics(face, bold)
+    local key = (face.hash or tostring(face)) .. tostring(bold)
+    local metrics = status_metrics[key]
+    if metrics then return metrics end
+    local widget = TextWidget:new{ text = STATUS_SAMPLE, face = face, bold = bold, fgcolor = Common.Progress.FILL }
+    local size = widget:getSize()
+    local canvas = Blitbuffer.new(size.w, size.h, Blitbuffer.TYPE_BB8)
+    canvas:fill(Blitbuffer.COLOR_WHITE)
+    widget:paintTo(canvas, 0, 0)
+    local ink_top = size.h
+    for y = 0, size.h - 1 do
+        for x = 0, size.w - 1 do
+            if canvas:getPixel(x, y):getColor8().a < INK_THRESHOLD then
+                ink_top = y
+                break
+            end
+        end
+        if ink_top < size.h then break end
+    end
+    metrics = { height = size.h, ink_top = ink_top, baseline = widget:getBaseline() }
+    canvas:free()
+    widget:free()
+    status_metrics[key] = metrics
+    return metrics
+end
+
+function StatusRow:layout()
+    local metrics = statusMetrics(self:face())
+    local reference = statusMetrics(self:face(STATUS_REFERENCE_SIZE))
+    local full = self.footer.height
+    local baseline = math.floor((full - reference.height) / 2) + reference.baseline
+    local text_y = baseline - metrics.baseline
+    local cut = math.max(0, text_y + metrics.ink_top)
+    return full - cut, text_y - cut
+end
+
 function StatusRow:getSize()
-    return Geom:new{ w = Screen:getWidth(), h = self.footer.height }
+    return Geom:new{ w = Screen:getWidth(), h = (self:layout()) }
 end
 
 local function pageText(footer)
@@ -897,15 +938,18 @@ function StatusRow:positionText()
     return ""
 end
 
-function StatusRow:face()
+function StatusRow:face(size)
     local footer = self.footer
     local settings = footer.settings
     if settings.text_font_face == footer.default_settings.text_font_face then
         local found = Common.Fonts.found
-        local path = settings.text_font_bold and found.ui_heavy or found.ui_regular
+        local path = settings.text_font_bold and found.ui_bold or found.ui_regular
         if path then
-            return U.face(path, settings.text_font_size), false
+            return U.face(path, size or settings.text_font_size), false
         end
+    end
+    if size then
+        return Font:getFace(settings.text_font_face, size), settings.text_font_bold
     end
     return footer.footer_text_face, settings.text_font_bold
 end
@@ -949,6 +993,7 @@ end
 
 function StatusRow:paintTo(bb, x, y)
     local size = self:getSize()
+    local text_y = select(2, self:layout())
     local face, bold = self:face()
     local margin = Themes.narrowMargin()
     local max_width = math.floor(size.w / 2) - margin
@@ -968,7 +1013,7 @@ function StatusRow:paintTo(bb, x, y)
         local widget = TextWidget:new{ text = text, face = face, bold = bold, max_width = max_width, fgcolor = Common.Progress.FILL }
         local text_size = widget:getSize()
         local text_x = right and x + size.w - margin - text_size.w or x + margin
-        widget:paintTo(bb, text_x, y + math.floor((size.h - text_size.h) / 2))
+        widget:paintTo(bb, text_x, y + text_y)
         widget:free()
         self:track(key, text, text_x, text_size.w, y, measure)
     end
@@ -1118,8 +1163,17 @@ local function tapStatusBar(ui, ges)
     return true
 end
 
-function Restyle.registerStatusTap(ui)
-    local zones = {}
+function Restyle.registerTapZones(ui)
+    local corner = G_defaults:readSetting("DTAP_ZONE_TOP_LEFT")
+    local zones = {
+        {
+            id = "kcui_menu_corner_tap",
+            ges = "tap",
+            screen_zone = { ratio_x = corner.x, ratio_y = corner.y, ratio_w = corner.w, ratio_h = corner.h },
+            overrides = { "tap_top_left_corner" },
+            handler = function(ges) return ui.menu:onTapShowMenu(ges) end,
+        },
+    }
     for id, setting in pairs({ kcui_status_tap = "DTAP_ZONE_CONFIG", kcui_status_tap_ext = "DTAP_ZONE_CONFIG_EXT" }) do
         local zone = G_defaults:readSetting(setting)
         table.insert(zones, {

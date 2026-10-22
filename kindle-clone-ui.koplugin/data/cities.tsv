@@ -90,7 +90,7 @@ Lanzhou		Gansu	CN	36.05701	103.83987	1521
 Bamako		Bamako	ML	12.60915	-7.97522	374
 Riyadh		Riyadh Region	SA	24.68773	46.72185	612
 Fuzhou		Fujian	CN	26.06139	119.30611	14
-Ürümqi	UEruemqi	Xinjiang	CN	43.80096	87.60046	862
+Ürümqi	Urumqi	Xinjiang	CN	43.80096	87.60046	862
 New Taipei City		Taipei	TW	25.06199	121.45703	4
 New Territories			HK	22.42441	114.11095	231
 Chattogram		Chittagong	BD	22.3384	91.83168	15
@@ -113,7 +113,7 @@ Hohhot		Inner Mongolia	CN	40.81056	111.65222	1051
 Berlin		State of Berlin	DE	52.52437	13.41053	74
 Tangshan		Hebei	CN	39.64381	118.18319	7
 Rawalpindi		Punjab	PK	33.59733	73.0479	501
-Lüliang	Lueliang	Shanxi	CN	37.5192	111.14436	959
+Lüliang	Luliang	Shanxi	CN	37.5192	111.14436	959
 Durban		KwaZulu-Natal	ZA	-29.8579	31.0292	21
 Anshan		Liaoning	CN	41.12361	122.99	55
 Changzhou		Jiangsu	CN	31.77359	119.95401	9
@@ -548,7 +548,7 @@ Howrah		West Bengal	IN	22.57688	88.31857	8
 Raipur		Chhattisgarh	IN	21.23333	81.63333	296
 Changwon		Gyeongsangnam-do	KR	35.22806	128.68111	27
 Longyan		Fujian	CN	25.07485	117.01775	318
-Köln	Koeln	North Rhine-Westphalia	DE	50.93333	6.95	58
+Köln	Koln	North Rhine-Westphalia	DE	50.93333	6.95	58
 Dublin		Leinster	IE	53.33306	-6.24889	17
 Tiruchirappalli		Tamil Nadu	IN	10.8155	78.69651	79
 Yongzhou		Hunan	CN	26.42389	111.61306	101
@@ -731,7 +731,7 @@ Niigata		Niigata	JP	37.92259	139.04125	1
 Muscat		Muscat	OM	23.58413	58.40778	14
 Zarqa		Zarqa	JO	32.07275	36.08796	625
 Çankaya	Cankaya	Ankara	TR	39.9179	32.86268	850
-Küçükçekmece	Kuecuekcekmece	Istanbul	TR	40.99104	28.77123	63
+Küçükçekmece	Kucukcekmece	Istanbul	TR	40.99104	28.77123	63
 Hamamatsu		Shizuoka	JP	34.7	137.73333	3
 Kolwezi		Lualaba	CD	-10.71484	25.46674	1485
 Vinh		Nghệ An Province	VN	18.67337	105.69232	12
@@ -947,7 +947,7 @@ Ansan-si		Gyeonggi-do	KR	37.32361	126.82194	15
 Al Mansurah		Dakahlia	EG	31.03637	31.38069	15
 Kermanshah		Kermanshah Province	IR	34.31417	47.065	1392
 Jiaozhou		Shandong	CN	36.28389	120.00333	10
-Düsseldorf	Duesseldorf	North Rhine-Westphalia	DE	51.22319	6.77927	42
+Düsseldorf	Dusseldorf	North Rhine-Westphalia	DE	51.22319	6.77927	42
 Suizhou		Hubei	CN	31.71111	113.36306	67
 Villa Nueva		Guatemala	GT	14.52512	-90.58544	1331
 Khabarovsk		Khabarovsk	RU	48.46204	135.0971	48
@@ -1025,7 +1025,7 @@ Herāt	Herat	Herat	AF	34.34817	62.19967	927
 Dongsheng		Inner Mongolia	CN	39.81609	109.97763	1439
 Gujrat		Punjab	PK	32.5742	74.07542	237
 Tomsk		Tomsk Oblast	RU	56.50049	84.98216	122
-Ümraniye	UEmraniye	Istanbul	TR	41.01643	29.12476	136
+Ümraniye	Umraniye	Istanbul	TR	41.01643	29.12476	136
 Shihezi		Xinjiang	CN	44.3023	86.03694	467
 South Boston		Massachusetts	US	42.33343	-71.04949	14
 Nakuru		Nakuru County	KE	-0.30719	36.07225	1802
@@ -1104,7 +1104,7 @@ Ji’an	Ji'an	Jiangxi	CN	27.11716	114.97927	72
 Sahiwal		Punjab	PK	31.97386	72.33109	171
 Sahiwal		Punjab	PK	30.66595	73.10186	174
 Mersin		Mersin	TR	36.81196	34.63886	10
-Nilüfer	Niluefer	Bursa Province	TR	40.21401	28.91567	69
+Nilüfer	Nilufer	Bursa Province	TR	40.21401	28.91567	69
 Leeds		England	GB	53.79648	-1.54785	50
 Poznań	Poznan	Greater Poland	PL	52.40692	16.92993	69
 Aqsu		Xinjiang	CN	41.18418	80.27921	1119
@@ -1135,8 +1135,8 @@ San Salvador		San Salvador Department	SV	13.68935	-89.18718	653
 Beihai		Guangxi	CN	21.48349	109.11549	0
 Van		Van	TR	38.49457	43.38323	1708
 Sacramento		California	US	38.58157	-121.4944	9
-Thủ Đức	Thu GJuc	Ho Chi Minh City (HCMC)	VN	10.84863	106.77209	29
-Üsküdar	UEskuedar	Istanbul	TR	41.02274	29.01366	41
+Thủ Đức	Thu Duc	Ho Chi Minh City (HCMC)	VN	10.84863	106.77209	29
+Üsküdar	Uskudar	Istanbul	TR	41.02274	29.01366	41
 Penza		Penza Oblast	RU	53.19568	45.01075	156
 Mazār-e Sharīf	Mazar-e Sharif	Balkh	AF	36.70904	67.11087	361
 Kandahār	Kandahar	Kandahar	AF	31.61332	65.71013	1007
@@ -1357,7 +1357,7 @@ Bắc Giang	Bac Giang	Bac Ninh	VN	21.27307	106.1946	14
 Şanlıurfa	Sanliurfa	Şanlıurfa	TR	37.16708	38.79392	528
 Kursk		Kursk Oblast	RU	51.72689	36.18457	187
 Maheshtala		West Bengal	IN	22.50862	88.25322	9
-Nam Định	Nam GJinh	Ninh Binh	VN	20.43389	106.17729	5
+Nam Định	Nam Dinh	Ninh Binh	VN	20.43389	106.17729	5
 Constantine		Constantine	DZ	36.365	6.61472	574
 Patiāla	Patiala	Punjab	IN	30.33625	76.3922	258
 Boksburg		Gauteng	ZA	-26.21197	28.25958	1624
@@ -1457,8 +1457,8 @@ Pasay		National Capital Region	PH	14.53748	121.00144	9
 Nuevo Laredo		Tamaulipas	MX	27.47629	-99.51639	130
 Toyama		Toyama	JP	36.7	137.21667	11
 Tétouan	Tetouan	Tanger-Tetouan-Al Hoceima	MA	35.57845	-5.36837	121
-Zürich	Zuerich	Zurich	CH	47.36667	8.55	429
-Beylikdüzü	Beylikduezue	Istanbul	TR	40.982	28.6399	102
+Zürich	Zurich	Zurich	CH	47.36667	8.55	429
+Beylikdüzü	Beylikduzu	Istanbul	TR	40.982	28.6399	102
 Việt Trì	Viet Tri	Phu Tho	VN	21.32274	105.40198	25
 Azcapotzalco		Mexico City	MX	19.48698	-99.18594	2249
 Tampa		Florida	US	27.94752	-82.45843	1
@@ -1615,7 +1615,7 @@ Nagano		Nagano	JP	36.65	138.18333	372
 Tawau		Sabah	MY	4.24482	117.89115	0
 Cardiff		Wales	GB	51.48	-3.18	17
 Dachang		Shanghai	CN	31.30873	121.41526	5
-Đống Đa	GJong GJa	Hanoi	VN	21.013	105.825	16
+Đống Đa	Dong Da	Hanoi	VN	21.013	105.825	16
 Chitungwiza		Harare	ZW	-18.01274	31.07555	1435
 Fenghuang		Hunan	CN	27.93557	109.59961	449
 Umuahia		Abia State	NG	5.52491	7.49461	148
@@ -1661,7 +1661,7 @@ Cibinong		West Java	ID	-6.48167	106.85417	137
 Nawabshah		Sindh	PK	26.23939	68.40369	32
 New Orleans		Louisiana	US	29.95465	-90.07507	0
 Keelung		Taiwan	TW	25.13089	121.74094	19
-Malmö	Malmoe	Skåne	SE	55.60587	13.00073	10
+Malmö	Malmo	Skåne	SE	55.60587	13.00073	10
 Jizhou		Hebei	CN	37.55054	115.56871	22
 Manukau City		Auckland	NZ	-36.99282	174.87986	43
 Maradi		Maradi Region	NE	13.5	7.10174	360
@@ -1741,7 +1741,7 @@ Bimbo		Ombella-M'Poko	CF	4.25671	18.41583	371
 Kalemyo		Sagaing Region	MM	23.19014	94.06405	119
 Belfast		Northern Ireland	GB	54.59682	-5.92541	7
 Long Bien		Hanoi	VN	21.03333	105.9	10
-Camagüey	Camagueey	Camagüey	CU	21.38083	-77.91694	102
+Camagüey	Camaguey	Camagüey	CU	21.38083	-77.91694	102
 Bilbao		Basque Country	ES	43.26271	-2.92528	20
 Ambon		Maluku	ID	-3.69583	128.18333	12
 Brest		Brest	BY	52.10894	23.71749	144
@@ -1954,7 +1954,7 @@ Kasugai		Aichi	JP	35.24762	136.97229	30
 An Nhơn	An Nhon	Gia Lai	VN	13.88579	109.10823	13
 Alimosho		Lagos	NG	6.60656	3.30235	43
 Ciudad Benito Juárez	Ciudad Benito Juarez	Nuevo León	MX	25.6466	-100.09142	389
-Münster	Muenster	North Rhine-Westphalia	DE	51.96236	7.62571	64
+Münster	Munster	North Rhine-Westphalia	DE	51.96236	7.62571	64
 Mannheim		Baden-Wurttemberg	DE	49.4891	8.46694	100
 Karawang		West Java	ID	-6.30525	107.3197	12
 Akita		Akita	JP	39.71667	140.11667	14
@@ -2148,7 +2148,7 @@ Valparaíso	Valparaiso	Valparaiso	CL	-33.036	-71.62963	15
 Ica		Ica	PE	-14.07538	-75.73422	396
 Purnia		Bihar	IN	25.77895	87.47422	44
 Newark		New Jersey	US	40.73566	-74.17237	9
-Itagüí	Itaguei	Antioquia	CO	6.18461	-75.59913	1538
+Itagüí	Itagui	Antioquia	CO	6.18461	-75.59913	1538
 Nicolás Romero	Nicolas Romero	México	MX	19.64177	-99.3068	2404
 Gebze		Kocaeli	TR	40.80276	29.43068	182
 Lichinga		Niassa Province	MZ	-13.31278	35.24056	1349
@@ -2241,7 +2241,7 @@ Southampton		England	GB	50.90395	-1.40428	19
 Kapar		Selangor	MY	3.13333	101.38333	1
 Çorum	Corum	Çorum	TR	40.54889	34.95333	808
 Ghulja		Xinjiang	CN	43.91515	81.32151	639
-Eimsbüttel	Eimsbuettel	Hamburg	DE	53.57416	9.95679	16
+Eimsbüttel	Eimsbuttel	Hamburg	DE	53.57416	9.95679	16
 Merlo		Buenos Aires	AR	-34.66536	-58.72744	13
 Yeosu		Jeollanam-do	KR	34.76062	127.66215	10
 Durg		Chhattisgarh	IN	21.19147	81.27619	303
@@ -2318,7 +2318,7 @@ Marāgheh	Maragheh	Razavi Khorasan	IR	35.82916	59.63324	1477
 Quilmes		Buenos Aires	AR	-34.72065	-58.25454	24
 Fukui-shi		Fukui	JP	36.06443	136.22257	15
 Lal Bahadur Nagar		Telangana	IN	17.34769	78.55757	511
-Mönchengladbach	Moenchengladbach	North Rhine-Westphalia	DE	51.18539	6.44172	57
+Mönchengladbach	Monchengladbach	North Rhine-Westphalia	DE	51.18539	6.44172	57
 Bagong Silang		National Capital Region	PH	14.7783	121.04487	50
 Zhytomyr		Zhytomyr Oblast	UA	50.26235	28.67913	236
 Karamay		Xinjiang	CN	45.58473	84.88724	366
@@ -2458,7 +2458,7 @@ Cidade Ademar		São Paulo	BR	-23.67379	-46.65681	809
 Burnaby		British Columbia	CA	49.26636	-122.95263	87
 Lubbock		Texas	US	33.57786	-101.85517	976
 Palermo		Buenos Aires F.D.	AR	-34.58856	-58.43053	14
-Thị Trấn Đông Triều	Thi Tran GJong Trieu	Quảng Ninh	VN	21.08242	106.5138	5
+Thị Trấn Đông Triều	Thi Tran Dong Trieu	Quảng Ninh	VN	21.08242	106.5138	5
 Thuqbah		Eastern Province	SA	26.26022	50.20486	9
 Yamagata		Yamagata	JP	38.23333	140.36667	321
 Tehuacán	Tehuacan	Puebla	MX	18.46422	-97.39735	1643
@@ -2658,7 +2658,7 @@ Taytay		Calabarzon	PH	14.55883	121.13285	9
 Phổ Yên	Pho Yen	Thai Nguyen	VN	21.41978	105.8899	22
 Neuquén	Neuquen	Neuquen	AR	-38.95078	-68.0592	281
 Divinópolis	Divinopolis	Minas Gerais	BR	-20.14355	-44.89065	747
-Türkmenabat	Tuerkmenabat	Lebap	TM	39.07328	63.57861	191
+Türkmenabat	Turkmenabat	Lebap	TM	39.07328	63.57861	191
 Shibuya		Tokyo	JP	35.6589	139.70665	77
 Sơn Tây	Son Tay	Hanoi	VN	21.14053	105.50686	16
 Ninh Hòa	Ninh Hoa	Khanh Hoa	VN	12.49187	109.12495	7
@@ -2718,7 +2718,7 @@ Paya Terubong		Penang	MY	5.37278	100.27972	156
 Richmond		Virginia	US	37.55376	-77.46026	64
 Chang-hua		Taiwan	TW	24.07327	120.56276	60
 Changhua		Taiwan	TW	24.0692	120.5512	28
-Điện Bàn	GJien Ban	Da Nang City	VN	15.88853	108.25447	15
+Điện Bàn	Dien Ban	Da Nang City	VN	15.88853	108.25447	15
 Takarazuka		Hyōgo	JP	34.79936	135.35697	29
 Nzérékoré	Nzerekore	Nzérékoré Region	GN	7.75624	-8.8179	482
 Regina		Saskatchewan	CA	50.45008	-104.6178	577
@@ -2906,7 +2906,7 @@ Cape Coast		Central	GH	5.10535	-1.2466	21
 Bukit Mertajam		Penang	MY	5.36301	100.4667	27
 Lipa City		Calabarzon	PH	13.9411	121.1631	325
 Lanús	Lanus	Buenos Aires	AR	-34.70757	-58.39132	7
-Lübeck	Luebeck	Schleswig-Holstein	DE	53.86893	10.68729	16
+Lübeck	Lubeck	Schleswig-Holstein	DE	53.86893	10.68729	16
 Luojiang		Sichuan	CN	31.30497	104.50484	509
 Sepang		Selangor	MY	2.6931	101.7498	12
 Cobán	Coban	Alta Verapaz	GT	15.47025	-90.37455	1326
@@ -3137,7 +3137,7 @@ Lengshuijiang		Hunan	CN	27.68806	111.42944	194
 Rostock		Mecklenburg-Vorpommern	DE	54.0887	12.14049	18
 Parma		Emilia-Romagna	IT	44.79935	10.32618	57
 Sibu		Sarawak	MY	2.3	111.81667	0
-Arnavutköy	Arnavutkoey	Istanbul	TR	41.18355	28.7402	147
+Arnavutköy	Arnavutkoy	Istanbul	TR	41.18355	28.7402	147
 Itami		Hyōgo	JP	34.78427	135.40126	22
 Mentougou		Beijing	CN	39.93819	116.09307	111
 Bhind		Madhya Pradesh	IN	26.56671	78.78728	157
@@ -3207,7 +3207,7 @@ Manéah	Maneah	Kindia	GN	9.73333	-13.41667	46
 Severodvinsk		Arkhangelskaya	RU	64.55825	39.82971	8
 Kowloon City Centre		Kowloon City	HK	22.32979	114.18889	16
 Matuga		Kwale County	KE	-4.168	39.57068	132
-Düzce	Duezce	Düzce	TR	40.83889	31.16389	153
+Düzce	Duzce	Düzce	TR	40.83889	31.16389	153
 Nnewi		Anambra	NG	6.01962	6.91729	151
 Yamaguchi		Yamaguchi	JP	34.18333	131.46667	157
 Alcalá de Henares	Alcala de Henares	Madrid	ES	40.48205	-3.35996	597
@@ -3347,7 +3347,7 @@ Poza Rica de Hidalgo		Veracruz	MX	20.53315	-97.45946	58
 Bilbeis		Sharqia	EG	30.42039	31.56223	17
 Roxas City		Western Visayas	PH	11.58528	122.75111	6
 Paris 20 Ménilmontant	Paris 20 Menilmontant	Île-de-France	FR	48.8646	2.3984	96
-Kütahya	Kuetahya	Kütahya	TR	39.42417	29.98333	947
+Kütahya	Kutahya	Kütahya	TR	39.42417	29.98333	947
 Palopo		South Sulawesi	ID	-2.9925	120.19694	8
 Potsdam		Brandenburg	DE	52.39886	13.06566	34
 Modena		Emilia-Romagna	IT	44.64783	10.92539	34
@@ -3379,7 +3379,7 @@ Paris 18 Buttes-Montmartre		Île-de-France	FR	48.8925	2.3444	66
 Sants-Montjuïc	Sants-Montjuic	Catalonia	ES	41.37263	2.1546	44
 Oradea		Bihor County	RO	47.0458	21.91833	126
 Araguaína	Araguaina	Tocantins	BR	-7.19111	-48.20722	237
-Saarbrücken	Saarbruecken	Saarland	DE	49.23262	7.00982	195
+Saarbrücken	Saarbrucken	Saarland	DE	49.23262	7.00982	195
 Bunda		Mara	TZ	-2.02153	33.87109	1235
 Skikda		Skikda	DZ	36.87617	6.90921	24
 Kyivskyi		Kharkiv	UA	50.04475	36.28883	173
@@ -3454,7 +3454,7 @@ Purwakarta		West Java	ID	-6.55694	107.44333	86
 Jizzax		Jizzakh Region	UZ	40.13351	67.82956	365
 Ferraz de Vasconcelos		São Paulo	BR	-23.54083	-46.36861	759
 Ila Orangun		Osun State	NG	8.01714	4.90421	493
-Thị Trấn Đại Từ	Thi Tran GJai Tu	Thai Nguyen	VN	21.63384	105.63766	63
+Thị Trấn Đại Từ	Thi Tran Dai Tu	Thai Nguyen	VN	21.63384	105.63766	63
 Neyveli		Tamil Nadu	IN	11.60877	79.4994	67
 Angra dos Reis		Rio de Janeiro	BR	-23.00667	-44.31806	8
 Qianjiang		Hubei	CN	30.421	112.8919	36
@@ -3560,7 +3560,7 @@ Myeik		Tanintharyi Region	MM	12.43954	98.60028	15
 East New York		New York	US	40.66677	-73.88236	6
 Khān Yūnis	Khan Yunis	Gaza Strip	PS	31.34018	34.30627	55
 Dharān	Dharan	Koshi	NP	26.81436	87.27972	375
-Mülheim	Muelheim	North Rhine-Westphalia	DE	51.43218	6.87967	40
+Mülheim	Mulheim	North Rhine-Westphalia	DE	51.43218	6.87967	40
 Albacete		Castille-La Mancha	ES	38.99424	-1.85643	695
 Bata		Litoral	GQ	1.86391	9.76582	13
 Kamakura		Kanagawa	JP	35.31085	139.54698	7
@@ -3662,7 +3662,7 @@ Rio das Ostras		Rio de Janeiro	BR	-22.52694	-41.945	11
 Horta-Guinardó	Horta-Guinardo	Catalonia	ES	41.41849	2.1677	166
 Pátra	Patra	West Greece	GR	38.2462	21.73508	52
 Rutchenkivskyi		Donetsk	UA	47.97597	37.69677	241
-Đồng Xoài	GJong Xoai	Dong Nai	VN	11.53495	106.88324	90
+Đồng Xoài	Dong Xoai	Dong Nai	VN	11.53495	106.88324	90
 Jamālpur	Jamalpur	Mymensingh Division	BD	24.91965	89.94812	23
 Kushiro		Hokkaido	JP	42.975	144.37472	6
 Berezniki		Perm Krai	RU	59.4091	56.8204	189
@@ -3686,14 +3686,14 @@ Mohali		Punjab	IN	30.67995	76.72211	312
 Sampit		Central Kalimantan	ID	-2.5315	112.9496	5
 Clarksville		Tennessee	US	36.52977	-87.35945	145
 Wan Chai		Wan Chai	HK	22.28142	114.17258	40
-Linköping	Linkoeping	Östergötland	SE	58.41086	15.62157	58
+Linköping	Linkoping	Östergötland	SE	58.41086	15.62157	58
 Iwata		Shizuoka	JP	34.7	137.85	5
 Kamalia		Punjab	PK	30.72708	72.64607	160
 Pembroke Pines		Florida	US	26.00315	-80.22394	2
 Maicao		La Guajira Department	CO	11.37837	-72.2395	52
 Obihiro		Hokkaido	JP	42.91722	143.20444	44
 Fatehpur		Uttar Pradesh	IN	25.92774	80.81266	121
-Osnabrück	Osnabrueck	Lower Saxony	DE	52.27264	8.0498	69
+Osnabrück	Osnabruck	Lower Saxony	DE	52.27264	8.0498	69
 Calama		Antofagasta	CL	-22.45667	-68.92371	2275
 Nou Barris		Catalonia	ES	41.44163	2.17727	85
 Nepalgunj		Lumbini Province	NP	28.05	81.61667	150
@@ -3712,7 +3712,7 @@ Tonk		Rajasthan	IN	26.16638	75.78824	278
 Saqqez		Kurdistan Province	IR	36.24992	46.2735	1520
 Béchar	Bechar	Béchar	DZ	31.61667	-2.21667	780
 Tam Kỳ	Tam Ky	Da Nang City	VN	15.57364	108.47403	11
-Gölbaşı	Goelbasi	Ankara	TR	39.79043	32.80903	990
+Gölbaşı	Golbasi	Ankara	TR	39.79043	32.80903	990
 Francisco Morato		São Paulo	BR	-23.28167	-46.74528	803
 Bima		West Nusa Tenggara	ID	-8.46006	118.72667	15
 Mu-se		Shan State	MM	23.99742	97.90109	828
@@ -3724,7 +3724,7 @@ Mthatha		Eastern Cape	ZA	-31.58893	28.78443	694
 Hengshan		Heilongjiang	CN	45.20837	130.89808	260
 Slough		England	GB	51.50949	-0.59541	33
 Bocoio		Benguela	AO	-12.47017	14.13688	972
-Neukölln	Neukoelln	State of Berlin	DE	52.47719	13.43126	55
+Neukölln	Neukolln	State of Berlin	DE	52.47719	13.43126	55
 Port Saint Lucie		Florida	US	27.29393	-80.35033	5
 Sītāpur	Sitapur	Uttar Pradesh	IN	27.56192	80.68265	143
 Alandur		Tamil Nadu	IN	13.0025	80.20611	15
@@ -3759,7 +3759,7 @@ Tongzhou		Beijing	CN	39.90395	116.66183	33
 Ludwigshafen am Rhein		Rheinland-Pfalz	DE	49.48121	8.44641	97
 Lat Krabang		Bangkok	TH	13.72197	100.78473	2
 Şalālah	Salalah	Dhofar	OM	17.01505	54.09237	13
-Büyükçekmece	Bueyuekcekmece	Istanbul	TR	41.02072	28.58502	5
+Büyükçekmece	Buyukcekmece	Istanbul	TR	41.02072	28.58502	5
 Rāj-Nāndgaon	Raj-Nandgaon	Chhattisgarh	IN	21.09687	81.0289	306
 Aydın	Aydin	Aydın	TR	37.84501	27.83963	67
 Envigado		Antioquia	CO	6.17591	-75.59174	1539
@@ -3798,7 +3798,7 @@ Budaun		Uttar Pradesh	IN	28.03811	79.12668	177
 Newport		Wales	GB	51.58774	-2.99835	16
 Coquimbo		Coquimbo Region	CL	-29.95332	-71.33947	22
 Baubau		Southeast Sulawesi	ID	-5.4633	122.6024	15
-Đưc Trọng	GJuc Trong	Lam Dong	VN	11.73559	108.3733	939
+Đưc Trọng	Duc Trong	Lam Dong	VN	11.73559	108.3733	939
 Blitar		East Java	ID	-8.0983	112.1681	180
 Alagoinhas		Bahia	BR	-12.13556	-38.41917	158
 KwaDukuza		KwaZulu-Natal	ZA	-29.32816	31.28954	111
@@ -3926,7 +3926,7 @@ Bạc Liêu	Bac Lieu	Ca Mau	VN	9.29414	105.72776	5
 Juja		Kiambu County	KE	-1.10148	37.0132	1521
 Nek’emtē	Nek'emte	Oromiya	ET	9.08333	36.55	2107
 Fès al Bali	Fes al Bali	Fes-Meknes	MA	34.0701	-4.95473	237
-Örebro	OErebro	Örebro	SE	59.27412	15.2066	35
+Örebro	Orebro	Örebro	SE	59.27412	15.2066	35
 Al Miqdādīyah	Al Miqdadiyah	Diyala	IQ	33.97861	44.93694	60
 Katsuta		Ibaraki	JP	36.38333	140.53333	21
 Malabo		Bioko Norte	GQ	3.75578	8.78166	34
@@ -3937,7 +3937,7 @@ Xinqiao		Shanghai	CN	31.065	121.3075	5
 Sunnyvale		California	US	37.36883	-122.03635	39
 Tema		Greater Accra	GH	5.6698	-0.01657	27
 Yichun		Heilongjiang	CN	47.72143	128.87529	225
-Đức Phổ	GJuc Pho	Quang Ngai	VN	14.81355	108.95931	17
+Đức Phổ	Duc Pho	Quang Ngai	VN	14.81355	108.95931	17
 San Martin Texmelucan de Labastida		Puebla	MX	19.28431	-98.43885	2260
 Ar Ramthā	Ar Ramtha	Irbid	JO	32.55873	36.00816	536
 Hanumāngarh	Hanumangarh	Rajasthan	IN	29.58182	74.32938	184
@@ -4123,7 +4123,7 @@ Melitopol		Zaporizhzhia	UA	46.84735	35.38196	38
 Dunhua		Jilin	CN	43.36954	128.22861	509
 Bhuj		Gujarat	IN	23.25397	69.66928	106
 Arganzuela		Madrid	ES	40.40021	-3.69618	605
-Jyväskylä	Jyvaeskylae	Central Finland	FI	62.24147	25.72088	109
+Jyväskylä	Jyvaskyla	Central Finland	FI	62.24147	25.72088	109
 Yonago		Tottori	JP	35.43333	133.33333	9
 Ruqi		Awdal	SO	9.97293	43.4276	1113
 Rimini		Emilia-Romagna	IT	44.05755	12.56528	5
@@ -4441,7 +4441,7 @@ Choloma		Cortés Department	HN	15.61444	-87.95302	41
 Barcarena		Pará	BR	-1.50583	-48.62583	9
 Kairouan		Kairouan	TN	35.6781	10.09633	65
 Stockport		England	GB	53.40979	-2.15761	59
-Budapest XI. kerület	Budapest XI. keruelet	Budapest	HU	47.47603	19.03605	107
+Budapest XI. kerület	Budapest XI. kerulet	Budapest	HU	47.47603	19.03605	107
 Huadian		Jilin	CN	42.97213	126.74107	264
 Crato		Ceará	BR	-7.23417	-39.40944	430
 Kousséri	Kousseri	Far North	CM	12.07689	15.03063	300
@@ -4611,9 +4611,9 @@ Anyama		Abidjan Autonomous District	CI	5.49462	-4.05183	95
 Jiawang		Jiangsu	CN	34.43278	117.44194	31
 Singaraja		Bali	ID	-8.112	115.08818	11
 Pātan	Patan	Gujarat	IN	23.8507	72.12963	82
-Würzburg	Wuerzburg	Bavaria	DE	49.79391	9.95121	204
+Würzburg	Wurzburg	Bavaria	DE	49.79391	9.95121	204
 Barysaw		Minsk	BY	54.2279	28.505	172
-Đồng Hới	GJong Hoi	Quang Tri	VN	17.46885	106.62226	9
+Đồng Hới	Dong Hoi	Quang Tri	VN	17.46885	106.62226	9
 Randfontein		Gauteng	ZA	-26.1844	27.70203	1716
 Pervouralsk		Sverdlovsk Oblast	RU	56.90528	59.94361	352
 Gondā City	Gonda City	Uttar Pradesh	IN	27.13181	81.95332	113
@@ -4677,9 +4677,9 @@ Kombolcha		Amhara	ET	11.08155	39.74339	1883
 Muricay		Zamboanga Peninsula	PH	7.8275	123.4782	3
 Sterling Heights		Michigan	US	42.58031	-83.0302	187
 Surat Thani		Surat Thani	TH	9.14011	99.33311	10
-Fürth	Fuerth	Bavaria	DE	49.47593	10.98856	302
+Fürth	Furth	Bavaria	DE	49.47593	10.98856	302
 Ferrara		Emilia-Romagna	IT	44.83804	11.62057	9
-Quận Đức Thịnh	Quan GJuc Thinh		VN	10.30989	105.73855	4
+Quận Đức Thịnh	Quan Duc Thinh		VN	10.30989	105.73855	4
 Isidro Casanova		Buenos Aires	AR	-34.7	-58.58745	25
 Ōmuta	Omuta	Fukuoka	JP	33.03333	130.45	15
 Villa Mercedes		Biobio	CL	-37.40421	-71.97949	342
@@ -4808,7 +4808,7 @@ Zacatecas		Zacatecas	MX	22.76843	-102.58141	2480
 Elizabeth		New Jersey	US	40.66399	-74.2107	6
 Zyablikovo		Moscow	RU	55.61667	37.76667	145
 Daur		Sindh	PK	26.45528	68.31835	37
-Bingöl	Bingoel	Bingöl	TR	38.88472	40.49389	1158
+Bingöl	Bingol	Bingöl	TR	38.88472	40.49389	1158
 Copacabana		Rio de Janeiro	BR	-22.96898	-43.18563	28
 Sātkhira	Satkhira	Khulna Division	BD	22.70817	89.07185	11
 Parung		West Java	ID	-6.42139	106.73306	101
@@ -4855,7 +4855,7 @@ Ivanovskoye		Moscow	RU	55.76667	37.83333	156
 Bento Gonçalves	Bento Goncalves	Rio Grande do Sul	BR	-29.17139	-51.51917	673
 Buôn Hồ	Buon Ho	Dak Lak	VN	12.95226	108.2962	706
 Chũ	Chu	Bac Ninh	VN	21.37379	106.56649	18
-Västerås	Vaesteras	Västmanland	SE	59.61617	16.55276	16
+Västerås	Vasteras	Västmanland	SE	59.61617	16.55276	16
 Seto		Aichi	JP	35.23333	137.1	111
 Alhambra		Arizona	US	33.49838	-112.13432	342
 Titāgarh	Titagarh	West Bengal	IN	22.74252	88.37326	10
@@ -4874,7 +4874,7 @@ Mykilska Borshchahivka		Kyiv City	UA	50.42638	30.37442	169
 Al Manzalah		Dakahlia	EG	31.15823	31.936	9
 Wau		Western Bahr al Ghazal	SS	7.70111	27.98972	440
 Songnan		Shanghai	CN	31.35043	121.48218	7
-Södermalm	Soedermalm	Stockholm	SE	59.31278	18.07577	39
+Södermalm	Sodermalm	Stockholm	SE	59.31278	18.07577	39
 Athens		Georgia	US	33.96095	-83.37794	228
 Amaigbo		Abia State	NG	5.78917	7.83829	84
 Vila Mariana		São Paulo	BR	-23.58833	-46.63464	643
@@ -4961,7 +4961,7 @@ Bang Sue		Bangkok	TH	13.81086	100.53064	2
 Mailsi		Punjab	PK	29.80123	72.17398	132
 Los Ángeles	Los Angeles	Biobio	CL	-37.46973	-72.35366	141
 Haimen		Guangdong	CN	23.19346	116.61219	17
-Karabük	Karabuek	Karabük Province	TR	41.20488	32.62768	316
+Karabük	Karabuk	Karabük Province	TR	41.20488	32.62768	316
 Ntuzuma		KwaZulu-Natal	ZA	-29.739	30.949	205
 Tsuruoka		Yamagata	JP	38.72167	139.82167	13
 Saint Peters		England	GB	51.36667	1.41667	43
@@ -5019,10 +5019,10 @@ Metz		Grand Est	FR	49.11911	6.17269	182
 Jiupu		Liaoning	CN	41.06667	122.95	31
 Dārjiling	Darjiling	West Bengal	IN	27.03333	88.26667	2127
 Baoshan		Heilongjiang	CN	46.57472	131.39318	192
-Salvaleón de Higüey	Salvaleon de Higueey	La Altagracia Province	DO	18.61501	-68.70798	95
+Salvaleón de Higüey	Salvaleon de Higuey	La Altagracia Province	DO	18.61501	-68.70798	95
 Butanta		São Paulo	BR	-23.5702	-46.72628	780
 Thaton		Mon	MM	16.91867	97.37001	24
-Budapest III. kerület	Budapest III. keruelet	Budapest	HU	47.54157	19.04501	109
+Budapest III. kerület	Budapest III. kerulet	Budapest	HU	47.54157	19.04501	109
 Kurichchi		Tamil Nadu	IN	10.96085	76.97379	410
 Lumajang		East Java	ID	-8.1335	113.2248	56
 Ise		Mie	JP	34.48333	136.7	56
@@ -5054,7 +5054,7 @@ Dam Dam		West Bengal	IN	22.63341	88.42286	9
 Hoima		Western Region	UG	1.43314	31.35241	1131
 Wuda		Inner Mongolia	CN	39.49944	106.71167	1129
 Az Zubayr		Basra	IQ	30.39213	47.70175	13
-Schöneberg	Schoeneberg	State of Berlin	DE	52.49801	13.3443	39
+Schöneberg	Schoneberg	State of Berlin	DE	52.49801	13.3443	39
 Beppu		Oita	JP	33.27945	131.49751	22
 Hardoī	Hardoi	Uttar Pradesh	IN	27.39491	80.13165	146
 Behbahān	Behbahan	Khuzestan	IR	30.5959	50.2417	326
@@ -5078,7 +5078,7 @@ Burton upon Trent		England	GB	52.80728	-1.64263	49
 Calumpit		Central Luzon	PH	14.91639	120.76583	9
 Lat Phrao		Bangkok	TH	13.80335	100.60696	6
 Livoberezhnyi		Donetsk	UA	47.1093	37.64306	52
-Göttingen	Goettingen	Lower Saxony	DE	51.53443	9.93228	153
+Göttingen	Gottingen	Lower Saxony	DE	51.53443	9.93228	153
 Titiwangsa		Kuala Lumpur	MY	3.17822	101.70312	60
 Phasi Charoen		Bangkok	TH	13.71466	100.43691	8
 Veshnyaki		Moscow	RU	55.72393	37.81952	155
@@ -5158,7 +5158,7 @@ Chūru	Churu	Rajasthan	IN	28.30415	74.96718	291
 Perugia		Umbria	IT	43.1122	12.38878	493
 Gangāpur	Gangapur	Rajasthan	IN	26.47249	76.71744	262
 Zhujing		Shanghai	CN	30.901	121.15966	6
-Bồ Đề	Bo GJe	Hanoi	VN	21.05618	105.86675	14
+Bồ Đề	Bo De	Hanoi	VN	21.05618	105.86675	14
 Guelma		Guelma	DZ	36.46214	7.42608	305
 International City		Dubai	AE	25.16383	55.40987	15
 Dubai Marina		Dubai	AE	25.08525	55.14646	-9
@@ -5317,7 +5317,7 @@ Longjing		Jilin	CN	42.77131	129.42307	245
 Kroonstad		Free State	ZA	-27.65036	27.23488	1399
 Remscheid		North Rhine-Westphalia	DE	51.17983	7.1925	351
 Billings		Montana	US	45.78329	-108.50069	952
-Möng Yang	Moeng Yang	Shan State	MM	21.8478	99.67651	914
+Möng Yang	Mong Yang	Shan State	MM	21.8478	99.67651	914
 Čačak	Cacak	Central Serbia	RS	43.89139	20.34972	241
 Ann Arbor		Michigan	US	42.27756	-83.74088	269
 Los Baños	Los Banos	Calabarzon	PH	14.17025	121.24181	32
@@ -5351,7 +5351,7 @@ Forlì	Forli	Emilia-Romagna	IT	44.22177	12.04144	34
 Azamgarh		Uttar Pradesh	IN	26.06832	83.18358	84
 Santa Maria		Federal District	BR	-16.03095	-48.02929	1177
 Masaka		Central Region	UG	-0.33379	31.73409	1292
-Cờ Đỏ	Co GJo	Can Tho City	VN	10.09377	105.42916	4
+Cờ Đỏ	Co Do	Can Tho City	VN	10.09377	105.42916	4
 Taldykorgan		Zhetysu Region	KZ	45.01556	78.37389	596
 Moncloa-Aravaca		Madrid	ES	40.43547	-3.7317	615
 Gulin		Sichuan	CN	28.04223	105.81038	506
@@ -5433,7 +5433,7 @@ Tucuruí	Tucurui	Pará	BR	-3.76585	-49.67923	60
 Bastī	Basti	Uttar Pradesh	IN	26.78817	82.71617	92
 Peoria		Illinois	US	40.69365	-89.58899	153
 Ezeiza		Buenos Aires	AR	-34.8544	-58.52474	16
-Lasnamäe	Lasnamaee	Harjumaa	EE	59.4336	24.86017	44
+Lasnamäe	Lasnamae	Harjumaa	EE	59.4336	24.86017	44
 Xiva		Xorazm Region	UZ	41.38555	60.36408	98
 Amasya		Amasya	TR	40.65333	35.83306	402
 Mendoza		Mendoza	AR	-32.88946	-68.84582	853
@@ -5441,7 +5441,7 @@ Balkh		Balkh	AF	36.75635	66.8972	348
 Cubatão	Cubatao	São Paulo	BR	-23.895	-46.42528	6
 Mingshui		Shandong	CN	36.71667	117.5	73
 Vila Medeiros		São Paulo	BR	-23.48874	-46.57762	757
-Phong Điền	Phong GJien	Thừa Thiên Huế Province	VN	16.58321	107.36438	14
+Phong Điền	Phong Dien	Thừa Thiên Huế Province	VN	16.58321	107.36438	14
 Nova Serrana		Minas Gerais	BR	-19.87611	-44.98361	715
 Wang Thonglang		Bangkok	TH	13.78546	100.61165	12
 Carlsbad		California	US	33.15809	-117.35059	16
@@ -5507,7 +5507,7 @@ Fujimino		Saitama	JP	35.90196	139.52489	7
 Doncaster		England	GB	53.52285	-1.13116	19
 Bình Thủy	Binh Thuy	Can Tho City	VN	10.07431	105.73974	5
 Dumaguete		Central Visayas	PH	9.30646	123.30769	10
-Budapest XIII. kerület	Budapest XIII. keruelet	Budapest	HU	47.52978	19.08068	106
+Budapest XIII. kerület	Budapest XIII. kerulet	Budapest	HU	47.52978	19.08068	106
 Nippes		North Rhine-Westphalia	DE	50.96545	6.95314	50
 Jaén	Jaen	Andalusia	ES	37.76922	-3.79028	558
 Chengqiao		Shanghai	CN	31.63082	121.39252	5
@@ -5540,7 +5540,7 @@ Taonan		Jilin	CN	45.33319	122.78464	148
 Youkaichi		Shiga	JP	35.11626	136.19768	124
 Kazo		Saitama	JP	36.11667	139.6	12
 Santa Lucía Cotzumalguapa	Santa Lucia Cotzumalguapa	Escuintla	GT	14.33505	-91.02339	386
-Jönköping	Joenkoeping	Jönköping	SE	57.78145	14.15618	100
+Jönköping	Jonkoping	Jönköping	SE	57.78145	14.15618	100
 City of Port Phillip		Victoria	AU	-37.83382	144.93834	6
 Tadepalligudem		Andhra Pradesh	IN	16.81467	81.52717	21
 Haikou		Yunnan	CN	24.77985	102.57548	1909
@@ -5847,7 +5847,7 @@ Daly City		California	US	37.70577	-122.46192	124
 Cikarang		West Java	ID	-6.26111	107.15278	17
 Arlit		Agadez	NE	18.73694	7.38528	423
 Bahārestān	Baharestan	Isfahan	IR	32.48814	51.77312	1562
-Ba Đồn	Ba GJon	Quang Tri	VN	17.75353	106.42355	8
+Ba Đồn	Ba Don	Quang Tri	VN	17.75353	106.42355	8
 Ranebennur		Karnataka	IN	14.62239	75.62951	579
 Longjiang		Heilongjiang	CN	47.33601	123.196	182
 Hwado		Gyeonggi-do	KR	37.6525	127.3075	86
@@ -6228,7 +6228,7 @@ Vasco da Gama		Goa	IN	15.39585	73.81568	7
 Barakaldo		Basque Country	ES	43.29639	-2.98813	27
 Oleksandrivskyi		Donetsk	UA	47.96788	37.80335	142
 Ermelo		Mpumalanga	ZA	-26.53333	29.98333	1700
-Klagenfurt am Wörthersee	Klagenfurt am Woerthersee	Carinthia	AT	46.62472	14.30528	450
+Klagenfurt am Wörthersee	Klagenfurt am Worthersee	Carinthia	AT	46.62472	14.30528	450
 Linxi		Hebei	CN	39.71183	118.44954	46
 Tiébo	Tiebo	Diourbel Region	SN	14.63333	-16.23333	17
 Gangtok		Sikkim	IN	27.32574	88.61216	1654
@@ -6378,11 +6378,11 @@ Bridgetown		Saint Michael	BB	13.10732	-59.62021	10
 Compton		California	US	33.89585	-118.22007	21
 Serov		Sverdlovsk Oblast	RU	59.59737	60.58608	89
 Habboûch	Habbouch	Nabatieh	LB	33.40753	35.48177	457
-Phong Điền	Phong GJien	Can Tho City	VN	9.99753	105.6673	1
+Phong Điền	Phong Dien	Can Tho City	VN	9.99753	105.6673	1
 Xinshi		Hubei	CN	31.04704	113.14098	115
 Vĩnh Thạnh	Vinh Thanh	Can Tho City	VN	10.22263	105.39841	3
 Landstraße	Landstrasse	Vienna	AT	48.2019	16.38792	178
-Budapest IV. kerület	Budapest IV. keruelet	Budapest	HU	47.56182	19.08909	109
+Budapest IV. kerület	Budapest IV. kerulet	Budapest	HU	47.56182	19.08909	109
 League City		Texas	US	29.50745	-95.09493	6
 Flint		Michigan	US	43.01253	-83.68746	229
 Silvassa		Dadra and Nagar Haveli and Daman and Diu	IN	20.27386	72.99673	37
@@ -6501,7 +6501,7 @@ Gongguan		Guangxi	CN	21.8	109.6	21
 Pouytenga		Centre-Est	BF	12.25162	-0.42565	318
 Estelí	Esteli	Estelí Department	NI	13.09291	-86.35589	833
 Soligorsk		Minsk	BY	52.78981	27.53583	152
-Nghĩa Đô	Nghia GJo	Hanoi	VN	21.05	105.8	6
+Nghĩa Đô	Nghia Do	Hanoi	VN	21.05	105.8	6
 Monkayo		Davao Region	PH	7.81528	126.05444	61
 South Gate		California	US	33.95474	-118.21202	35
 Jounieh		Mount Lebanon	LB	33.98083	35.61778	40
@@ -6514,7 +6514,7 @@ Bārmer	Barmer	Rajasthan	IN	25.74572	71.39211	202
 Maribor		Urban Municipality of Maribor	SI	46.55583	15.64593	262
 Portsmouth		Virginia	US	36.83543	-76.29827	3
 Muroran		Hokkaido	JP	42.31722	140.98806	8
-Gütersloh	Guetersloh	North Rhine-Westphalia	DE	51.90693	8.37853	79
+Gütersloh	Gutersloh	North Rhine-Westphalia	DE	51.90693	8.37853	79
 Limpio		Central Department	PY	-25.16611	-57.48562	74
 Saint-Denis		Île-de-France	FR	48.93564	2.35387	34
 Khōst	Khost	Khowst	AF	33.33951	69.92041	1183
@@ -6664,8 +6664,8 @@ Zheleznogorsk		Krasnoyarsk Krai	RU	56.25109	93.53142	149
 Bandar Kinrara		Selangor	MY	3.04926	101.64153	79
 Fangcheng		Henan	CN	33.25692	113.00099	182
 West Albany		New York	US	42.68313	-73.77845	61
-Khương Đình	Khuong GJinh	Hanoi	VN	20.98366	105.81537	23
-Norrköping	Norrkoeping	Östergötland	SE	58.59419	16.1826	12
+Khương Đình	Khuong Dinh	Hanoi	VN	20.98366	105.81537	23
+Norrköping	Norrkoping	Östergötland	SE	58.59419	16.1826	12
 Bohicon		Zou	BJ	7.17826	2.0667	166
 Daotian		Shandong	CN	36.83389	118.89778	19
 Yakima		Washington	US	46.60207	-120.5059	326
@@ -6686,7 +6686,7 @@ Michurinsk		Tambov Oblast	RU	52.90761	40.4823	139
 Kuala Nerus		Terengganu	MY	5.37293	103.02053	146
 Kribi		South	CM	2.93725	9.90765	12
 Guadalajara		Castille-La Mancha	ES	40.62862	-3.16185	722
-Düren	Dueren	North Rhine-Westphalia	DE	50.80434	6.49299	142
+Düren	Duren	North Rhine-Westphalia	DE	50.80434	6.49299	142
 České Budějovice	Ceske Budejovice	South Bohemian Region	CZ	48.97447	14.47434	381
 Fuwwah		Kafr el-Sheikh	EG	31.20365	30.54908	9
 Yashio		Saitama	JP	35.82255	139.83905	8
@@ -6705,7 +6705,7 @@ Polatlı	Polatli	Ankara	TR	39.57715	32.14132	855
 Tangwu		Shandong	CN	36.44667	118.85972	149
 Boca Raton		Florida	US	26.35869	-80.0831	4
 Jiayue		Shandong	CN	36.02361	119.17611	89
-Budapest XVIII. kerület	Budapest XVIII. keruelet	Budapest	HU	47.44417	19.17595	127
+Budapest XVIII. kerület	Budapest XVIII. kerulet	Budapest	HU	47.44417	19.17595	127
 Santa Monica		California	US	34.01949	-118.49138	32
 Kalibo		Western Visayas	PH	11.7086	122.3648	3
 Rubio		Táchira	VE	7.70156	-72.35551	833
@@ -6779,7 +6779,7 @@ Esslingen		Baden-Wurttemberg	DE	48.73961	9.30473	241
 Darlington		England	GB	54.52429	-1.55039	40
 Muğla	Mugla	Muğla	TR	37.21807	28.3665	672
 Bang Phlat		Bangkok	TH	13.79425	100.50447	7
-Tübingen	Tuebingen	Baden-Wurttemberg	DE	48.52266	9.05222	333
+Tübingen	Tubingen	Baden-Wurttemberg	DE	48.52266	9.05222	333
 Pandeglang		Banten	ID	-6.3084	106.1067	253
 Miami Beach		Florida	US	25.79065	-80.13005	1
 Rajpura		Punjab	IN	30.47856	76.59284	273
@@ -6827,7 +6827,7 @@ São João da Boa Vista	Sao Joao da Boa Vista	São Paulo	BR	-21.96917	-46.79806	
 Pickering		Ontario	CA	43.90012	-79.13289	214
 Cidade Ocidental		Goiás	BR	-16.10971	-47.93261	930
 Zhongshu		Yunnan	CN	24.51667	103.76667	1701
-Türkmenbaşy	Tuerkmenbasy	Balkan	TM	40.02216	52.95517	5
+Türkmenbaşy	Turkmenbasy	Balkan	TM	40.02216	52.95517	5
 Southport		England	GB	53.64581	-3.01008	9
 Huazhou		Guangdong	CN	21.63333	110.58333	27
 Phú Thọ	Phu Tho	Phu Tho	VN	21.39963	105.22221	32
@@ -6864,14 +6864,14 @@ Nakonde		Muchinga	ZM	-9.34213	32.745	1589
 Bethlehem		Free State	ZA	-28.23078	28.30707	1630
 Niğde	Nigde	Niğde Province	TR	37.96583	34.67935	1243
 Newmarket		Ontario	CA	44.05011	-79.46631	250
-Lünen	Luenen	North Rhine-Westphalia	DE	51.61634	7.52872	57
+Lünen	Lunen	North Rhine-Westphalia	DE	51.61634	7.52872	57
 Yaroslavskiy		Moscow	RU	55.88333	37.71667	144
 Lefortovo		Moscow	RU	55.76667	37.7	144
 Launceston		Tasmania	AU	-41.43876	147.13467	11
 Ga-Rankuwa		North West	ZA	-25.61692	27.99471	1246
 Gaoyou		Jiangsu	CN	32.78933	119.44182	6
 Kunjah		Punjab	PK	32.52982	73.97486	234
-Lüleburgaz	Lueleburgaz	Kırklareli	TR	41.40173	27.35746	76
+Lüleburgaz	Luleburgaz	Kırklareli	TR	41.40173	27.35746	76
 Myitkyina		Kachin State	MM	25.38327	97.39637	147
 Lqoliaa		Souss-Massa	MA	30.29759	-9.46597	48
 Yulinshi		Shaanxi	CN	38.29181	109.73753	1056
@@ -6895,7 +6895,7 @@ Greenville		North Carolina	US	35.61266	-77.36635	18
 Hradec Králové	Hradec Kralove	Hradec Králové Region	CZ	50.20923	15.83277	250
 Tongren		Guizhou	CN	27.71722	109.18528	263
 Saquarema		Rio de Janeiro	BR	-22.89889	-42.46985	57
-Körfez	Koerfez	Kocaeli	TR	40.76704	29.78275	57
+Körfez	Korfez	Kocaeli	TR	40.76704	29.78275	57
 Mihara		Hiroshima	JP	34.4	133.08333	11
 Çankırı	Cankiri	Çankırı	TR	40.59995	33.6153	727
 Eslāmābād-e Gharb	Eslamabad-e Gharb	Kermanshah Province	IR	34.1089	46.52988	1335
@@ -7046,7 +7046,7 @@ Toms River		New Jersey	US	39.95373	-74.19792	6
 Rāmgarh	Ramgarh	Jharkhand	IN	23.6303	85.52156	339
 Habiganj		Sylhet Division	BD	24.38044	91.41299	15
 Wangqing		Jilin	CN	43.31077	129.76334	252
-Budapest II. kerület	Budapest II. keruelet	Budapest	HU	47.51984	19.02218	202
+Budapest II. kerület	Budapest II. kerulet	Budapest	HU	47.51984	19.02218	202
 Rafaela		Santa Fe	AR	-31.25285	-61.49078	96
 Carmel		Indiana	US	39.97837	-86.11804	260
 Xiazhuang		Shandong	CN	36.44917	119.83556	17
@@ -7333,7 +7333,7 @@ Yokote		Akita	JP	39.31691	140.55034	61
 Alhambra		California	US	34.09529	-118.12701	150
 Svetlanovskiy		Leningradskaya Oblast'	RU	60.00276	30.33051	19
 Bangil		East Java	ID	-7.59939	112.8186	2
-Định Công	GJinh Cong	Hanoi	VN	20.98389	105.82694	18
+Định Công	Dinh Cong	Hanoi	VN	20.98389	105.82694	18
 Nanding		Shandong	CN	36.74833	118.05583	64
 Birni N Konni		Tahoua Region	NE	13.79599	5.25026	272
 Moriyama		Shiga	JP	35.06667	135.98333	92
@@ -7449,7 +7449,7 @@ Liaolan		Shandong	CN	36.67444	119.87528	16
 Bālāghāt	Balaghat	Madhya Pradesh	IN	21.8156	80.18845	319
 Trinidad		Beni Department	BO	-14.83223	-64.90335	155
 Phuthaditjhaba		Free State	ZA	-28.52423	28.81582	1671
-Çerkezköy	Cerkezkoey	Tekirdağ	TR	41.28629	27.99939	152
+Çerkezköy	Cerkezkoy	Tekirdağ	TR	41.28629	27.99939	152
 Jinxiang		Zhejiang	CN	27.43265	120.60625	10
 Yurga		Kuzbass	RU	55.72306	84.88611	156
 Timbuktu		Tombouctou	ML	16.77348	-3.00742	274
@@ -7470,7 +7470,7 @@ Wako		Saitama	JP	35.78944	139.62333	24
 Binonga		Western Visayas	PH	10.7719	122.9817	15
 Reinickendorf		State of Berlin	DE	52.56395	13.33552	38
 Degan		Chongqing	CN	29.27846	106.23157	205
-Xiannü	Xiannue	Jiangsu	CN	32.42806	119.56048	13
+Xiannü	Xiannu	Jiangsu	CN	32.42806	119.56048	13
 Bāghestān	Baghestan	Tehran	IR	35.64706	51.13378	1107
 Ayase		Kanagawa	JP	35.43515	139.4256	39
 Idaiyarpālaiyam	Idaiyarpalaiyam	Tamil Nadu	IN	11.03937	76.92369	455
@@ -7495,7 +7495,7 @@ Nanzhang Chengguanzhen		Hubei	CN	31.78394	111.82752	130
 Hamma Bouziane		Constantine	DZ	36.41205	6.59603	479
 Al Qanāţir al Khayrīyah	Al Qanatir al Khayriyah	Qalyubia	EG	30.19327	31.13703	20
 San Pedro		California	US	33.73585	-118.29229	34
-Đông Ngạc	GJong Ngac	Hanoi	VN	21.08063	105.77397	13
+Đông Ngạc	Dong Ngac	Hanoi	VN	21.08063	105.77397	13
 Ahwatukee Foothills		Arizona	US	33.34171	-111.98403	391
 Paris 10e Arrondissement		Île-de-France	FR	48.87668	2.35904	53
 Kisilevsk		Kuzbass	RU	53.99623	86.64847	335
@@ -7615,7 +7615,7 @@ Nangong		Hebei	CN	37.35464	115.38881	32
 Mbalmayo		Centre	CM	3.51667	11.5	663
 Sabaneta		Antioquia	CO	6.15153	-75.61657	1592
 Limão	Limao	São Paulo	BR	-23.49283	-46.66916	768
-Lüshun	Lueshun	Liaoning	CN	38.8	121.26667	10
+Lüshun	Lushun	Liaoning	CN	38.8	121.26667	10
 Troitsk		Chelyabinsk	RU	54.09224	61.56756	160
 Mādabā	Madaba	Madaba	JO	31.71599	35.79392	790
 Maţāy	Matay	Minya	EG	28.41866	30.77861	38
@@ -7632,7 +7632,7 @@ Dondo		Sofala	MZ	-19.60944	34.74306	55
 Maple Ridge		British Columbia	CA	49.21939	-122.60193	42
 Caldas		Antioquia	CO	6.09106	-75.63569	1756
 Ōmihachiman	Omihachiman	Shiga	JP	35.12861	136.0976	91
-Budapest VIII. kerület	Budapest VIII. keruelet	Budapest	HU	47.48919	19.07012	115
+Budapest VIII. kerület	Budapest VIII. kerulet	Budapest	HU	47.48919	19.07012	115
 Atambua		East Nusa Tenggara	ID	-9.10611	124.8925	336
 Anguo		Jiangsu	CN	34.83056	116.81944	38
 Quixeramobim		Ceará	BR	-5.19917	-39.29278	202
@@ -7772,7 +7772,7 @@ Berestovskyi		Donetsk	UA	48.04426	37.87654	221
 Curvelo		Minas Gerais	BR	-18.75639	-44.43083	653
 Lai Vung		Dong Thap	VN	10.25664	105.59329	3
 Mijas		Andalusia	ES	36.59575	-4.63728	418
-Güigüe	Gueiguee	Carabobo	VE	10.08344	-67.77799	445
+Güigüe	Guigue	Carabobo	VE	10.08344	-67.77799	445
 Bargarh		Odisha	IN	21.33348	83.61905	179
 Nianzhuang		Jiangsu	CN	34.29722	117.77222	28
 Aulnay-sous-Bois		Île-de-France	FR	48.93814	2.49402	45
@@ -7810,10 +7810,10 @@ Kedungwaru		East Java	ID	-8.06667	111.91667	90
 Kendall		Florida	US	25.67927	-80.31727	4
 Lawrence		Massachusetts	US	42.70704	-71.16311	14
 Dashiqiao		Liaoning	CN	40.63732	122.50251	16
-Budapest XV. kerület	Budapest XV. keruelet	Budapest	HU	47.56263	19.11681	111
+Budapest XV. kerület	Budapest XV. kerulet	Budapest	HU	47.56263	19.11681	111
 Panshi		Jilin	CN	42.93719	126.05743	307
 Palwancha		Telangana	IN	17.58152	80.67651	87
-Neumünster	Neumuenster	Schleswig-Holstein	DE	54.07399	9.98456	24
+Neumünster	Neumunster	Schleswig-Holstein	DE	54.07399	9.98456	24
 Chapadinha		Maranhão	BR	-3.74167	-43.36028	109
 Serpong		West Java	ID	-6.31694	106.66417	49
 Meru		Meru County	KE	0.04626	37.65587	1579
@@ -7888,7 +7888,7 @@ Huehuetenango		Huehuetenango	GT	15.32097	-91.47001	1907
 Senhor do Bonfim		Bahia	BR	-10.46139	-40.18944	544
 Dosso		Dosso Region	NE	13.049	3.1937	218
 Bang Sue subdistrict		Bangkok	TH	13.80645	100.53062	2
-Lüdenscheid	Luedenscheid	North Rhine-Westphalia	DE	51.21977	7.6273	410
+Lüdenscheid	Ludenscheid	North Rhine-Westphalia	DE	51.21977	7.6273	410
 Zarzis		Medenine Governorate	TN	33.50398	11.11215	11
 Caçador	Cacador	Santa Catarina	BR	-26.77528	-51.015	916
 Phuket		Phuket	TH	7.89059	98.3981	28
@@ -7994,7 +7994,7 @@ Al Ḩayy	Al Hayy	Wasit	IQ	32.17419	46.04345	20
 Bamban		Central Luzon	PH	15.27386	120.56683	80
 Pingyi		Shandong	CN	35.50056	117.63083	154
 Southall		England	GB	51.50896	-0.3713	35
-Budapest XVII. kerület	Budapest XVII. keruelet	Budapest	HU	47.47997	19.25388	137
+Budapest XVII. kerület	Budapest XVII. kerulet	Budapest	HU	47.47997	19.25388	137
 Wulong		Chongqing	CN	29.32431	107.76056	217
 Valvedditturai		Northern Province	LK	9.81667	80.16667	10
 Rheinhausen		North Rhine-Westphalia	DE	51.40055	6.71187	31
@@ -8058,7 +8058,7 @@ Hammond		Indiana	US	41.58337	-87.50004	183
 Milpitas		California	US	37.42827	-121.90662	5
 Ouarzazate		Drâa-Tafilalet	MA	30.91894	-6.89341	1113
 Inowrocław	Inowroclaw	Kujawsko-Pomorskie	PL	52.79886	18.26387	98
-Ünye	UEnye	Ordu	TR	41.14049	37.28851	1
+Ünye	Unye	Ordu	TR	41.14049	37.28851	1
 Bodhan		Telangana	IN	18.66208	77.88581	375
 Santo Ângelo	Santo Angelo	Rio Grande do Sul	BR	-28.29917	-54.26306	295
 Songling		Jiangsu	CN	31.1933	120.71758	5
@@ -8089,7 +8089,7 @@ Fukuchiyama		Kyoto	JP	35.3	135.11667	20
 Mungyeong		Gyeongsangbuk-do	KR	36.59458	128.19946	78
 Bāramūla	Baramula	Jammu and Kashmir	IN	34.209	74.34285	1579
 Paisley		Scotland	GB	55.83173	-4.43254	50
-Keur Médoune	KeurMedoune	Diourbel Region	SN	14.75835	-15.90434	26
+Keur Médoune	Keur Medoune	Diourbel Region	SN	14.75835	-15.90434	26
 Agua Prieta		Sonora	MX	31.3224	-109.54251	1219
 Canindé	Caninde	Ceará	BR	-4.35889	-39.31167	154
 Pesaro		The Marches	IT	43.90921	12.9164	11
@@ -8192,7 +8192,7 @@ Yaxing		Hainan	CN	19.44778	109.26273	146
 Yuktae-dong		South Hamgyong	KP	40.02472	128.15972	1
 Dangkao		Phnom Penh	KH	11.50881	104.89144	12
 Ciudad Satelite		Arequipa	PE	-16.43085	-71.52921	2336
-Fünfhaus	Fuenfhaus	Vienna	AT	48.19596	16.3183	229
+Fünfhaus	Funfhaus	Vienna	AT	48.19596	16.3183	229
 Antibes		Provence-Alpes-Côte d'Azur	FR	43.58127	7.12487	1
 Yangliuqing		Tianjin	CN	39.1375	116.99972	8
 Stoney Creek		Ontario	CA	43.21681	-79.76633	112
@@ -8205,7 +8205,7 @@ Thawi Watthana		Bangkok	TH	13.78316	100.37805	2
 Electronic City Phase I		Karnataka	IN	12.85492	77.6633	917
 Aira		Kagoshima	JP	31.77429	130.59208	76
 Qiuji		Jiangsu	CN	33.8	118	22
-Budapest XXI. kerület	Budapest XXI. keruelet	Budapest	HU	47.42215	19.06641	96
+Budapest XXI. kerület	Budapest XXI. kerulet	Budapest	HU	47.42215	19.06641	96
 Baytown		Texas	US	29.7355	-94.97743	8
 Sant'Ana do Livramento		Rio Grande do Sul	BR	-30.89083	-55.53278	213
 Furukawa		Miyagi	JP	38.57167	140.95556	23
@@ -8306,7 +8306,7 @@ Miki		Hyōgo	JP	34.8	134.98333	38
 Manteca		California	US	37.79743	-121.21605	11
 Schiedam		South Holland	NL	51.91917	4.38889	-2
 Ra'anana		Central District	IL	32.1836	34.87386	49
-Döbling	Doebling	Vienna	AT	48.25	16.33333	247
+Döbling	Dobling	Vienna	AT	48.25	16.33333	247
 Saint-Maur-des-Fossés	Saint-Maur-des-Fosses	Île-de-France	FR	48.79395	2.49323	38
 Srivilliputhur		Tamil Nadu	IN	9.51272	77.63369	153
 Anhanguera		São Paulo	BR	-23.43088	-46.79295	769
@@ -8359,7 +8359,7 @@ Haninge		Stockholm	SE	59.16775	18.14478	67
 Maozhou		Guangdong	CN	22.76361	113.81288	4
 Jaora		Madhya Pradesh	IN	23.63783	75.12711	473
 Bethlehem		Pennsylvania	US	40.62593	-75.37046	109
-Gävle	Gaevle	Gävleborg	SE	60.67452	17.14174	3
+Gävle	Gavle	Gävleborg	SE	60.67452	17.14174	3
 Arnsberg		North Rhine-Westphalia	DE	51.38333	8.08333	295
 Topi		Khyber Pakhtunkhwa	PK	34.07034	72.62147	348
 Molepolole		Kweneng	BW	-24.40659	25.49508	1146
@@ -8552,7 +8552,7 @@ Richard-Toll		Saint-Louis	SN	16.4625	-15.70083	7
 Pattukkottai		Tamil Nadu	IN	10.42358	79.31949	27
 Siemianowice Śląskie	Siemianowice Slaskie	Silesia	PL	50.32738	19.02901	270
 Negēlē	Negele	Oromiya	ET	5.31667	39.58333	1540
-Mayagüez	Mayagueez	Mayagüez	PR	18.20107	-67.13962	21
+Mayagüez	Mayaguez	Mayagüez	PR	18.20107	-67.13962	21
 Néa Smýrni	Nea Smyrni	Attica	GR	37.94504	23.71416	57
 Ţāmiyah	Tamiyah	Faiyum	EG	29.47639	30.96119	-6
 Joypur Hāt	Joypur Hat	Rajshahi Division	BD	25.10147	89.02734	24
@@ -8697,7 +8697,7 @@ Saint John		New Brunswick	CA	45.27076	-66.05616	30
 São Sebastião do Paraíso	Sao Sebastiao do Paraiso	Minas Gerais	BR	-20.91694	-46.99139	974
 Farīdpur	Faridpur	Uttar Pradesh	IN	28.20997	79.54149	170
 Tando Jam		Sindh	PK	25.42813	68.52923	24
-Yüksekova	Yueksekova	Hakkâri	TR	37.57362	44.28716	1874
+Yüksekova	Yuksekova	Hakkâri	TR	37.57362	44.28716	1874
 Birkhadem		Algiers	DZ	36.71499	3.05002	94
 Zaandam		North Holland	NL	52.43854	4.82643	-1
 Borås	Boras	Västra Götaland	SE	57.72101	12.9401	143
@@ -8756,10 +8756,10 @@ Winneba		Central	GH	5.35113	-0.62313	25
 Szolnok		Jász-Nagykun-Szolnok	HU	47.18066	20.19835	76
 Changtu		Liaoning	CN	42.77884	124.09545	135
 Ban Ko Sire		Phuket	TH	7.88747	98.42575	15
-Växjö	Vaexjoe	Kronoberg	SE	56.87767	14.80906	169
+Växjö	Vaxjo	Kronoberg	SE	56.87767	14.80906	169
 Huashan		Jiangsu	CN	34.63	116.73583	41
 Ilidža	Ilidza	Federation of B&H	BA	43.83148	18.30697	495
-Lüneburg	Lueneburg	Lower Saxony	DE	53.25122	10.41548	12
+Lüneburg	Luneburg	Lower Saxony	DE	53.25122	10.41548	12
 Tôlanaro	Tolanaro	Anosy	MG	-25.03249	46.98329	27
 El Pueblito		Querétaro	MX	20.54006	-100.44093	1878
 Flower Mound		Texas	US	33.01457	-97.09696	184
@@ -8829,13 +8829,13 @@ Kopeysk		Chelyabinsk	RU	55.11686	61.61807	211
 Eha Amufu		Enugu State	NG	6.65915	7.75961	109
 Fatehābād	Fatehabad	Haryana	IN	29.51525	75.45554	216
 Bāpatla	Bapatla	Andhra Pradesh	IN	15.90422	80.46743	10
-Södertälje	Soedertaelje	Stockholm	SE	59.19554	17.62525	29
+Södertälje	Sodertalje	Stockholm	SE	59.19554	17.62525	29
 Gongchangling		Liaoning	CN	41.11667	123.45	214
 Beypore		Kerala	IN	11.17151	75.80611	15
 Bir el Ater		Tébessa	DZ	34.74488	8.06024	889
 Jimo		Shandong	CN	36.38972	120.46222	25
 Malumfashi		Katsina State	NG	11.78935	7.62061	618
-Cổ Đô	Co GJo	Hanoi	VN	21.27964	105.36404	17
+Cổ Đô	Co Do	Hanoi	VN	21.27964	105.36404	17
 Janaúba	Janauba	Minas Gerais	BR	-15.8025	-43.30889	539
 Koppal		Karnataka	IN	15.34522	76.15478	540
 Buenavista		Caraga	PH	8.97694	125.40889	7
@@ -8897,7 +8897,7 @@ Brumado		Bahia	BR	-14.20361	-41.66528	427
 Alphen aan den Rijn		South Holland	NL	52.12917	4.65546	1
 Kadirli		Osmaniye	TR	37.37389	36.09611	82
 Goya		Corrientes	AR	-29.13995	-59.26343	42
-Châu Đốc	Chau GJoc	An Giang	VN	10.7	105.11667	10
+Châu Đốc	Chau Doc	An Giang	VN	10.7	105.11667	10
 Phaya Thai		Bangkok	TH	13.7803	100.54261	8
 Dārāb	Darab	Fars	IR	28.75171	54.54065	1125
 Şirvan	Sirvan	Shirvan	AZ	39.93778	48.929	-15
@@ -8935,7 +8935,7 @@ Fordon		Kujawsko-Pomorskie	PL	53.14821	18.17036	39
 Vikindu		Pwani	TZ	-7.00667	39.29849	86
 Mira Mesa		California	US	32.9156	-117.14392	133
 Woodland Hills		California	US	34.16834	-118.60592	273
-Linh Đàm	Linh GJam	Hanoi	VN	20.96441	105.83054	19
+Linh Đàm	Linh Dam	Hanoi	VN	20.96441	105.83054	19
 Raha		Southeast Sulawesi	ID	-4.838	122.7209	19
 Duyên Hải	Duyen Hai	Vinh Long	VN	9.63497	106.49237	2
 Weston		Florida	US	26.10037	-80.39977	1
@@ -8948,7 +8948,7 @@ Abhar		Zanjan	IR	36.1468	49.218	1541
 Xinhe		Shandong	CN	36.925	119.59306	1
 Moquegua		Moquegua Department	PE	-17.19747	-70.93587	1445
 Shima		Chongqing	CN	28.98773	105.92441	407
-Güira de Melena	Gueira de Melena	Artemisa	CU	22.79688	-82.50651	21
+Güira de Melena	Guira de Melena	Artemisa	CU	22.79688	-82.50651	21
 Chamrajnagar		Karnataka	IN	11.92312	76.93949	717
 Mertoyudan		Central Java	ID	-7.52	110.22639	351
 Consolación del Sur	Consolacion del Sur	Pinar del Río	CU	22.50545	-83.51309	64
@@ -9049,7 +9049,7 @@ Magalang		Central Luzon	PH	15.2151	120.6596	46
 Ihnāsyā al Madīnah	Ihnasya al Madinah	Beni Suweif	EG	29.0895	30.94319	30
 Jamkhandi		Karnataka	IN	16.50461	75.29146	563
 Bogale		Ayeyarwady	MM	16.29415	95.39742	11
-Güines	Gueines	Mayabeque	CU	22.83837	-82.02673	60
+Güines	Guines	Mayabeque	CU	22.83837	-82.02673	60
 Royal Tunbridge Wells		England	GB	51.13321	0.26256	118
 Walnut Creek		California	US	37.90631	-122.06496	52
 Ad Dilinjāt	Ad Dilinjat	Beheira	EG	30.82796	30.53552	6
@@ -9097,9 +9097,9 @@ Aschaffenburg		Bavaria	DE	49.97704	9.15214	140
 Bouïra	Bouira	Bouira	DZ	36.37489	3.902	519
 Chinchiná	Chinchina	Caldas Department	CO	4.9832	-75.60488	1488
 Ouricuri		Pernambuco	BR	-7.8825	-40.08167	451
-Budapest XVI. kerület	Budapest XVI. keruelet	Budapest	HU	47.51482	19.17028	146
+Budapest XVI. kerület	Budapest XVI. kerulet	Budapest	HU	47.51482	19.17028	146
 Tsuruga		Fukui	JP	35.653	136.06331	12
-Hämeenlinna	Haemeenlinna	Kanta-Häme	FI	60.99596	24.46434	83
+Hämeenlinna	Hameenlinna	Kanta-Häme	FI	60.99596	24.46434	83
 Northridge		California	US	34.22834	-118.53675	246
 Waterloo		Iowa	US	42.49276	-92.34296	261
 Tanauan		Calabarzon	PH	14.08627	121.14975	155
@@ -9126,7 +9126,7 @@ Adrar		Adrar	DZ	27.87429	-0.29388	257
 Issia		Sassandra-Marahoue	CI	6.49224	-6.58558	211
 Dolgoprudnyy		Moscow Oblast	RU	55.94958	37.50183	173
 Formiga		Minas Gerais	BR	-20.46444	-45.42639	841
-Söke	Soeke	Aydın	TR	37.7482	27.40614	38
+Söke	Soke	Aydın	TR	37.7482	27.40614	38
 Altagracia de Orituco		Guárico	VE	9.86005	-66.38139	352
 Nghĩa Lộ	Nghia Lo	Lao Cai	VN	21.6	104.51667	260
 Attili		Andhra Pradesh	IN	16.7	81.6	11
@@ -9160,7 +9160,7 @@ Cadereyta		Nuevo León	MX	25.58333	-99.98333	321
 Bourges		Centre-Val de Loire	FR	47.08333	2.4	144
 Yorba Linda		California	US	33.88863	-117.81311	116
 Nābha	Nabha	Punjab	IN	30.37577	76.15292	256
-Mustamäe	Mustamaee	Harjumaa	EE	59.40482	24.68119	22
+Mustamäe	Mustamae	Harjumaa	EE	59.40482	24.68119	22
 Ardeşen	Ardesen	Rize Province	TR	41.19064	40.97935	8
 Chaihe		Heilongjiang	CN	44.7598	129.67826	229
 Budyonnovsk		Stavropol Kray	RU	44.78389	44.16583	119
@@ -9240,7 +9240,7 @@ Victoria		Texas	US	28.80527	-97.0036	29
 Trapani		Sicily	IT	38.0176	12.53617	3
 Paignton		England	GB	50.43565	-3.56789	8
 Rosales		Ilocos	PH	15.89444	120.63278	37
-Lüeyang Chengguanzhen	Lueeyang Chengguanzhen	Shaanxi	CN	33.33205	106.15496	745
+Lüeyang Chengguanzhen	Lueyang Chengguanzhen	Shaanxi	CN	33.33205	106.15496	745
 Tejen		Ahal	TM	37.38338	60.50545	190
 Gaithersburg		Maryland	US	39.14344	-77.20137	153
 Babati		Manyara	TZ	-4.21667	35.75	1351
@@ -9285,8 +9285,8 @@ Tabatinga		Amazonas	BR	-4.23116	-69.93858	80
 Tianliu		Shandong	CN	37	118.78333	7
 Minchinabad		Punjab	PK	30.16356	73.56858	168
 Lushar		Qinghai	CN	36.48416	101.56328	2738
-Ödemiş	OEdemis	İzmir Province	TR	38.2278	27.96955	129
-Köpenick	Koepenick	State of Berlin	DE	52.4455	13.57455	32
+Ödemiş	Odemis	İzmir Province	TR	38.2278	27.96955	129
+Köpenick	Kopenick	State of Berlin	DE	52.4455	13.57455	32
 Wanggou		Jiangsu	CN	34.67147	116.49213	43
 Fengkou		Hubei	CN	30.08268	113.33346	28
 Néa Ionía	Nea Ionia	Attica	GR	38.0357	23.75733	152
@@ -9326,7 +9326,7 @@ Sidi Aïssa	Sidi Aissa	M'Sila	DZ	35.88548	3.77236	662
 Palo Alto		California	US	37.44188	-122.14302	9
 Saiki		Oita	JP	32.95	131.9	3
 Wacheng Neighborhood		Henan	CN	33.78333	114.51667	56
-Seinäjoki	Seinaejoki	South Ostrobothnia	FI	62.79446	22.82822	50
+Seinäjoki	Seinajoki	South Ostrobothnia	FI	62.79446	22.82822	50
 Tarn Taran		Punjab	IN	31.45191	74.92777	227
 General Pico		La Pampa	AR	-35.6593	-63.75787	112
 Neuwied		Rheinland-Pfalz	DE	50.4336	7.47057	67
@@ -9426,7 +9426,7 @@ Castellammare di Stabia		Campania	IT	40.70211	14.48685	6
 Cheria		Tébessa	DZ	35.27306	7.75194	1094
 Kasungu		Central Region	MW	-13.03333	33.48333	1051
 Qionghu		Hunan	CN	28.84122	112.35505	44
-I‘zāz	I`zaz	Aleppo	SY	36.58662	37.04628	559
+I‘zāz	I'zaz	Aleppo	SY	36.58662	37.04628	559
 Thái Hòa	Thai Hoa	Nghệ An Province	VN	18.92031	104.97441	64
 Camucuio		Namibe	AO	-14.11382	13.24061	712
 Gamping Lor		Yogyakarta	ID	-7.79556	110.32639	105
@@ -9854,7 +9854,7 @@ Florence-Graham		California	US	33.96772	-118.24438	44
 Youxi		Chongqing	CN	29.20936	106.14428	219
 Waltham		Massachusetts	US	42.37649	-71.23561	20
 Borsad		Gujarat	IN	22.40788	72.89817	39
-Budapest XX. kerület	Budapest XX. keruelet	Budapest	HU	47.43674	19.10093	114
+Budapest XX. kerület	Budapest XX. kerulet	Budapest	HU	47.43674	19.10093	114
 Feltham		England	GB	51.4462	-0.41388	22
 Siddharthanagar		Lumbini Province	NP	27.5	83.45	107
 Garbsen		Lower Saxony	DE	52.41961	9.6033	49
@@ -10047,7 +10047,7 @@ Nova Odessa		São Paulo	BR	-22.7775	-47.29583	569
 Łomża	Lomza	Podlasie	PL	53.17806	22.05935	103
 Bin Xian		Heilongjiang	CN	45.74274	127.46053	191
 Kempas		Johor	MY	1.5489	103.6965	33
-Angyalföld	Angyalfoeld	Budapest	HU	47.54765	19.07973	107
+Angyalföld	Angyalfold	Budapest	HU	47.54765	19.07973	107
 Meshkīn Dasht	Meshkin Dasht	Tehran	IR	35.74988	50.94376	1241
 Mīzan Teferī	Mizan Teferi	South West Ethiopia Peoples' Region	ET	6.99865	35.58879	1419
 Erzsébetváros	Erzsebetvaros	Budapest	HU	47.50207	19.07218	114
@@ -10125,7 +10125,7 @@ Kolding		South Denmark	DK	55.4904	9.47216	8
 Extremoz		Rio Grande do Norte	BR	-5.70556	-35.30722	48
 Xinye		Henan	CN	32.52875	112.36514	83
 Cheruvannur		Kerala	IN	11.19033	75.82833	1
-Budapest XIX. kerület	Budapest XIX. keruelet	Budapest	HU	47.45293	19.14943	124
+Budapest XIX. kerület	Budapest XIX. kerulet	Budapest	HU	47.45293	19.14943	124
 Ad Dir‘īyah	Ad Dir'iyah	Riyadh Region	SA	24.75187	46.53874	600
 Dmitrov		Moscow Oblast	RU	56.34485	37.52041	138
 Ueno-ebisumachi		Mie	JP	34.75856	136.13108	149
@@ -10164,7 +10164,7 @@ Aketi		Bas-Uele	CD	2.73877	23.78326	380
 Dashi		Chongqing	CN	30.09372	106.22227	289
 Viçosa do Ceará	Vicosa do Ceara	Ceará	BR	-3.56222	-41.09222	719
 Stryi		Lviv	UA	49.26103	23.84845	290
-Kempten (Allgäu)	Kempten (Allgaeu)	Bavaria	DE	47.72674	10.31389	681
+Kempten (Allgäu)	Kempten (Allgau)	Bavaria	DE	47.72674	10.31389	681
 Mdiq		Tanger-Tetouan-Al Hoceima	MA	35.68313	-5.32871	23
 Abū Ḩummuş	Abu Hummus	Beheira	EG	31.09311	30.31418	4
 Castro Valley		California	US	37.6941	-122.08635	50
@@ -10189,7 +10189,7 @@ Mateare		Managua Department	NI	12.23512	-86.42809	60
 La Chorrera		Panamá Oeste Province	PA	8.87763	-79.78007	70
 Kuroiso		Tochigi	JP	36.96667	140.05	301
 Barbalha		Ceará	BR	-7.31111	-39.30417	422
-Schwäbisch Gmünd	Schwaebisch Gmuend	Baden-Wurttemberg	DE	48.79947	9.79809	325
+Schwäbisch Gmünd	Schwabisch Gmund	Baden-Wurttemberg	DE	48.79947	9.79809	325
 Rocklin		California	US	38.79073	-121.23578	79
 Slawi		Central Java	ID	-6.9816	109.1407	43
 Gaalkacyo		Mudug	SO	6.76972	47.43083	288
@@ -10468,7 +10468,7 @@ Fountainebleau		Florida	US	25.77288	-80.34783	1
 Piekary Śląskie	Piekary Slaskie	Silesia	PL	50.38017	18.92653	290
 Itogon		Cordillera	PH	16.36389	120.67694	808
 Békéscsaba	Bekescsaba	Bekes County	HU	46.68333	21.1	87
-Rüsselsheim am Main	Ruesselsheim am Main	Hesse	DE	49.98955	8.42251	89
+Rüsselsheim am Main	Russelsheim am Main	Hesse	DE	49.98955	8.42251	89
 Zvishavane		Masvingo Province	ZW	-20.32674	30.06648	998
 Saint Clair Shores		Michigan	US	42.49698	-82.88881	177
 Agía Paraskeví	Agia Paraskevi	Attica	GR	38.01667	23.83333	216
@@ -10491,7 +10491,7 @@ Tuanbao		Hubei	CN	30.33675	109.13465	999
 San Cristobal		Artemisa	CU	22.71658	-83.05647	63
 Den Helder		North Holland	NL	52.95988	4.75933	3
 Chapel Hill		North Carolina	US	35.9132	-79.05584	148
-Berlin Köpenick	Berlin Koepenick	State of Berlin	DE	52.44254	13.58228	35
+Berlin Köpenick	Berlin Kopenick	State of Berlin	DE	52.44254	13.58228	35
 Molfetta		Apulia	IT	41.20036	16.59905	15
 Altamira		Tamaulipas	MX	22.39309	-97.93857	15
 Canyon Country		California	US	34.42333	-118.47203	409
@@ -10509,7 +10509,7 @@ Comitancillo		San Marcos	GT	15.08937	-91.74971	2271
 Sonsonate		Sonsonate Department	SV	13.71726	-89.72304	245
 Wenshang		Shandong	CN	35.7275	116.49611	34
 Ipirá	Ipira	Bahia	BR	-12.15833	-39.73722	331
-Mölndal	Moelndal	Västra Götaland	SE	57.6554	12.01378	9
+Mölndal	Molndal	Västra Götaland	SE	57.6554	12.01378	9
 Huntington Park		California	US	33.98168	-118.22507	52
 Meïganga	Meiganga	Adamaoua	CM	6.51667	14.3	970
 La Roche-sur-Yon		Pays de la Loire	FR	46.66974	-1.42757	73
@@ -10554,7 +10554,7 @@ Hezuo		Gansu	CN	34.98556	102.90944	2898
 Azua		Azua Province	DO	18.45319	-70.7349	86
 Wanchaq		Cuzco Department	PE	-13.52493	-71.96531	3358
 Chalkída	Chalkida	Central Greece	GR	38.46354	23.60284	22
-Oltinko‘l	Oltinko`l	Karakalpakstan	UZ	43.06874	58.90372	63
+Oltinko‘l	Oltinko'l	Karakalpakstan	UZ	43.06874	58.90372	63
 Ullal		Karnataka	IN	12.80569	74.86058	18
 Ābādeh	Abadeh	Fars	IR	28.83168	53.17276	1900
 Abadeh		Fars	IR	31.1608	52.6506	2006
@@ -10748,7 +10748,7 @@ Dapaong		Savanes	TG	10.86225	0.20762	323
 Felgueiras		Porto	PT	41.36806	-8.19396	348
 Serian		Sarawak	MY	1.16667	110.56667	20
 Streatham		England	GB	51.42897	-0.13184	54
-Göppingen	Goeppingen	Baden-Wurttemberg	DE	48.70354	9.65209	323
+Göppingen	Goppingen	Baden-Wurttemberg	DE	48.70354	9.65209	323
 Zgierz		Łódź Voivodeship	PL	51.85561	19.40623	187
 Caucasia		Antioquia	CO	7.98654	-75.19349	50
 Bowie		Maryland	US	38.94278	-76.73028	42
@@ -10795,7 +10795,7 @@ Longtan		Chongqing	CN	28.75716	108.96414	328
 Shenliu		Hunan	CN	29.41369	112.16435	33
 Lop Buri		Lopburi	TH	14.79808	100.65397	20
 Ksar		Nouakchott West	MR	18.0995	-15.9574	5
-Görlitz	Goerlitz	Saxony	DE	51.15518	14.98853	210
+Görlitz	Gorlitz	Saxony	DE	51.15518	14.98853	210
 Dublin		California	US	37.70215	-121.93579	112
 St. Albert		Alberta	CA	53.63344	-113.63533	663
 Hagere Maryam		Oromiya	ET	5.63418	38.23603	1883
@@ -10942,7 +10942,7 @@ Ninghai		Shandong	CN	37.38422	121.60859	12
 Manfredonia		Apulia	IT	41.63065	15.91876	5
 Veszprém	Veszprem	Veszprém	HU	47.09327	17.91149	265
 Anlong Veaeng		Ŏtâr Méanchey	KH	14.23223	104.08107	54
-Neu-Hohenschönhausen	Neu-Hohenschoenhausen	State of Berlin	DE	52.56681	13.51255	55
+Neu-Hohenschönhausen	Neu-Hohenschonhausen	State of Berlin	DE	52.56681	13.51255	55
 Bayt Lāhyā	Bayt Lahya	Gaza Strip	PS	31.5464	34.49514	33
 Foligno		Umbria	IT	42.95488	12.70268	234
 Zhuzhai		Jiangsu	CN	34.76111	116.81389	40
@@ -11000,12 +11000,12 @@ Hilden		North Rhine-Westphalia	DE	51.16818	6.93093	52
 Wellingborough		England	GB	52.30273	-0.69446	70
 Mafra		Santa Catarina	BR	-26.11139	-49.80528	806
 Tennala		Kerala	IN	10.99342	75.93504	36
-Budapest XII. kerület	Budapest XII. keruelet	Budapest	HU	47.49192	19.01493	168
+Budapest XII. kerület	Budapest XII. kerulet	Budapest	HU	47.49192	19.01493	168
 Aylmer		Quebec	CA	45.4002	-75.80644	90
 Chakradharpur		Jharkhand	IN	22.67611	85.62892	232
 Oberá	Obera	Misiones	AR	-27.48683	-55.11994	345
 Irving Park		Illinois	US	41.95336	-87.73645	184
-Dörtyol	Doertyol	Hatay	TR	36.83917	36.23025	79
+Dörtyol	Dortyol	Hatay	TR	36.83917	36.23025	79
 Limoeiro		Pernambuco	BR	-7.87472	-35.45028	142
 Ureña	Urena	Táchira	VE	7.92162	-72.44396	345
 Capitão Poço	Capitao Poco	Pará	BR	-1.74639	-47.05944	69
@@ -11063,7 +11063,7 @@ Espinal		Tolima Department	CO	4.14924	-74.88429	323
 Huauchinango		Puebla	MX	20.17376	-98.05491	1531
 Vranje		Central Serbia	RS	42.55139	21.90028	468
 Kirishi		Leningradskaya Oblast'	RU	59.47417	32.04007	25
-Gölcük	Goelcuek	Kocaeli	TR	40.71501	29.81824	56
+Gölcük	Golcuk	Kocaeli	TR	40.71501	29.81824	56
 Khartsyzk		Donetsk	UA	48.04277	38.14025	258
 Linghai		Liaoning	CN	41.16528	121.36667	27
 Turbaco		Bolívar	CO	10.32944	-75.41137	174
@@ -11178,7 +11178,7 @@ Amuntai		South Kalimantan	ID	-2.41773	115.24941	10
 Hà Giang	Ha Giang	Tuyen Quang	VN	22.82333	104.98357	107
 Nuevo Casas Grandes		Chihuahua	MX	30.41552	-107.91166	1455
 Chicago Lawn		Illinois	US	41.77503	-87.69644	184
-Eminönü	Eminoenue	Istanbul	TR	41.01754	28.97101	1
+Eminönü	Eminonu	Istanbul	TR	41.01754	28.97101	1
 Hempstead		New York	US	40.70621	-73.61874	17
 Buthidaung Town		Rakhine	MM	20.87537	92.53	8
 Wellington		Western Cape	ZA	-33.63981	19.0112	127
@@ -11220,7 +11220,7 @@ Bisceglie		Apulia	IT	41.24264	16.50104	16
 Jaguare		São Paulo	BR	-23.54382	-46.74871	762
 Kottayam		Kerala	IN	9.58692	76.52132	20
 Pruszków	Pruszkow	Mazovia	PL	52.17072	20.81214	92
-Bozüyük	Bozueyuek	Bilecik	TR	39.90778	30.03667	752
+Bozüyük	Bozuyuk	Bilecik	TR	39.90778	30.03667	752
 Tiruttangal		Tamil Nadu	IN	9.48333	77.83333	88
 Minamiuonuma		Niigata	JP	37.08259	138.87413	198
 Bossangoa		Ouham	CF	6.49263	17.45518	456
@@ -11347,12 +11347,12 @@ Bandar Labuan		Sabah	MY	5.28319	115.25371	1
 Mount Prospect		Illinois	US	42.06642	-87.93729	204
 Punganūru	Punganuru	Andhra Pradesh	IN	13.36672	78.57186	730
 Liangzhai		Jiangsu	CN	34.5	116.75	44
-Wolfenbüttel	Wolfenbuettel	Lower Saxony	DE	52.16442	10.54095	80
+Wolfenbüttel	Wolfenbuttel	Lower Saxony	DE	52.16442	10.54095	80
 Huyton		England	GB	53.4115	-2.83935	40
 Bhamo		Kachin State	MM	24.25256	97.23357	115
 Leytonstone		England	GB	51.56856	0.00768	19
 Rio de Mouro		Lisbon	PT	38.76613	-9.32804	121
-Hürth	Huerth	North Rhine-Westphalia	DE	50.87079	6.86761	91
+Hürth	Hurth	North Rhine-Westphalia	DE	50.87079	6.86761	91
 Luputa		Lomami	CD	-7.16177	23.70057	879
 Jaguaquara		Bahia	BR	-13.53056	-39.97083	675
 Barry		Wales	GB	51.39979	-3.2838	25
@@ -11417,7 +11417,7 @@ Yunjin		Sichuan	CN	29.0818	105.64329	414
 Bom Despacho		Minas Gerais	BR	-19.73639	-45.25222	771
 Normal		Illinois	US	40.5142	-88.99063	244
 Ajaccio		Corsica	FR	41.91886	8.73812	0
-Jagüey Grande	Jagueey Grande	Matanzas Province	CU	22.52629	-81.12855	16
+Jagüey Grande	Jaguey Grande	Matanzas Province	CU	22.52629	-81.12855	16
 Javānrūd	Javanrud	Kermanshah Province	IR	34.8067	46.4913	1317
 Eisenzicken		Burgenland	AT	47.27603	16.25908	297
 Macclesfield		England	GB	53.26023	-2.12564	156
@@ -11439,7 +11439,7 @@ Kérou	Kerou	Atakora	BJ	10.82578	2.10479	332
 Pir Jo Goth		Sindh	PK	27.59178	68.61848	63
 Hietzing		Vienna	AT	48.18623	16.2965	201
 Gravesend		England	GB	51.44206	0.37106	21
-Zürich (Kreis 11)	Zuerich (Kreis 11)	Zurich	CH	47.42326	8.52166	445
+Zürich (Kreis 11)	Zurich (Kreis 11)	Zurich	CH	47.42326	8.52166	445
 Pemangkat		West Kalimantan	ID	1.16667	108.96667	1
 Richland		Washington	US	46.28569	-119.28446	117
 Eastleigh		England	GB	50.96667	-1.35	11
@@ -11624,7 +11624,7 @@ Voi		Taita Taveta	KE	-3.39605	38.55609	580
 Bhongīr	Bhongir	Telangana	IN	17.51544	78.88563	442
 Chaozhou		Taiwan	TW	22.54987	120.54067	16
 Tōkamachi	Tokamachi	Niigata	JP	37.13333	138.76667	154
-Kelenföld	Kelenfoeld	Budapest	HU	47.46614	19.03102	104
+Kelenföld	Kelenfold	Budapest	HU	47.46614	19.03102	104
 Puttūr	Puttur	Karnataka	IN	12.75975	75.20169	100
 Chaeryŏng-ŭp	Chaeryong-up	South Hwanghae	KP	38.39917	125.61556	17
 Yucaipa		California	US	34.03363	-117.04309	798
@@ -11788,7 +11788,7 @@ Terbanggi Besar		Lampung	ID	-4.87898	105.21818	29
 Maiquetía	Maiquetia	Vargas	VE	10.5945	-66.95624	82
 Puji		Shandong	CN	36.13194	119.72111	57
 Downtown DC		District of Columbia	US	38.8935	-77.01991	12
-Caucagüito	Caucagueito	Miranda	VE	10.48666	-66.73799	707
+Caucagüito	Caucaguito	Miranda	VE	10.48666	-66.73799	707
 Pryluky		Chernihiv Oblast	UA	50.59525	32.38382	119
 Lalian		Punjab	PK	31.82462	72.80116	179
 Harrisonburg		Virginia	US	38.44957	-78.86892	404
@@ -11947,7 +11947,7 @@ Sa'dah		Şa‘dah	YE	16.94021	43.76393	1876
 Palm Desert		California	US	33.72255	-116.37697	67
 Zhongxin		Yunnan	CN	26.61667	101.27154	1226
 Devakottai		Tamil Nadu	IN	9.94704	78.8233	53
-Bad Homburg vor der Höhe	Bad Homburg vor der Hoehe	Hesse	DE	50.22683	8.61816	186
+Bad Homburg vor der Höhe	Bad Homburg vor der Hohe	Hesse	DE	50.22683	8.61816	186
 Porvoo		Uusimaa	FI	60.39233	25.66507	29
 Arwal		Bihar	IN	25.24281	84.66571	80
 Louveira		São Paulo	BR	-23.08639	-46.95056	702
@@ -12033,11 +12033,11 @@ Sūsangerd	Susangerd	Khuzestan	IR	31.5635	48.18958	15
 Changanācheri	Changanacheri	Kerala	IN	9.44203	76.53604	14
 Haabersti		Harjumaa	EE	59.42334	24.64654	16
 Acre		Northern District	IL	32.92814	35.07647	8
-Đố Sơn	GJo Son	Hai Phong	VN	20.71361	106.78944	8
+Đố Sơn	Do Son	Hai Phong	VN	20.71361	106.78944	8
 Sanhui		Chongqing	CN	30.08167	106.5912	266
 Jendouba		Jendouba Governorate	TN	36.50114	8.78024	143
 Grapevine		Texas	US	32.93429	-97.07807	195
-Währing	Waehring	Vienna	AT	48.22611	16.34484	192
+Währing	Wahring	Vienna	AT	48.22611	16.34484	192
 Clamart		Île-de-France	FR	48.80299	2.26692	101
 Tŭytepa	Tuytepa	Tashkent Region	UZ	41.0321	69.36253	395
 Shorāpur	Shorapur	Karnataka	IN	16.521	76.75738	480
@@ -12110,7 +12110,7 @@ Martin		Žilina Region	SK	49.06651	18.92399	400
 Musina		Limpopo	ZA	-22.34881	30.04074	540
 Coral Gables		Florida	US	25.72149	-80.26838	3
 Gangshang		Jiangsu	CN	34.52147	118.11835	44
-Neubrück	Neubrueck	North Rhine-Westphalia	DE	51.13434	6.63857	51
+Neubrück	Neubruck	North Rhine-Westphalia	DE	51.13434	6.63857	51
 Khurai		Madhya Pradesh	IN	24.04372	78.33014	439
 Kayna		North Kivu	CD	-0.60927	29.17249	1753
 Reservoir		Victoria	AU	-37.71667	145	89
@@ -12154,7 +12154,7 @@ Kosonsoy		Namangan	UZ	41.24944	71.54738	892
 Gurlan		Xorazm Region	UZ	41.84123	60.39268	92
 Cimitarra		Santander Department	CO	6.31419	-73.94968	156
 Babīlā	Babila	Rif-dimashq	SY	33.47101	36.33076	669
-Hà Đông	Ha GJong	Hanoi	VN	20.97136	105.77876	13
+Hà Đông	Ha Dong	Hanoi	VN	20.97136	105.77876	13
 Buckeye		Arizona	US	33.37032	-112.58378	265
 Naya Gaon		Punjab	IN	30.77515	76.79308	347
 Repalle		Andhra Pradesh	IN	16.0184	80.82958	8
@@ -12205,7 +12205,7 @@ Sangkapura		East Java	ID	-5.84525	112.65173	28
 Suhum		Eastern	GH	6.04089	-0.45004	182
 Saint Croix		Saint Croix Island	VI	17.72751	-64.74698	87
 Nanjangūd	Nanjangud	Karnataka	IN	12.11764	76.68397	666
-Lhünzhub	Lhuenzhub	Tibet	CN	29.8931	91.26166	3775
+Lhünzhub	Lhunzhub	Tibet	CN	29.8931	91.26166	3775
 Skien		Telemark	NO	59.20962	9.60897	27
 Ōi	Oi	Saitama	JP	35.85091	139.51998	21
 Jaru		Rondônia	BR	-10.43889	-62.46639	159
@@ -12229,13 +12229,13 @@ Turbo		Antioquia	CO	8.09263	-76.72822	6
 Kavaklı	Kavakli	Istanbul	TR	41.09258	28.33172	81
 Pivdenna Borshchahivka		Kyiv City	UA	50.41059	30.40396	153
 Deçan	Decan	Gjakova	XK	42.54018	20.28793	612
-Budapest XXII. kerület	Budapest XXII. keruelet	Budapest	HU	47.42698	19.04016	104
+Budapest XXII. kerület	Budapest XXII. kerulet	Budapest	HU	47.42698	19.04016	104
 Laval		Pays de la Loire	FR	48.07247	-0.77019	54
 Hyères	Hyeres	Provence-Alpes-Côte d'Azur	FR	43.12038	6.12857	41
 Kyaukse		Mandalay Region	MM	21.6056	96.13508	86
 Amahai		Maluku	ID	-3.33984	128.91975	6
 Forbesganj		Bihar	IN	26.30253	87.26556	65
-Cần Đước	Can GJuoc	Tay Ninh	VN	10.50966	106.60308	2
+Cần Đước	Can Duoc	Tay Ninh	VN	10.50966	106.60308	2
 North La Crosse		Wisconsin	US	43.84635	-91.24819	197
 Burien		Washington	US	47.47038	-122.34679	115
 Nithari		Delhi	IN	28.70489	77.05285	214
@@ -12324,7 +12324,7 @@ Uiju		P'yŏngan-bukto	KP	40.19944	124.53167	26
 Sfântu Gheorghe	Sfantu Gheorghe	Covasna County	RO	45.86667	25.78333	552
 Pijijiapan		Chiapas	MX	15.68618	-93.20938	47
 Moyobamba		San Martín Department	PE	-6.03441	-76.97423	741
-Alt-Hohenschönhausen	Alt-Hohenschoenhausen	State of Berlin	DE	52.54608	13.5013	55
+Alt-Hohenschönhausen	Alt-Hohenschonhausen	State of Berlin	DE	52.54608	13.5013	55
 Capivari		São Paulo	BR	-22.995	-47.50778	555
 Heidenheim an der Brenz		Baden-Wurttemberg	DE	48.67798	10.15162	494
 Tateyama		Chiba	JP	34.98333	139.86667	7
@@ -12377,7 +12377,7 @@ Untolovo		Leningradskaya Oblast'	RU	60.0122	30.20897	1
 ‘Ayn al ‘Arab	'Ayn al 'Arab	Aleppo	SY	36.89095	38.35347	514
 Ko Samui		Surat Thani	TH	9.53567	99.93567	8
 Merter Keresteciler		Istanbul	TR	41.01295	28.88593	350
-Güngören Merter	Guengoeren Merter	Istanbul	TR	41.00711	28.88795	340
+Güngören Merter	Gungoren Merter	Istanbul	TR	41.00711	28.88795	340
 Utengule		Mbeya	TZ	-8.9	33.33333	1397
 Tukuyu		Mbeya	TZ	-9.25	33.65	1431
 Masumbwe		Geita	TZ	-3.63333	32.18333	1191
@@ -12424,7 +12424,7 @@ Nohar		Rajasthan	IN	29.18292	74.77064	193
 Kameyama		Mie	JP	34.85	136.45	54
 Sunnyside		New York	US	40.73982	-73.93542	5
 Yeola		Maharashtra	IN	20.0424	74.48944	562
-Östersund	OEstersund	Jämtland	SE	63.1792	14.63566	328
+Östersund	Ostersund	Jämtland	SE	63.1792	14.63566	328
 Mbuguni		Arusha	TZ	-3.56667	36.95	921
 Zaječar	Zajecar	Central Serbia	RS	43.90358	22.26405	130
 Kerkrade		Limburg	NL	50.86583	6.0625	157
@@ -12654,7 +12654,7 @@ Xinhe		Jiangsu	CN	34.18613	117.98775	22
 Amboasary		Anosy	MG	-25.03333	46.38333	22
 Elmshorn		Schleswig-Holstein	DE	53.74912	9.66176	8
 Scafati		Campania	IT	40.7602	14.53723	12
-‘Afrīn	`Afrin	Aleppo	SY	36.51194	36.86954	229
+‘Afrīn	'Afrin	Aleppo	SY	36.51194	36.86954	229
 Megion		Khanty-Mansia	RU	61.03429	76.10683	45
 Talinding		Banjul	GM	13.42558	-16.67261	24
 San Juan de los Lagos		Jalisco	MX	21.24893	-102.33036	1749
@@ -12679,7 +12679,7 @@ Ningdong		Ningxia	CN	38.16143	106.58502	1302
 Xianfeng		Chongqing	CN	29.21004	106.30012	370
 Izunokuni		Shizuoka	JP	35.03907	138.95143	17
 Ido-dong		Jeju-do	KR	33.49778	126.52722	62
-Trollhättan	Trollhaettan	Västra Götaland	SE	58.28365	12.28864	49
+Trollhättan	Trollhattan	Västra Götaland	SE	58.28365	12.28864	49
 Nushki		Balochistan	PK	29.55218	66.02288	997
 Nova Andradina		Mato Grosso do Sul	BR	-22.23333	-53.34306	371
 Aquidauana		Mato Grosso do Sul	BR	-20.47111	-55.78722	157
@@ -12953,7 +12953,7 @@ Stuttgart-Ost		Baden-Wurttemberg	DE	48.78363	9.21032	300
 Shakiso		Oromiya	ET	5.76494	38.91006	1741
 Injibara		Amhara	ET	11	36.91667	2661
 Walajapet		Tamil Nadu	IN	12.9251	79.36626	173
-Dülmen	Duelmen	North Rhine-Westphalia	DE	51.83149	7.28075	72
+Dülmen	Dulmen	North Rhine-Westphalia	DE	51.83149	7.28075	72
 Alajuela		Alajuela Province	CR	10.01723	-84.21275	955
 Masbate		Bicol Region	PH	12.37169	123.62494	12
 Aznā	Azna	Lorestan Province	IR	33.45643	49.45646	1862
@@ -13073,7 +13073,7 @@ Pyapon		Ayeyarwady	MM	16.28543	95.67882	8
 Mattanur		Kerala	IN	11.93018	75.57152	51
 Nawá	Nawa	Daraa	SY	32.88646	36.03905	568
 San Marcos		San Marcos	GT	14.96437	-91.79486	2380
-Thị Trấn Đầm Hà	Thi Tran GJam Ha	Quảng Ninh	VN	21.35314	107.59722	19
+Thị Trấn Đầm Hà	Thi Tran Dam Ha	Quảng Ninh	VN	21.35314	107.59722	19
 Arras		Hauts-de-France	FR	50.29301	2.78186	73
 Sant Gervasi - Galvany		Catalonia	ES	41.3975	2.14301	85
 Sanremo		Liguria	IT	43.81725	7.7772	15
@@ -13085,7 +13085,7 @@ Boulogne-sur-Mer		Hauts-de-France	FR	50.72485	1.61373	43
 Cabreúva	Cabreuva	São Paulo	BR	-23.3075	-47.13278	638
 Kendrāparha	Kendraparha	Odisha	IN	20.50166	86.42227	8
 Shido		Kagawa	JP	34.32333	134.17333	6
-Lörrach	Loerrach	Baden-Wurttemberg	DE	47.61497	7.66457	308
+Lörrach	Lorrach	Baden-Wurttemberg	DE	47.61497	7.66457	308
 Sipe Sipe		Cochabamba	BO	-17.45419	-66.35737	2588
 Tipton		England	GB	52.52956	-2.06773	144
 Beryozovsky		Sverdlovsk Oblast	RU	56.9083	60.8019	257
@@ -13113,7 +13113,7 @@ San Jacinto		California	US	33.78391	-116.95864	477
 Albstadt		Baden-Wurttemberg	DE	48.21644	9.02596	733
 Chelles		Île-de-France	FR	48.88109	2.59295	44
 Blacktown		New South Wales	AU	-33.76667	150.91667	67
-Järvenpää	Jaervenpaeae	Uusimaa	FI	60.47369	25.08992	51
+Järvenpää	Jarvenpaa	Uusimaa	FI	60.47369	25.08992	51
 Sunlou		Jiangsu	CN	34.66667	116.58333	40
 Cagnes-sur-Mer		Provence-Alpes-Côte d'Azur	FR	43.66352	7.1479	22
 Selu		Maharashtra	IN	19.45512	76.44073	424
@@ -13235,7 +13235,7 @@ Děčín	Decin	Ústí nad Labem Region	CZ	50.78215	14.21478	135
 Staaken		State of Berlin	DE	52.53661	13.15057	31
 Littleton		Colorado	US	39.61332	-105.01665	1631
 Nilambūr	Nilambur	Kerala	IN	11.27271	76.22571	50
-Bünde	Buende	North Rhine-Westphalia	DE	52.19837	8.58644	74
+Bünde	Bunde	North Rhine-Westphalia	DE	52.19837	8.58644	74
 Esplugues de Llobregat		Catalonia	ES	41.37732	2.08809	102
 Mangshi		Yunnan	CN	24.45329	98.57037	885
 Alsdorf		North Rhine-Westphalia	DE	50.87673	6.16399	167
@@ -13248,7 +13248,7 @@ Ganj Dundwāra	Ganj Dundwara	Uttar Pradesh	IN	27.73308	78.94119	173
 Victoria-Downtown		British Columbia	CA	48.4277	-123.36104	17
 Boca Chica		Santo Domingo Province	DO	18.45	-69.6	12
 Barranca		Lima region	PE	-10.75	-77.76667	52
-Böblingen	Boeblingen	Baden-Wurttemberg	DE	48.68212	9.01171	442
+Böblingen	Boblingen	Baden-Wurttemberg	DE	48.68212	9.01171	442
 Banstead		England	GB	51.32233	-0.20685	160
 Nānpāra	Nanpara	Uttar Pradesh	IN	27.86459	81.50036	138
 Beavercreek		Ohio	US	39.70923	-84.06327	266
@@ -13280,7 +13280,7 @@ Timbaúba	Timbauba	Pernambuco	BR	-7.50528	-35.31833	136
 Kannapolis		North Carolina	US	35.48736	-80.62173	244
 Mislata		Valencia	ES	39.47523	-0.41825	35
 Neath		Wales	GB	51.66317	-3.80443	13
-Rheda-Wiedenbrück	Rheda-Wiedenbrueck	North Rhine-Westphalia	DE	51.84967	8.30017	72
+Rheda-Wiedenbrück	Rheda-Wiedenbruck	North Rhine-Westphalia	DE	51.84967	8.30017	72
 Limache		Valparaiso	CL	-33.01327	-71.26084	136
 União	Uniao	Piauí	BR	-4.58583	-42.86417	60
 Pechora		Komi	RU	65.14717	57.22439	60
@@ -13310,7 +13310,7 @@ Everett		Massachusetts	US	42.40843	-71.05366	20
 Binghamton		New York	US	42.09869	-75.91797	264
 Paternò	Paterno	Sicily	IT	37.56675	14.90254	225
 Nawanshahr		Punjab	IN	31.1245	76.11613	264
-Zürich (Kreis 3)	Zuerich (Kreis 3)	Zurich	CH	47.35785	8.50296	507
+Zürich (Kreis 3)	Zurich (Kreis 3)	Zurich	CH	47.35785	8.50296	507
 Rānāvāv	Ranavav	Gujarat	IN	21.68734	69.74485	29
 Stavroúpoli	Stavroupoli	Central Macedonia	GR	40.66944	22.93806	45
 Balfour		Mpumalanga	ZA	-26.66331	28.59016	1622
@@ -13477,7 +13477,7 @@ Liberia		Guanacaste Province	CR	10.63517	-85.43779	148
 Sololá	Solola	Sololá	GT	14.7707	-91.18344	2044
 Giddarbāha	Giddarbaha	Punjab	IN	30.19953	74.66627	199
 Barra Velha		Santa Catarina	BR	-26.63222	-48.68472	14
-Nurmijärvi	Nurmijaervi	Uusimaa	FI	60.46407	24.8073	78
+Nurmijärvi	Nurmijarvi	Uusimaa	FI	60.46407	24.8073	78
 Meddappakkam		Tamil Nadu	IN	12.91661	80.19385	20
 Santiago de Veraguas		Veraguas Province	PA	8.1	-80.98333	100
 Altoona		Pennsylvania	US	40.51868	-78.39474	355
@@ -13598,7 +13598,7 @@ Vallenar		Atacama	CL	-28.57617	-70.75938	388
 Kimje		Jeollabuk-do	KR	35.80167	126.88889	18
 Āz̄arshahr	Azarshahr	East Azerbaijan	IR	37.759	45.9783	1386
 Aliağa	Aliaga	İzmir Province	TR	38.79975	26.97203	24
-Zürich (Kreis 9)	Zuerich (Kreis 9)	Zurich	CH	47.38245	8.47993	426
+Zürich (Kreis 9)	Zurich (Kreis 9)	Zurich	CH	47.38245	8.47993	426
 Orani		Central Luzon	PH	14.8006	120.5371	9
 Dois Vizinhos		Paraná	BR	-25.73361	-53.05722	562
 Tumsar		Maharashtra	IN	21.38333	79.73333	278
@@ -13660,7 +13660,7 @@ Suresnes		Île-de-France	FR	48.87143	2.22929	35
 Cerquilho		São Paulo	BR	-23.165	-47.74361	587
 Linden		Upper Demerara-Berbice	GY	6.00815	-58.30724	4
 Azemmour		Casablanca-Settat	MA	33.28952	-8.3425	28
-Neustadt am Rübenberge	Neustadt am Ruebenberge	Lower Saxony	DE	52.50462	9.45871	42
+Neustadt am Rübenberge	Neustadt am Rubenberge	Lower Saxony	DE	52.50462	9.45871	42
 Strongsville		Ohio	US	41.3145	-81.83569	284
 Ponte de Lima		Viana do Castelo	PT	41.76719	-8.58393	13
 Avtovo		St.-Petersburg	RU	59.87167	30.26583	14
@@ -13812,7 +13812,7 @@ Kobayashi		Miyazaki	JP	31.98333	130.98333	205
 Kanyobagonga		North Kivu	CD	-0.69978	29.17181	1772
 Boû Arfa	Bou Arfa	Blida	DZ	36.46298	2.81464	241
 Marino		Lazio	IT	41.76984	12.65917	360
-Brühl	Bruehl	North Rhine-Westphalia	DE	50.82928	6.90499	68
+Brühl	Bruhl	North Rhine-Westphalia	DE	50.82928	6.90499	68
 Drogheda		Leinster	IE	53.71889	-6.34778	28
 Krasnyy Sulin		Rostov	RU	47.89246	40.07185	175
 Panambi		Rio Grande do Sul	BR	-28.2925	-53.50167	421
@@ -14070,7 +14070,7 @@ Morshansk		Tambov Oblast	RU	53.44325	41.81061	108
 Pedra Branca		Ceará	BR	-5.45417	-39.71722	506
 Oshakati		Oshana Region	NA	-17.78833	15.70436	1103
 Sovetsk		Kaliningrad Oblast	RU	55.08392	21.87851	13
-Qiryat Motsqin	QiryatMotsqin	Haifa	IL	32.83706	35.0776	10
+Qiryat Motsqin	Qiryat Motsqin	Haifa	IL	32.83706	35.0776	10
 Pittsfield		Massachusetts	US	42.45008	-73.24538	306
 Puerta del Angel		Madrid	ES	40.40969	-3.73181	623
 General Pacheco		Buenos Aires	AR	-34.45256	-58.64312	13
@@ -14147,7 +14147,7 @@ Wong Sawang		Bangkok	TH	13.81671	100.51587	2
 Abū Ḩammād	Abu Hammad	Sharqia	EG	30.53766	31.67875	19
 Gifhorn		Lower Saxony	DE	52.47944	10.55223	53
 Kālimpong	Kalimpong	West Bengal	IN	27.03461	88.63084	1566
-Möng La	Moeng La	Shan State	MM	21.67112	100.01267	639
+Möng La	Mong La	Shan State	MM	21.67112	100.01267	639
 Rosário	Rosario	Maranhão	BR	-2.94047	-44.24898	1
 Jiangping		Guangxi	CN	21.6	108.15	4
 Vyshneve		Kyiv Oblast	UA	50.38834	30.36809	165
@@ -14282,7 +14282,7 @@ Empalme		Sonora	MX	27.96166	-110.81411	7
 Thān	Than	Gujarat	IN	22.57422	71.19942	144
 Kaufbeuren		Bavaria	DE	47.88238	10.62192	672
 Lomonosov		St.-Petersburg	RU	59.90612	29.77253	30
-Göyçay	Goeycay	Göyçay	AZ	40.65055	47.74219	122
+Göyçay	Goycay	Göyçay	AZ	40.65055	47.74219	122
 Barra de São Francisco	Barra de Sao Francisco	Espírito Santo	BR	-18.755	-40.89083	197
 Indralaya		South Sumatra	ID	-3.25249	104.67555	8
 Iwai		Ibaraki	JP	36.05	139.9	5
@@ -14290,9 +14290,9 @@ Partizansk		Primorye	RU	43.11992	133.12316	145
 Selebi-Phikwe		Selibe Phikwe	BW	-21.97895	27.84296	870
 Santa Helena		Maranhão	BR	-2.23111	-45.3	12
 Tikrīt	Tikrit	Salah ad Din	IQ	34.61581	43.67861	112
-‘Irbīn	`Irbin	Rif-dimashq	SY	33.53719	36.36635	688
+‘Irbīn	'Irbin	Rif-dimashq	SY	33.53719	36.36635	688
 Cintalapa de Figueroa		Chiapas	MX	16.68393	-93.71814	577
-Lidingö	Lidingoe	Stockholm	SE	59.36667	18.13333	30
+Lidingö	Lidingo	Stockholm	SE	59.36667	18.13333	30
 Naju		Jeollanam-do	KR	35.0292	126.7175	25
 Bāola	Baola	Gujarat	IN	22.82844	72.36364	29
 Wum		North-West	CM	6.38333	10.06667	1055
@@ -14398,7 +14398,7 @@ Khairābād	Khairabad	Uttar Pradesh	IN	27.52698	80.75461	140
 Amangarh		Khyber Pakhtunkhwa	PK	34.00584	71.92971	301
 Rosa Zarate		Esmeraldas	EC	0.32779	-79.47407	88
 Izberbash		Dagestan	RU	42.56705	47.87546	-11
-Budapest VI. kerület	Budapest VI. keruelet	Budapest	HU	47.50369	19.06583	117
+Budapest VI. kerület	Budapest VI. kerulet	Budapest	HU	47.50369	19.06583	117
 Kaarst		North Rhine-Westphalia	DE	51.22929	6.61883	42
 Garça	Garca	São Paulo	BR	-22.21056	-49.65611	678
 Luobei		Heilongjiang	CN	47.57602	130.81311	85
@@ -14451,7 +14451,7 @@ Manica		Manica	MZ	-18.93444	32.87556	720
 Lajedo		Pernambuco	BR	-8.66361	-36.32	672
 Desio		Lombardy	IT	45.61831	9.20249	196
 Jhingergācha	Jhingergacha	Khulna Division	BD	23.11134	89.09061	15
-Borlänge	Borlaenge	Dalarna	SE	60.4858	15.43714	124
+Borlänge	Borlange	Dalarna	SE	60.4858	15.43714	124
 Stretford		England	GB	53.45	-2.31667	27
 Brea		California	US	33.91668	-117.90006	110
 Lemgo		North Rhine-Westphalia	DE	52.02786	8.89901	100
@@ -14502,7 +14502,7 @@ Porto de Moz		Pará	BR	-1.74833	-52.23833	20
 Kitaibaraki		Ibaraki	JP	36.78671	140.74901	5
 Stare Misto		Kyiv City	UA	50.44759	30.52635	183
 Timmins		Ontario	CA	48.46686	-81.33312	301
-Köniz	Koeniz	Bern	CH	46.92436	7.41457	577
+Köniz	Koniz	Bern	CH	46.92436	7.41457	577
 Sūrampatti	Surampatti	Tamil Nadu	IN	11.32726	77.71122	177
 The Colony		Texas	US	33.08901	-96.88639	180
 Lago Norte		Federal District	BR	-15.73948	-47.85686	1027
@@ -14534,7 +14534,7 @@ Lubero		North Kivu	CD	-0.15837	29.23859	1871
 Álimos	Alimos	Attica	GR	37.91033	23.72361	44
 Diwek		East Java	ID	-7.57897	112.23109	53
 Faenza		Emilia-Romagna	IT	44.29007	11.87948	35
-Mülheim	Muelheim	North Rhine-Westphalia	DE	50.96639	7.00384	54
+Mülheim	Mulheim	North Rhine-Westphalia	DE	50.96639	7.00384	54
 Bilāra	Bilara	Rajasthan	IN	26.18067	73.7055	276
 Dover		England	GB	51.12598	1.31257	12
 Taman Greenwood		Selangor	MY	3.23208	101.70484	63
@@ -14694,7 +14694,7 @@ Peddapalli		Telangana	IN	18.61357	79.37442	234
 Dhupgāri	Dhupgari	West Bengal	IN	26.58904	89.00732	82
 Triprangod		Kerala	IN	10.84225	75.94856	16
 San Pedro		Coahuila	MX	25.43333	-103.21667	1126
-Königswinter	Koenigswinter	North Rhine-Westphalia	DE	50.67734	7.19245	114
+Königswinter	Konigswinter	North Rhine-Westphalia	DE	50.67734	7.19245	114
 University		Florida	US	28.07389	-82.43902	12
 Coppell		Texas	US	32.95457	-97.01501	158
 Timizart		Tizi Ouzou	DZ	36.8	4.26667	312
@@ -14771,7 +14771,7 @@ Pocito		San Juan	AR	-31.68333	-68.58333	608
 Jalārpet	Jalarpet	Tamil Nadu	IN	12.57025	78.57318	414
 Buco Zau		Cabinda	AO	-4.76667	12.55	49
 Ilkeston		England	GB	52.97055	-1.30951	103
-Völklingen	Voelklingen	Saarland	DE	49.25162	6.85873	197
+Völklingen	Volklingen	Saarland	DE	49.25162	6.85873	197
 Trowbridge		England	GB	51.31889	-2.20861	41
 Balaka		Southern Region	MW	-14.97928	34.95575	633
 Carrollwood Village		Florida	US	28.06752	-82.52093	14
@@ -14840,7 +14840,7 @@ Swords		Leinster	IE	53.45972	-6.21806	17
 Lodi		Lombardy	IT	45.30989	9.50085	87
 Kannabechō-yahiro	Kannabecho-yahiro	Hiroshima	JP	34.55808	133.41796	17
 Itoigawa		Niigata	JP	37.03333	137.85	15
-Gönen	Goenen	Balıkesir	TR	40.1049	27.65399	40
+Gönen	Gonen	Balıkesir	TR	40.1049	27.65399	40
 Lincoln Square		Illinois	US	41.97587	-87.68922	185
 Pánuco	Panuco	Veracruz	MX	22.05378	-98.18192	10
 Pariaguán	Pariaguan	Anzoátegui	VE	8.84357	-64.71053	276
@@ -14911,7 +14911,7 @@ Bosconia		Cesar Department	CO	9.97106	-73.88817	84
 Nailā	Naila	Chhattisgarh	IN	22.02074	82.5666	273
 Teknāf	Teknaf	Chittagong	BD	20.85829	92.29773	7
 Ancaster		Ontario	CA	43.21806	-79.98716	253
-Südstadt	Suedstadt	Lower Saxony	DE	52.35967	9.7508	59
+Südstadt	Sudstadt	Lower Saxony	DE	52.35967	9.7508	59
 Streamwood		Illinois	US	42.02558	-88.17841	246
 Fitchburg		Massachusetts	US	42.58342	-71.8023	142
 Nannambra		Kerala	IN	10.99211	75.90799	19
@@ -15014,7 +15014,7 @@ Ampanihy		Atsimo-Andrefana	MG	-24.6937	44.74581	236
 Saḩāb	Sahab	Amman	JO	31.87032	36.00479	872
 Marcianise		Campania	IT	41.03064	14.29868	33
 Nādāpuram	Nadapuram	Kerala	IN	11.68465	75.65493	24
-Pärnu	Paernu	Pärnumaa	EE	58.38588	24.49711	6
+Pärnu	Parnu	Pärnumaa	EE	58.38588	24.49711	6
 Mingguang		Yunnan	CN	25.49314	98.54153	1858
 Santa Rosalía de Camargo	Santa Rosalia de Camargo	Chihuahua	MX	27.67891	-105.17158	1240
 Gursahāiganj	Gursahaiganj	Uttar Pradesh	IN	27.11518	79.73174	149
@@ -15052,7 +15052,7 @@ Gramado		Rio Grande do Sul	BR	-29.37861	-50.87389	818
 Vargem Grande do Sul		São Paulo	BR	-21.83222	-46.89361	725
 Guarda		Guarda	PT	40.53754	-7.26631	1008
 Mapusa		Goa	IN	15.59154	73.80898	14
-Märkisches Viertel	Maerkisches Viertel	State of Berlin	DE	52.59841	13.35766	52
+Märkisches Viertel	Markisches Viertel	State of Berlin	DE	52.59841	13.35766	52
 Vernon		British Columbia	CA	50.26729	-119.27337	383
 Balzar		Guayas	EC	-1.36553	-79.90507	41
 Luga		Leningradskaya Oblast'	RU	58.73876	29.84756	40
@@ -15128,7 +15128,7 @@ Telychka		Kyiv City	UA	50.4	30.56667	97
 Novyi Lviv		Lviv	UA	49.81519	24.03171	326
 St. Johns		Florida	US	30.0815	-81.54774	10
 Uchqŭrghon Shahri	Uchqurghon Shahri	Namangan	UZ	41.11371	72.07915	496
-Güiria	Gueiria	Sucre	VE	10.57721	-62.29841	12
+Güiria	Guiria	Sucre	VE	10.57721	-62.29841	12
 Istok		Pec	XK	42.78083	20.4875	465
 Gangtou		Jiangsu	CN	34.31743	118.20719	32
 Ewell		England	GB	51.34948	-0.2494	38
@@ -15152,7 +15152,7 @@ Tighenif		Mascara	DZ	35.41722	0.32982	517
 Kyaukme		Shan State	MM	22.5392	97.03434	769
 Bānsi	Bansi	Uttar Pradesh	IN	27.17749	82.93442	91
 Cantù	Cantu	Lombardy	IT	45.74096	9.13084	369
-Đan Phượng	GJan Phuong	Hanoi	VN	21.08917	105.6625	12
+Đan Phượng	Dan Phuong	Hanoi	VN	21.08917	105.6625	12
 Zhaojia		Chongqing	CN	31.08125	108.41164	173
 Shuanghuai		Chongqing	CN	30.18416	106.5558	268
 Kampong Pangkal Kalong		Kelantan	MY	5.91667	102.21667	31
@@ -15179,7 +15179,7 @@ Sŭngho 1-tong	Sungho 1-tong	Pyongyang	KP	38.99139	125.97778	38
 Roanne		Auvergne-Rhône-Alpes	FR	46.03624	4.06802	285
 Rajapolah		West Java	ID	-7.221	108.1896	467
 Amherst		Massachusetts	US	42.36723	-72.51852	82
-Hückelhoven	Hueckelhoven	North Rhine-Westphalia	DE	51.0555	6.22658	64
+Hückelhoven	Huckelhoven	North Rhine-Westphalia	DE	51.0555	6.22658	64
 Duncanville		Texas	US	32.6518	-96.90834	221
 New Berlin		Wisconsin	US	42.9764	-88.10842	281
 Marlborough		Massachusetts	US	42.34593	-71.55229	119
@@ -15282,7 +15282,7 @@ Bhachāu	Bhachau	Gujarat	IN	23.29858	70.34279	44
 Boldumsaz		Dasoguz	TM	42.12763	59.6723	81
 Jalālābād	Jalalabad	Punjab	IN	30.60622	74.25727	189
 Araquari		Santa Catarina	BR	-26.37	-48.72222	10
-Löhne	Loehne	North Rhine-Westphalia	DE	52.18848	8.6922	68
+Löhne	Lohne	North Rhine-Westphalia	DE	52.18848	8.6922	68
 Bremerton		Washington	US	47.56732	-122.63264	11
 Livry-Gargan		Île-de-France	FR	48.9193	2.54305	76
 Épinal	Epinal	Grand Est	FR	48.18324	6.45304	388
@@ -15322,7 +15322,7 @@ Téra	Tera	Tillabéri Region	NE	14.00776	0.75306	248
 Yesan		Chungcheongnam-do	KR	36.67756	126.84272	23
 Wiradesa		Central Java	ID	-6.8922	109.619	10
 North Fort Myers		Florida	US	26.66729	-81.88009	1
-Mörön	Moeroen	Khövsgöl Province	MN	49.63417	100.1625	1280
+Mörön	Moron	Khövsgöl Province	MN	49.63417	100.1625	1280
 Dover		Delaware	US	39.15817	-75.52437	9
 Wenquan		Chongqing	CN	31.35911	108.52224	277
 Nejo		Oromiya	ET	9.5	35.5	1888
@@ -15395,7 +15395,7 @@ Podilsk		Odesa	UA	47.74988	29.53074	248
 Pinamar		Buenos Aires	AR	-37.11108	-56.86523	16
 Chhātak	Chhatak	Sylhet Division	BD	25.03852	91.66958	17
 Aroor		Kerala	IN	9.8694	76.30498	9
-Gümüşhane	Guemueshane	Gümüşhane Province	TR	40.46001	39.47176	1180
+Gümüşhane	Gumushane	Gümüşhane Province	TR	40.46001	39.47176	1180
 Bonito		Pernambuco	BR	-8.47028	-35.72861	441
 Hasaki		Chiba	JP	35.73333	140.83333	5
 Los Reyes de Salgado		Michoacán	MX	19.58854	-102.47333	1329
@@ -15427,7 +15427,7 @@ Bizen		Okayama	JP	34.78674	134.23542	284
 Coram		New York	US	40.86871	-73.00149	29
 Soria		Castille and León	ES	41.76401	-2.46883	1064
 El Meghaïer	El Meghaier	El Mghair	DZ	33.95139	5.92222	1
-Möng Yawng	Moeng Yawng	Shan State	MM	21.17924	100.35761	569
+Möng Yawng	Mong Yawng	Shan State	MM	21.17924	100.35761	569
 Pehowa		Haryana	IN	29.97897	76.58249	261
 Lalibela		Amhara	ET	12.03219	39.04756	2481
 Yew Tee			SG	1.39665	103.74738	1
@@ -15531,7 +15531,7 @@ Kavadarci		Kavadarci	MK	41.43344	22.01218	276
 Bragado		Buenos Aires	AR	-35.11557	-60.48965	52
 Chojnice		Pomerania	PL	53.69554	17.55701	152
 Langen		Hesse	DE	49.98955	8.66852	134
-Nyköping	Nykoeping	Södermanland	SE	58.753	17.00788	20
+Nyköping	Nykoping	Södermanland	SE	58.753	17.00788	20
 Żary	Zary	Lubusz	PL	51.64205	15.13727	152
 Caeté	Caete	Minas Gerais	BR	-19.88	-43.66972	910
 Yoshinogawa		Tokushima	JP	34.03858	134.29207	309
@@ -15745,7 +15745,7 @@ Plettenberg Bay		Western Cape	ZA	-34.05274	23.3716	77
 Tepotzotlán	Tepotzotlan	México	MX	19.72116	-99.22391	2317
 Thới Bình	Thoi Binh	Ca Mau	VN	9.35584	105.09929	4
 Weixinghu		Chongqing	CN	29.2445	105.88001	304
-Mühlhausen	Muehlhausen	Thuringia	DE	51.20896	10.45275	221
+Mühlhausen	Muhlhausen	Thuringia	DE	51.20896	10.45275	221
 Hegeng		Chongqing	CN	29.13696	105.86988	332
 Fate		Jilin	CN	44.48333	126.5	162
 Canaã dos Carajás	Canaa dos Carajas	Pará	BR	-6.52392	-49.85167	282
@@ -15757,7 +15757,7 @@ Newala Kisimani		Mtwara	TZ	-10.95	39.28333	687
 Entre Rios		Bahia	BR	-11.94194	-38.08444	165
 Kamiiso		Hokkaido	JP	41.82013	140.64482	2
 Limbang		Sarawak	MY	4.75477	115.01011	5
-Madīnat ‘Īsá	Madinat `Isa	Southern Governorate	BH	26.17361	50.54778	7
+Madīnat ‘Īsá	Madinat 'Isa	Southern Governorate	BH	26.17361	50.54778	7
 Hanover		Maryland	US	39.19289	-76.72414	32
 Burhaniye		Balıkesir	TR	39.50041	26.97269	21
 Chan Kasem		Bangkok	TH	13.82064	100.58311	2
@@ -15771,7 +15771,7 @@ Pleasant Grove		Utah	US	40.36412	-111.73854	1409
 Socorro		São Paulo	BR	-23.68528	-46.71372	748
 Songwŏn	Songwon	Chagang	KP	40.37704	125.87867	329
 Songwŏn-ŭp	Songwon-up	Chagang	KP	40.37278	126.30833	371
-General Güemes	General Gueemes	Salta	AR	-24.67445	-65.0466	696
+General Güemes	General Guemes	Salta	AR	-24.67445	-65.0466	696
 Mabote		Berea	LS	-29.27861	27.52417	1507
 Kāman	Kaman	Rajasthan	IN	27.65791	77.26908	187
 Dej		Cluj County	RO	47.15	23.86667	231
@@ -15804,14 +15804,14 @@ Tirupati NMA		Andhra Pradesh	IN	13.63229	79.48568	120
 Kranj		Urban Municipality of Kranj	SI	46.23887	14.35561	387
 Roy		Utah	US	41.16161	-112.02633	1384
 Valley Stream		New York	US	40.66427	-73.70846	5
-‘Izbat al Burj	`Izbat al Burj	Dakahlia	EG	31.5084	31.84106	8
+‘Izbat al Burj	'Izbat al Burj	Dakahlia	EG	31.5084	31.84106	8
 San José de los Cerrillos	San Jose de los Cerrillos	Salta	AR	-24.89715	-65.48445	1219
 Rolim de Moura do Guaporé	Rolim de Moura do Guapore	Rondônia	BR	-13.08271	-62.27726	159
 Gauribidanur		Karnataka	IN	13.61072	77.51738	690
 Tāsgaon	Tasgaon	Maharashtra	IN	17.037	74.60171	586
 La Chaux-de-Fonds		Neuchâtel	CH	47.09993	6.82586	995
 Umm Hājar	Umm Hajar	Batha	TD	13.2954	19.6966	397
-Neustadt/Süd	Neustadt/Sued	North Rhine-Westphalia	DE	50.92509	6.94762	55
+Neustadt/Süd	Neustadt/Sud	North Rhine-Westphalia	DE	50.92509	6.94762	55
 Spanish Fork		Utah	US	40.11496	-111.65492	1395
 Weißenfels	Weissenfels	Saxony-Anhalt	DE	51.20148	11.96843	102
 Agar		Madhya Pradesh	IN	23.71177	76.01571	519
@@ -15900,7 +15900,7 @@ Narón	Naron	Galicia	ES	43.50175	-8.19082	23
 Leblon		Rio de Janeiro	BR	-22.98444	-43.22315	9
 Nangli Sakrawat		Delhi	IN	28.62169	76.9923	213
 Mizunami		Gifu	JP	35.36667	137.25	157
-Yolöten	Yoloeten	Mary	TM	37.29886	62.35975	263
+Yolöten	Yoloten	Mary	TM	37.29886	62.35975	263
 Satānā	Satana	Maharashtra	IN	20.59483	74.20301	557
 Aghdam		Ağdam	AZ	39.99096	46.92736	374
 Bedēsa	Bedesa	Oromiya	ET	8.9	40.78333	1683
@@ -15951,7 +15951,7 @@ Batī	Bati	Amhara	ET	11.19152	40.01675	1662
 Yasynuvata		Donetsk	UA	48.12678	37.85924	245
 Pivnichno-Brovarskyi Masyv		Kyiv City	UA	50.46304	30.61697	97
 Troitsk		Moscow	RU	55.48498	37.30736	170
-Bäherden	Baeherden	Ahal	TM	38.43624	57.43158	160
+Bäherden	Baherden	Ahal	TM	38.43624	57.43158	160
 Beverwijk		North Holland	NL	52.48333	4.65694	3
 Brighton		Colorado	US	39.98526	-104.82053	1519
 Rushden		England	GB	52.28927	-0.60184	74
@@ -16090,7 +16090,7 @@ Sestroretsk		St.-Petersburg	RU	60.09801	29.96378	8
 Auburn		New South Wales	AU	-33.85	151.03333	26
 Tsz Wan Shan		Wong Tai Sin District	HK	22.35247	114.20016	178
 Aïn el Bya	Ain el Bya	Oran	DZ	35.80389	-0.30178	63
-Jelilyüzi	Jelilyuezi	Xinjiang	CN	43.9749	81.53555	783
+Jelilyüzi	Jelilyuzi	Xinjiang	CN	43.9749	81.53555	783
 Villaflores		Chiapas	MX	16.23377	-93.27006	571
 Nelamangala		Karnataka	IN	13.09978	77.39364	898
 Assin Foso		Central	GH	5.7	-1.65	107
@@ -16110,7 +16110,7 @@ Salvatierra		Guanajuato	MX	20.21615	-100.88208	1796
 Rukungiri		Western Region	UG	-0.84111	29.94194	1575
 Presidente Figueiredo		Amazonas	BR	-2.03444	-60.025	77
 Xiluo		Taiwan	TW	23.79891	120.46337	34
-Köneürgenç	Koeneuergenc	Dasoguz	TM	42.32613	59.15307	65
+Köneürgenç	Koneurgenc	Dasoguz	TM	42.32613	59.15307	65
 Bom Jesus do Itabapoana		Rio de Janeiro	BR	-21.13389	-41.67972	90
 Jacaltenango		Huehuetenango	GT	15.66662	-91.71177	1459
 Fengolo		Montagnes	CI	6.78634	-7.39338	247
@@ -16146,7 +16146,7 @@ Kalutara		Western Province	LK	6.5831	79.9593	7
 Wayao		Jiangsu	CN	34.38333	118.23333	31
 Qorof		Somali	ET	6.58222	46.43333	382
 Tange		Gansu	CN	34.62764	104.84062	1767
-Würselen	Wuerselen	North Rhine-Westphalia	DE	50.81809	6.1347	190
+Würselen	Wurselen	North Rhine-Westphalia	DE	50.81809	6.1347	190
 Redcar		England	GB	54.61657	-1.05999	9
 Indian Trail		North Carolina	US	35.07681	-80.66924	213
 Vasylkiv		Kyiv Oblast	UA	50.18023	30.31189	151
@@ -16184,7 +16184,7 @@ Tursunzoda		Republican Subordination	TJ	38.51271	68.23163	707
 Parque Lefevre		Panamá	PA	9.02266	-79.47864	6
 Lynnwood		Washington	US	47.82093	-122.31513	120
 Bahādurganj	Bahadurganj	Bihar	IN	26.26172	87.82443	57
-Beşikdüzü	Besikduezue	Trabzon	TR	41.05202	39.23294	10
+Beşikdüzü	Besikduzu	Trabzon	TR	41.05202	39.23294	10
 Cesano Maderno		Lombardy	IT	45.62915	9.15189	198
 Jesi		The Marches	IT	43.52142	13.24368	97
 Benfica		Lisbon	PT	38.75087	-9.20282	82
@@ -16228,7 +16228,7 @@ Longview		Washington	US	46.13817	-122.93817	6
 Santa Teresa		México	MX	19.845	-99.23333	2286
 Sarzedo		Minas Gerais	BR	-20.03528	-44.14472	795
 Pylaía	Pylaia	Central Macedonia	GR	40.59918	22.98613	90
-Skövde	Skoevde	Västra Götaland	SE	58.39118	13.84506	152
+Skövde	Skovde	Västra Götaland	SE	58.39118	13.84506	152
 Santiago		Nuevo León	MX	25.42596	-100.15399	486
 Vršovice	Vrsovice	Prague	CZ	50.06732	14.46026	213
 Debila		El Oued	DZ	33.51667	6.95	52
@@ -16327,9 +16327,9 @@ Woodhaven		New York	US	40.68927	-73.85791	13
 Sohna		Haryana	IN	28.24737	77.06544	212
 Temryuk		Krasnodar Krai	RU	45.26885	37.39752	24
 Washinomiya		Saitama	JP	36.09916	139.66041	11
-Schwäbisch Hall	Schwaebisch Hall	Baden-Wurttemberg	DE	49.11127	9.73908	322
+Schwäbisch Hall	Schwabisch Hall	Baden-Wurttemberg	DE	49.11127	9.73908	322
 Licata		Sicily	IT	37.10267	13.93972	8
-Upplands Väsby	Upplands Vaesby	Stockholm	SE	59.51839	17.91128	17
+Upplands Väsby	Upplands Vasby	Stockholm	SE	59.51839	17.91128	17
 Odorheiu Secuiesc		Harghita County	RO	46.3	25.3	495
 Hang Hau		Sai Kung District	HK	22.31811	114.26994	14
 Patāmundai	Patamundai	Odisha	IN	20.57806	86.56063	7
@@ -16362,7 +16362,7 @@ Niederkassel		North Rhine-Westphalia	DE	50.81503	7.03777	59
 Newton Abbot		England	GB	50.52858	-3.61186	14
 Florida		Florida	UY	-34.10032	-56.21477	79
 Sarankhola		Khulna Division	BD	22.31006	89.79113	9
-Uzunköprü	Uzunkoeprue	Edirne	TR	41.26914	26.68598	7
+Uzunköprü	Uzunkopru	Edirne	TR	41.26914	26.68598	7
 Daryāpur	Daryapur	Maharashtra	IN	20.92489	77.32644	287
 Matale		Central Province	LK	7.4698	80.6217	366
 Iperó	Ipero	São Paulo	BR	-23.35028	-47.68861	571
@@ -16375,7 +16375,7 @@ Ar Rābiyah	Ar Rabiyah	Al Asimah	KW	29.295	47.93306	24
 Igangan		Oyo State	NG	7.6807	3.18413	166
 Temblador		Monagas	VE	9.00525	-62.64493	36
 Qīāmdasht	Qiamdasht	Tehran	IR	35.5237	51.6505	1033
-Cái Đôi Vàm	Cai GJoi Vam	Ca Mau	VN	8.85707	104.81199	2
+Cái Đôi Vàm	Cai Doi Vam	Ca Mau	VN	8.85707	104.81199	2
 Osmancık	Osmancik	Çorum	TR	40.97818	34.8047	424
 Pahrump		Nevada	US	36.20829	-115.98391	822
 Barnagar		Madhya Pradesh	IN	23.0489	75.37804	500
@@ -16387,7 +16387,7 @@ Mangotsfield		England	GB	51.4878	-2.50403	74
 Maia		Porto	PT	41.23574	-8.6199	93
 Folweni		KwaZulu-Natal	ZA	-29.99569	30.80724	318
 Bocaranga		Ouham-Pendé	CF	6.98533	15.64062	1078
-Östermalm	OEstermalm	Stockholm	SE	59.33879	18.08487	30
+Östermalm	Ostermalm	Stockholm	SE	59.33879	18.08487	30
 Estahbān	Estahban	Fars	IR	29.1266	54.0421	1743
 Los Realejos		Canary Islands	ES	28.38487	-16.58275	297
 Letlhakane		Central	BW	-21.41494	25.59263	984
@@ -16408,7 +16408,7 @@ Temple City		California	US	34.10723	-118.05785	122
 Porta Westfalica		North Rhine-Westphalia	DE	52.22961	8.91612	73
 Betafo		Vakinankaratra	MG	-19.83333	46.85	1371
 Marion		Ohio	US	40.58867	-83.12852	299
-Mellunkylä	Mellunkylae	Uusimaa	FI	60.23355	25.09947	19
+Mellunkylä	Mellunkyla	Uusimaa	FI	60.23355	25.09947	19
 Conflans-Sainte-Honorine		Île-de-France	FR	49.00158	2.09694	48
 Itu		Akwa Ibom State	NG	5.20131	7.98373	32
 La Troncal		Canar	EC	-2.42466	-79.34159	480
@@ -16462,7 +16462,7 @@ Solano		Cagayan Valley	PH	16.51918	121.18124	264
 Franklin		Wisconsin	US	42.88863	-88.03842	244
 West Hollywood		California	US	34.09001	-118.36174	86
 Dachang		Chongqing	CN	31.26861	109.8021	151
-Zürich (Kreis 10)	Zuerich (Kreis 10)	Zurich	CH	47.40773	8.5005	516
+Zürich (Kreis 10)	Zurich (Kreis 10)	Zurich	CH	47.40773	8.5005	516
 Richfield		Minnesota	US	44.8833	-93.283	256
 Vilappil		Kerala	IN	8.52218	77.04001	76
 Mim		Ahafo	GH	6.90412	-2.56114	231
@@ -16612,8 +16612,8 @@ Richmond West		Florida	US	25.6105	-80.42971	2
 Partūr	Partur	Maharashtra	IN	19.59925	76.21541	453
 Novokazalinsk		Kyzylorda	KZ	45.84806	62.15254	69
 San José de Mayo	San Jose de Mayo	San José Department	UY	-34.33898	-56.71339	53
-Görükle	Goeruekle	Bursa Province	TR	40.23114	28.84017	121
-Barmbek-Süd	Barmbek-Sued	Hamburg	DE	53.58007	10.04067	9
+Görükle	Gorukle	Bursa Province	TR	40.23114	28.84017	121
+Barmbek-Süd	Barmbek-Sud	Hamburg	DE	53.58007	10.04067	9
 Dương Minh Châu	Duong Minh Chau	Tay Ninh	VN	11.38414	106.23078	23
 Sanmiao		Chongqing	CN	30.23763	106.12704	242
 Michalovce		Košice Region	SK	48.75434	21.9195	111
@@ -16804,7 +16804,7 @@ Entrevías	Entrevias	Madrid	ES	40.37846	-3.6739	621
 Zorgo		Plateau-Central	BF	12.24922	-0.61527	312
 Dwarsloop		Limpopo	ZA	-24.79456	31.10277	588
 Tala		Jalisco	MX	20.65267	-103.70148	1337
-Kohtla-Järve	Kohtla-Jaerve	Ida-Virumaa	EE	59.39861	27.27306	66
+Kohtla-Järve	Kohtla-Jarve	Ida-Virumaa	EE	59.39861	27.27306	66
 Rājpīpla	Rajpipla	Gujarat	IN	21.86667	73.5	45
 San Martín Azcatepec	San Martin Azcatepec	México	MX	19.68667	-98.97278	2308
 Baradero		Buenos Aires	AR	-33.81199	-59.50467	37
@@ -16839,7 +16839,7 @@ Conceição do Jacuípe	Conceicao do Jacuipe	Bahia	BR	-12.31667	-38.76667	212
 Tahuna		North Sulawesi	ID	3.61099	125.4858	77
 Villamaría	Villamaria	Caldas Department	CO	5.04509	-75.51249	1843
 Badessa		South Ethiopia Regional State	ET	6.8773	37.93619	1665
-Yerköy	Yerkoey	Yozgat	TR	39.63806	34.46722	770
+Yerköy	Yerkoy	Yozgat	TR	39.63806	34.46722	770
 Neu-Isenburg		Hesse	DE	50.04832	8.69406	127
 Goya		Montagnes	CI	6.56487	-7.42735	234
 Tha Bo		Nong Khai	TH	17.85003	102.58139	182
@@ -16871,7 +16871,7 @@ Bollate		Lombardy	IT	45.54647	9.12054	156
 Záběhlice	Zabehlice	Prague	CZ	50.0573	14.5038	253
 Merrillville		Indiana	US	41.48281	-87.33281	200
 Villena		Valencia	ES	38.6373	-0.86568	525
-Zweibrücken	Zweibruecken	Rheinland-Pfalz	DE	49.24686	7.36977	242
+Zweibrücken	Zweibrucken	Rheinland-Pfalz	DE	49.24686	7.36977	242
 Mazarrón	Mazarron	Murcia	ES	37.5992	-1.31493	66
 Hitchin		England	GB	51.94924	-0.28496	77
 Shumerlya		Chuvash Republic	RU	55.5005	46.41288	106
@@ -16956,7 +16956,7 @@ Helsingør	Helsingor	Capital Region	DK	56.03606	12.6136	8
 Ubajara		Ceará	BR	-3.85444	-40.92111	855
 Ouro Preto do Oeste		Rondônia	BR	-10.74806	-62.21583	214
 Sabanagrande		Atlántico	CO	10.79115	-74.76059	9
-Hötting	Hoetting	Tyrol	AT	47.26815	11.36868	666
+Hötting	Hotting	Tyrol	AT	47.26815	11.36868	666
 New Amsterdam		East Berbice-Corentyne	GY	6.24924	-57.51578	1
 Notsé	Notse	Plateaux	TG	6.95	1.16667	142
 Nanuque		Minas Gerais	BR	-17.83917	-40.35389	108
@@ -17330,7 +17330,7 @@ Zhelou		Guizhou	CN	24.96667	105.81667	701
 Beruwala		Western Province	LK	6.4788	79.9828	0
 Aoji-ri		North Hamgyong	KP	42.52182	130.39572	30
 Varberg		Halland	SE	57.10557	12.25078	15
-Göksun	Goeksun	Kahramanmaraş	TR	38.02096	36.4973	1344
+Göksun	Goksun	Kahramanmaraş	TR	38.02096	36.4973	1344
 Kuruvattūr	Kuruvattur	Kerala	IN	11.33609	75.83511	33
 Katsuren-haebaru		Okinawa	JP	26.33294	127.87403	9
 Blagoveshchensk		Bashkortostan Republic	RU	55.0352	55.97703	109
@@ -17406,7 +17406,7 @@ Nawābganj	Nawabganj	Uttar Pradesh	IN	28.54103	79.63462	184
 Kālka	Kalka	Himachal Pradesh	IN	30.83982	76.94065	703
 Fusō	Fuso	Aichi	JP	35.35782	136.90983	46
 Irvine		Scotland	GB	55.6194	-4.65508	14
-Đông Phú	GJong Phu	Da Nang City	VN	15.67356	108.2201	43
+Đông Phú	Dong Phu	Da Nang City	VN	15.67356	108.2201	43
 Papenburg		Lower Saxony	DE	53.07769	7.41516	5
 Zhuxi		Chongqing	CN	29.53614	105.66685	324
 San Juan Nepomuceno		Bolívar	CO	9.95157	-75.08198	172
@@ -17438,7 +17438,7 @@ Anloga		Volta	GH	5.79473	0.89728	6
 Aragua de Barcelona		Anzoátegui	VE	9.45588	-64.82928	110
 Piombino		Tuscany	IT	42.92554	10.52585	21
 Biharamulo		Kagera	TZ	-2.63194	31.30889	1479
-Középső-Ferencváros	Koezepso-Ferencvaros	Budapest	HU	47.47305	19.07971	98
+Középső-Ferencváros	Kozepso-Ferencvaros	Budapest	HU	47.47305	19.07971	98
 Coatzintla		Veracruz	MX	20.48699	-97.46823	77
 Salto		Buenos Aires	AR	-34.29175	-60.2545	31
 Studio City		California	US	34.14862	-118.39647	186
@@ -17468,7 +17468,7 @@ Letchworth Garden City		England	GB	51.97938	-0.22664	84
 Auderghem		Brussels Capital	BE	50.81667	4.43333	75
 Longfeng		Chongqing	CN	29.81527	106.42906	212
 Kornwestheim		Baden-Wurttemberg	DE	48.86158	9.18569	299
-Lüfeng	Luefeng	Chongqing	CN	29.85834	105.97306	301
+Lüfeng	Lufeng	Chongqing	CN	29.85834	105.97306	301
 Dipayal		Sudurpashchim Pradesh	NP	29.26083	80.94	565
 Mimico		Ontario	CA	43.61616	-79.51269	101
 Orangevale		California	US	38.67851	-121.22578	73
@@ -17489,7 +17489,7 @@ Chelmsford		Massachusetts	US	42.59981	-71.36728	75
 Tudiyalūr	Tudiyalur	Tamil Nadu	IN	11.08159	76.94464	454
 Ālankōd	Alankod	Kerala	IN	10.74603	76.03481	30
 Bay City		Michigan	US	43.59447	-83.88886	182
-Jülich	Juelich	North Rhine-Westphalia	DE	50.92149	6.36267	85
+Jülich	Julich	North Rhine-Westphalia	DE	50.92149	6.36267	85
 Quthing		Quthing	LS	-30.40001	27.70027	1515
 Tōon	Toon	Ehime	JP	33.79427	132.89011	121
 Shāhpura	Shahpura	Rajasthan	IN	27.3912	75.95956	438
@@ -17533,7 +17533,7 @@ Hadjout		Tipaza	DZ	36.51257	2.41382	88
 Iramallūr	Iramallur	Kerala	IN	10.0619	76.57168	45
 Kandoeng		Takeo	KH	11.29163	104.84103	15
 Strumica		Strumica	MK	41.43763	22.64288	228
-Zürich (Kreis 7)	Zuerich (Kreis 7)	Zurich	CH	47.37328	8.58038	656
+Zürich (Kreis 7)	Zurich (Kreis 7)	Zurich	CH	47.37328	8.58038	656
 Limburg an der Lahn		Hesse	DE	50.3836	8.0503	138
 Luuq		Gedo	SO	3.80315	42.54417	150
 Parras de la Fuente		Coahuila	MX	25.44185	-102.17808	1527
@@ -17579,7 +17579,7 @@ Zacatlán	Zacatlan	Puebla	MX	19.9355	-97.96125	2048
 Panadura		Western Province	LK	6.7132	79.9026	10
 Chockli		Kerala	IN	11.72745	75.55509	27
 Kashmor		Sindh	PK	28.4326	69.58364	81
-Ylöjärvi	Yloejaervi	Pirkanmaa	FI	61.55632	23.59606	107
+Ylöjärvi	Ylojarvi	Pirkanmaa	FI	61.55632	23.59606	107
 Marmaris		Muğla	TR	36.855	28.27417	8
 Schwedt (Oder)		Brandenburg	DE	53.05963	14.28154	2
 El Ksar		Gafsa	TN	34.3992	8.80399	284
@@ -17672,11 +17672,11 @@ Mlonggo		Central Java	ID	-6.53333	110.7	18
 Madikeri		Karnataka	IN	12.42602	75.7382	1141
 Mulleriyawa		Western Province	LK	6.933	79.9297	8
 Biltine		Wadi Fira	TD	14.52727	20.92603	518
-Fürstenwalde	Fuerstenwalde	Brandenburg	DE	52.36067	14.06185	44
+Fürstenwalde	Furstenwalde	Brandenburg	DE	52.36067	14.06185	44
 Kopāganj	Kopaganj	Uttar Pradesh	IN	26.01923	83.5663	78
 Chilibre		Panamá	PA	9.15403	-79.62019	61
 Ban Ratsada		Phuket	TH	7.90963	98.40248	12
-Fürstenfeldbruck	Fuerstenfeldbruck	Bavaria	DE	48.17904	11.2547	517
+Fürstenfeldbruck	Furstenfeldbruck	Bavaria	DE	48.17904	11.2547	517
 Richmond		Kentucky	US	37.74786	-84.29465	289
 Venaria Reale		Piedmont	IT	45.12597	7.63136	262
 Acornhoek		Limpopo	ZA	-24.5878	31.09467	645
@@ -17761,7 +17761,7 @@ Epe		Gelderland	NL	52.3475	5.98333	16
 Waxahachie		Texas	US	32.38653	-96.84833	170
 Namhkam		Shan State	MM	23.83342	97.67984	762
 Strood		England	GB	51.39323	0.47713	32
-Gökdepe	Goekdepe	Ahal	TM	38.15863	57.96072	207
+Gökdepe	Gokdepe	Ahal	TM	38.15863	57.96072	207
 St. Charles		Maryland	US	38.60728	-76.92478	63
 Remuna		Odisha	IN	21.52798	86.87156	25
 Cobbs Creek		Pennsylvania	US	39.94761	-75.24018	30
@@ -18047,7 +18047,7 @@ Mushābani	Mushabani	Jharkhand	IN	22.51135	86.45713	122
 Babanūsah	Babanusah	West Kordofan	SD	11.33333	27.8	456
 Udaipur		Tripura	IN	23.53333	91.48333	28
 Hoi An		Da Nang City	VN	15.87944	108.335	13
-Mörfelden-Walldorf	Moerfelden-Walldorf	Hesse	DE	49.99472	8.58361	109
+Mörfelden-Walldorf	Morfelden-Walldorf	Hesse	DE	49.99472	8.58361	109
 Oyim		Andijan Region	UZ	40.81955	72.74234	631
 West Lawn		Illinois	US	41.77281	-87.72227	186
 Riccione		Emilia-Romagna	IT	43.99942	12.65689	12
@@ -18062,7 +18062,7 @@ Víctor Rosales	Victor Rosales	Zacatecas	MX	22.94889	-102.70222	2167
 Léré	Lere	Mayo-Kebbi Ouest	TD	9.6447	14.2151	231
 Windsor		Colorado	US	40.47748	-104.90136	1462
 Châtenay-Malabry	Chatenay-Malabry	Île-de-France	FR	48.76507	2.26655	116
-Höxter	Hoexter	North Rhine-Westphalia	DE	51.77501	9.38155	100
+Höxter	Hoxter	North Rhine-Westphalia	DE	51.77501	9.38155	100
 Panatina		Honiara	SB	-9.43215	160.00607	15
 Alabaster		Alabama	US	33.24428	-86.81638	153
 Casal Palocco		Lazio	IT	41.74845	12.34726	11
@@ -18156,7 +18156,7 @@ In Salah		In Salah	DZ	27.19678	2.47913	293
 West Village		New York	US	40.73361	-74.00917	3
 Rio Branco do Sul		Paraná	BR	-25.19	-49.31417	901
 Agrigento		Sicily	IT	37.31065	13.57661	230
-Königs Wusterhausen	Koenigs Wusterhausen	Brandenburg	DE	52.30141	13.633	32
+Königs Wusterhausen	Konigs Wusterhausen	Brandenburg	DE	52.30141	13.633	32
 Penalva		Maranhão	BR	-3.29417	-45.17361	17
 Shimada		Kumamoto	JP	32.75684	130.79043	4
 Ulliyeri		Kerala	IN	11.45247	75.76662	30
@@ -18170,7 +18170,7 @@ Vinces		Los Ríos	EC	-1.55637	-79.75249	17
 Aguilares		Tucuman	AR	-27.4315	-65.61465	341
 Muttayyāpuram	Muttayyapuram	Tamil Nadu	IN	8.7498	78.13112	6
 Bugarama		Kagera	TZ	-2.87056	30.52806	1493
-Örnsköldsvik	OErnskoeldsvik	Västernorrland	SE	63.29091	18.71525	1
+Örnsköldsvik	Ornskoldsvik	Västernorrland	SE	63.29091	18.71525	1
 Mateur		Bizerte Governorate	TN	37.04045	9.66557	36
 Yanai		Yamaguchi	JP	33.96667	132.11667	0
 Wisbech		England	GB	52.66622	0.15938	6
@@ -18348,7 +18348,7 @@ Tiruchchendur		Tamil Nadu	IN	8.49725	78.11906	9
 Wernigerode		Saxony-Anhalt	DE	51.83652	10.78216	237
 Colonia del Sacramento		Colonia	UY	-34.46262	-57.83976	30
 Ahwiaa		Ashanti	GH	6.76051	-1.59402	309
-Ma‘arratmişrīn	Ma`arratmisrin	Idlib	SY	36.01152	36.67183	339
+Ma‘arratmişrīn	Ma'arratmisrin	Idlib	SY	36.01152	36.67183	339
 Snowdon		Quebec	CA	45.4859	-73.63103	70
 Centro Familiar la Soledad		Guanajuato	MX	21.135	-101.74972	1935
 Laramie		Wyoming	US	41.31137	-105.5911	2184
@@ -18405,7 +18405,7 @@ Limbiate		Lombardy	IT	45.59951	9.12509	185
 Fenhe		Chongqing	CN	31.13723	109.52206	382
 Aïn Smara	Ain Smara	Constantine	DZ	36.2674	6.50135	627
 Neugraben-Fischbek		Hamburg	DE	53.46579	9.84344	38
-Eisenhüttenstadt	Eisenhuettenstadt	Brandenburg	DE	52.15	14.65	45
+Eisenhüttenstadt	Eisenhuttenstadt	Brandenburg	DE	52.15	14.65	45
 Langendreer		North Rhine-Westphalia	DE	51.46023	7.32584	121
 Naranjal		Guayas	EC	-2.67638	-79.61735	60
 Thenhippalam		Kerala	IN	11.13232	75.88224	33
@@ -18414,7 +18414,7 @@ San Pawl il-Baħar	San Pawl il-Bahar	Saint Paul’s Bay	MT	35.95064	14.41561	22
 Macau		Rio Grande do Norte	BR	-5.115	-36.63444	7
 São Miguel Arcanjo	Sao Miguel Arcanjo	São Paulo	BR	-23.87833	-47.99722	666
 Puerto Iguazú	Puerto Iguazu	Misiones	AR	-25.59912	-54.57355	177
-Niederschönhausen	Niederschoenhausen	State of Berlin	DE	52.58483	13.40272	48
+Niederschönhausen	Niederschonhausen	State of Berlin	DE	52.58483	13.40272	48
 Nguigmi		Diffa	NE	14.24953	13.10921	287
 Huixtla		Chiapas	MX	15.13924	-92.4634	52
 Montgomery Village		Maryland	US	39.17677	-77.19526	114
@@ -18663,7 +18663,7 @@ Tirumuruganpūndi	Tirumuruganpundi	Tamil Nadu	IN	11.16493	77.30838	314
 Kōshū	Koshu	Yamanashi	JP	35.72422	138.77106	635
 Wudalike		Xinjiang	CN	38.3618	77.12973	1242
 Thanneermukkom		Kerala	IN	9.66337	76.38073	9
-Hafnarfjörður	Hafnarfjoerdur	Capital Region	IS	64.0671	-21.93774	39
+Hafnarfjörður	Hafnarfjordur	Capital Region	IS	64.0671	-21.93774	39
 Vitorino Freire		Maranhão	BR	-4.28805	-45.24611	93
 Neubau		Vienna	AT	48.20172	16.34715	215
 San Luis		Arizona	US	32.487	-114.78218	40
@@ -18796,7 +18796,7 @@ Siliana		Siliana Governorate	TN	36.08497	9.37082	428
 Ţafas	Tafas	Daraa	SY	32.73709	36.06654	489
 Bowling Green		Ohio	US	41.37477	-83.65132	212
 Ancien-Prozi		Sassandra-Marahoue	CI	7.66885	-6.96881	304
-Georgsmarienhütte	Georgsmarienhuette	Lower Saxony	DE	52.20296	8.0448	117
+Georgsmarienhütte	Georgsmarienhutte	Lower Saxony	DE	52.20296	8.0448	117
 Nāspur	Naspur	Telangana	IN	18.84577	79.46165	143
 Kaminokawa		Tochigi	JP	36.43333	139.91667	65
 Carangola		Minas Gerais	BR	-20.73306	-42.02944	416
@@ -18813,7 +18813,7 @@ Athis-Mons		Île-de-France	FR	48.70522	2.39147	33
 Nemuro		Hokkaido	JP	43.32361	145.575	24
 Des Moines		Washington	US	47.40177	-122.32429	28
 Krabi		Krabi	TH	8.07257	98.91052	14
-Güstrow	Guestrow	Mecklenburg-Vorpommern	DE	53.7972	12.17337	9
+Güstrow	Gustrow	Mecklenburg-Vorpommern	DE	53.7972	12.17337	9
 Chūō	Chuo	Yamanashi	JP	35.59465	138.50275	249
 Ołbin	Olbin	Lower Silesia	PL	51.12132	17.05303	114
 Bama		Boucle du Mouhoun	BF	12.0357	-4.3987	350
@@ -18849,7 +18849,7 @@ Lend		Styria	AT	47.08256	15.41589	363
 Valdepeñas	Valdepenas	Castille-La Mancha	ES	38.76211	-3.38483	714
 Podili		Andhra Pradesh	IN	15.60639	79.61489	88
 Barberà del Vallès	Barbera del Valles	Catalonia	ES	41.5159	2.12457	144
-Ortaköy	Ortakoey	Aksaray	TR	38.73728	34.03866	1226
+Ortaköy	Ortakoy	Aksaray	TR	38.73728	34.03866	1226
 Ganderkesee		Lower Saxony	DE	53.03616	8.54514	28
 Aberdare		Wales	GB	51.71438	-3.44918	135
 Shrīgonda	Shrigonda	Maharashtra	IN	18.61527	74.69895	558
@@ -19199,7 +19199,7 @@ San Pedro de Urabá	San Pedro de Uraba	Antioquia	CO	8.27515	-76.37641	141
 Mairo Inya		Nyandarua County	KE	0.02538	36.40865	2294
 Annex		Ontario	CA	43.67159	-79.404	123
 Oadar Temsia		Souss-Massa	MA	30.36531	-9.41044	51
-Karamürsel	Karamuersel	Kocaeli	TR	40.69129	29.61649	17
+Karamürsel	Karamursel	Kocaeli	TR	40.69129	29.61649	17
 Şaḩnāyā	Sahnaya	Rif-dimashq	SY	33.42531	36.22552	705
 Sherwood		Arkansas	US	34.81509	-92.22432	100
 Guamo		Tolima Department	CO	4.03078	-74.9701	323
@@ -19269,7 +19269,7 @@ Borzya		Zabaykalskiy (Transbaikal) Kray	RU	50.39138	116.53355	696
 Carlos Barbosa		Rio Grande do Sul	BR	-29.2975	-51.50361	680
 Bonoufla		Sassandra-Marahoue	CI	7.12906	-6.47424	238
 Nanyō	Nanyo	Yamagata	JP	38.04322	140.11276	212
-Schönebeck	Schoenebeck	Saxony-Anhalt	DE	52.01682	11.7307	53
+Schönebeck	Schonebeck	Saxony-Anhalt	DE	52.01682	11.7307	53
 Kemalpaşa	Kemalpasa	İzmir Province	TR	38.42621	27.41731	211
 Oer-Erkenschwick		North Rhine-Westphalia	DE	51.64198	7.26451	76
 Andernach		Rheinland-Pfalz	DE	50.43109	7.40425	81
@@ -19287,7 +19287,7 @@ Manāwar	Manawar	Madhya Pradesh	IN	22.23566	75.08917	195
 Savage		Minnesota	US	44.77913	-93.33634	220
 Tagoloan		Northern Mindanao	PH	8.53954	124.75411	15
 Myoko		Niigata	JP	37.02534	138.25561	79
-Görele	Goerele	Giresun	TR	41.03083	39.00306	26
+Görele	Gorele	Giresun	TR	41.03083	39.00306	26
 Mporokoso		Northern Province	ZM	-9.37273	30.12501	1442
 New Tafo		Ashanti	GH	6.71897	-1.61188	277
 Saladillo		Buenos Aires	AR	-35.63884	-59.77938	47
@@ -19320,7 +19320,7 @@ Télimélé	Telimele	Kindia	GN	10.9	-13.03333	610
 North Royalton		Ohio	US	41.31366	-81.72457	366
 To‘rqao‘rg‘on	To'rqao'rg'on	Namangan	UZ	40.99984	71.51162	556
 Mengla		Yunnan	CN	21.46234	101.5637	770
-Tönisvorst	Toenisvorst	North Rhine-Westphalia	DE	51.32092	6.49412	42
+Tönisvorst	Tonisvorst	North Rhine-Westphalia	DE	51.32092	6.49412	42
 Bad Nauheim		Hesse	DE	50.36463	8.73859	157
 Pontoise		Île-de-France	FR	49.05	2.1	46
 Chimichagua		Cesar Department	CO	9.25778	-73.81228	35
@@ -19347,7 +19347,7 @@ Villiers-sur-Marne		Île-de-France	FR	48.831	2.54844	97
 Asprópyrgos	Aspropyrgos	Attica	GR	38.06134	23.58971	35
 Hufeng		Chongqing	CN	29.7155	106.11089	303
 Dunakeszi		Pest County	HU	47.63641	19.13864	129
-Vartiokylä	Vartiokylae	Uusimaa	FI	60.21799	25.09569	8
+Vartiokylä	Vartiokyla	Uusimaa	FI	60.21799	25.09569	8
 Puente-Genil		Andalusia	ES	37.38943	-4.76686	215
 Ribáuè	Ribaue	Nampula	MZ	-14.94473	38.32362	557
 Walnut		California	US	34.02029	-117.86534	171
@@ -19547,7 +19547,7 @@ Shūrash	Shurash	Sulaymaniyah	IQ	35.51562	44.84266	686
 Jelebu			SG	1.37953	103.76286	2
 Luoyu		Gansu	CN	33.84103	105.23117	1635
 Friedberg		Bavaria	DE	48.35693	10.98461	514
-Zürich (Kreis 6)	Zuerich (Kreis 6)	Zurich	CH	47.39223	8.54381	487
+Zürich (Kreis 6)	Zurich (Kreis 6)	Zurich	CH	47.39223	8.54381	487
 Radcliffe		England	GB	53.56178	-2.32455	76
 Bāqa el Gharbīya	Baqa el Gharbiya	Haifa	IL	32.42061	35.04266	66
 Talāja	Talaja	Gujarat	IN	21.3527	72.03524	25
@@ -19580,7 +19580,7 @@ Serra Negra		São Paulo	BR	-22.61222	-46.70056	937
 Lomme		Hauts-de-France	FR	50.64358	2.98715	39
 Huyanghe		Xinjiang	CN	44.6984	84.83362	389
 Metamórfosi	Metamorfosi	Attica	GR	38.06576	23.76356	173
-Delbrück	Delbrueck	North Rhine-Westphalia	DE	51.76503	8.56223	102
+Delbrück	Delbruck	North Rhine-Westphalia	DE	51.76503	8.56223	102
 Malvar		Calabarzon	PH	14.04472	121.15861	210
 East Hill-Meridian		Washington	US	47.41052	-122.17369	154
 Winnenden		Baden-Wurttemberg	DE	48.87563	9.39819	293
@@ -19868,7 +19868,7 @@ Singojuruh		East Java	ID	-8.31667	114.23333	157
 Vadakku Valliyūr	Vadakku Valliyur	Tamil Nadu	IN	8.38286	77.61221	106
 Jāmtāra	Jamtara	Jharkhand	IN	23.963	86.80285	199
 Espigão dOeste	Espigao dOeste	Rondônia	BR	-11.52472	-61.01278	261
-Gürpınar	Guerpinar	Istanbul	TR	40.992	28.603	116
+Gürpınar	Gurpinar	Istanbul	TR	40.992	28.603	116
 Muritiba		Bahia	BR	-12.62639	-38.99	214
 Pingshan		Chongqing	CN	30.09655	107.42439	460
 Dā‘il	Da'il	Daraa	SY	32.75355	36.13076	525
@@ -19992,7 +19992,7 @@ Hōshakuji	Hoshakuji	Tochigi	JP	36.63333	139.98333	163
 Galdakao		Basque Country	ES	43.23073	-2.8429	57
 Ténès	Tenes	Chlef	DZ	36.51076	1.30809	50
 Mapun		Mimaropa	PH	6.9747	118.5144	8
-Zürich (Kreis 2)	Zuerich (Kreis 2)	Zurich	CH	47.33756	8.5211	439
+Zürich (Kreis 2)	Zurich (Kreis 2)	Zurich	CH	47.33756	8.5211	439
 Leusden		Utrecht	NL	52.1325	5.43194	5
 Shuanglong		Chongqing	CN	29.95972	107.20356	418
 Totana		Murcia	ES	37.7688	-1.50229	262
@@ -20164,7 +20164,7 @@ Cheadle Hulme		England	GB	53.3761	-2.1897	68
 Lasem		Central Java	ID	-6.6922	111.4527	12
 Yara		Granma Province	CU	20.27417	-76.95227	25
 Randwick		New South Wales	AU	-33.91439	151.24895	40
-Düsseldorf-Pempelfort	Duesseldorf-Pempelfort	North Rhine-Westphalia	DE	51.23812	6.78678	43
+Düsseldorf-Pempelfort	Dusseldorf-Pempelfort	North Rhine-Westphalia	DE	51.23812	6.78678	43
 Suār	Suar	Uttar Pradesh	IN	29.02841	79.05654	211
 Humberto de Campos		Maranhão	BR	-2.59833	-43.46111	14
 Ballymena		Northern Ireland	GB	54.86357	-6.27628	49
@@ -20288,7 +20288,7 @@ Tanuma		Tochigi	JP	36.36667	139.58333	66
 Jhālod	Jhalod	Gujarat	IN	23.10097	74.15536	272
 Mill Park		Victoria	AU	-37.66667	145.06667	133
 Shwe Lin Ban		Yangon	MM	16.89659	96.06801	5
-Köthen	Koethen	Saxony-Anhalt	DE	51.75185	11.97093	83
+Köthen	Kothen	Saxony-Anhalt	DE	51.75185	11.97093	83
 La Sagrera		Catalonia	ES	41.42271	2.18589	41
 Partinico		Sicily	IT	38.04657	13.11785	175
 Kuvandyk		Orenburg Oblast	RU	51.48481	57.35788	218
@@ -20321,7 +20321,7 @@ Kibondo		Kigoma	TZ	-3.58639	30.72028	1505
 Yenişehir	Yenisehir	Bursa Province	TR	40.26444	29.65306	228
 Geislingen an der Steige		Baden-Wurttemberg	DE	48.62423	9.82736	426
 Redmond		Oregon	US	44.27262	-121.17392	916
-Änew	AEnew	Ahal	TM	37.88754	58.51596	247
+Änew	Anew	Ahal	TM	37.88754	58.51596	247
 Boukadir		Chlef	DZ	36.06629	1.12602	79
 Delfzijl		Groningen	NL	53.33	6.91806	0
 Partille		Västra Götaland	SE	57.7395	12.10642	11
@@ -20354,10 +20354,10 @@ Kombissiri		Centre-Sud	BF	12.06884	-1.33644	311
 Manga		Centre-Sud	BF	11.66496	-1.06977	284
 Lambersart		Hauts-de-France	FR	50.65	3.03333	24
 Ruidian		Yunnan	CN	25.53171	98.40855	1755
-Riihimäki	Riihimaeki	Kanta-Häme	FI	60.73769	24.77726	106
+Riihimäki	Riihimaki	Kanta-Häme	FI	60.73769	24.77726	106
 Fray Bernardino de Sahagún	Fray Bernardino de Sahagun	Hidalgo	MX	19.77268	-98.58227	2442
 Gorlice		Lesser Poland	PL	49.65563	21.16035	283
-Bühl	Buehl	Baden-Wurttemberg	DE	48.69676	8.13523	138
+Bühl	Buhl	Baden-Wurttemberg	DE	48.69676	8.13523	138
 Anapu		Pará	BR	-3.47222	-51.19778	59
 Kopargo		Donga	BJ	9.84108	1.54231	512
 Kaman		Kırşehir	TR	39.3575	33.72389	1126
@@ -20397,7 +20397,7 @@ Englewood		New Jersey	US	40.89288	-73.97264	14
 Hammamet		Tébessa	DZ	35.44862	7.95184	878
 Bemetāra	Bemetara	Chhattisgarh	IN	21.71556	81.53423	291
 Sept-Îles	Sept-Iles	Quebec	CA	50.20011	-66.38208	5
-Mühlheim am Main	Muehlheim am Main	Hesse	DE	50.11667	8.83333	103
+Mühlheim am Main	Muhlheim am Main	Hesse	DE	50.11667	8.83333	103
 Rūdehen	Rudehen	Tehran	IR	35.73338	51.90587	1796
 Warstein		North Rhine-Westphalia	DE	51.44488	8.34851	346
 Randudongkal		Central Java	ID	-7.0981	109.3243	216
@@ -20457,19 +20457,19 @@ Nālūt	Nalut	Nalut	LY	31.86848	10.9812	637
 Jowai		Meghalaya	IN	25.43596	92.19132	1358
 Ankazobe		Analamanga	MG	-18.31667	47.11667	1231
 Khust		Zakarpattia	UA	48.17193	23.29791	164
-Yangiqo‘rg‘on	Yangiqo`rg`on	Namangan	UZ	41.19474	71.72385	750
+Yangiqo‘rg‘on	Yangiqo'rg'on	Namangan	UZ	41.19474	71.72385	750
 Courtenay		British Columbia	CA	49.68657	-124.9936	13
 Oliva		Valencia	ES	38.91971	-0.11935	22
 Bushey		England	GB	51.64316	-0.36053	99
 Ochira		Kerala	IN	9.13478	76.51169	10
 An Trạch	An Trach	Ca Mau	VN	9.06861	105.39583	1
 Miracema		Rio de Janeiro	BR	-21.41222	-42.19667	142
-Leppävaara	Leppaevaara	Uusimaa	FI	60.21283	24.81348	15
+Leppävaara	Leppavaara	Uusimaa	FI	60.21283	24.81348	15
 Rāpar	Rapar	Gujarat	IN	23.57267	70.64718	65
 Ambodifotatra		Analanjirofo	MG	-16.98333	49.85	0
 Hobart		Indiana	US	41.53226	-87.25504	190
 Massaguet		Hadjer-Lamis	TD	12.47554	15.43647	292
-Ölgii	OElgii	Bayan-Ölgii Province	MN	48.96833	89.9625	1715
+Ölgii	Olgii	Bayan-Ölgii Province	MN	48.96833	89.9625	1715
 Ben Mehidi		El Tarf	DZ	36.76967	7.90641	8
 Terme		Samsun	TR	41.20917	36.97389	11
 Fresh Meadows		New York	US	40.73482	-73.79347	11
@@ -20527,7 +20527,7 @@ Ippy		Ouaka	CF	6.26793	21.22468	596
 Bergerac		New Aquitaine	FR	44.85157	0.48171	35
 Kālāvad	Kalavad	Gujarat	IN	22.20789	70.38343	100
 Tomilino		Moscow Oblast	RU	55.65619	37.94713	133
-Zürich (Kreis 9) / Altstetten	Zuerich (Kreis 9) / Altstetten	Zurich	CH	47.38946	8.48533	403
+Zürich (Kreis 9) / Altstetten	Zurich (Kreis 9) / Altstetten	Zurich	CH	47.38946	8.48533	403
 Higashikagawa		Kagawa	JP	34.21024	134.33653	59
 Olindina		Bahia	BR	-11.36667	-38.33333	166
 Novyi Rozdil		Lviv	UA	49.47136	24.13352	277
@@ -20601,7 +20601,7 @@ Tikil Dingay		Amhara	ET	12.98417	37.04417	1207
 Popondetta		Oro Province	PG	-8.76536	148.23252	106
 Pūnch	Punch	Jammu and Kashmir	IN	33.77033	74.09254	999
 Kandyagash		Aktobe	KZ	49.46917	57.41865	294
-Zürich (Kreis 12)	Zuerich (Kreis 12)	Zurich	CH	47.40372	8.57608	435
+Zürich (Kreis 12)	Zurich (Kreis 12)	Zurich	CH	47.40372	8.57608	435
 Zaventem		Flanders	BE	50.88365	4.47298	46
 Burgos		Central Luzon	PH	15.72892	120.57224	20
 Monroeville		Pennsylvania	US	40.42118	-79.7881	367
@@ -20672,7 +20672,7 @@ Pô	Po	Centre-Sud	BF	11.16972	-1.145	319
 Sibulan		Central Visayas	PH	9.3584	123.285	10
 Leichlingen		North Rhine-Westphalia	DE	51.10628	7.01873	63
 Goryachiy Klyuch		Krasnodar Krai	RU	44.63394	39.13582	68
-Gölbaşı	Goelbasi	Adıyaman Province	TR	37.78361	37.63667	898
+Gölbaşı	Golbasi	Adıyaman Province	TR	37.78361	37.63667	898
 Rillieux-la-Pape		Auvergne-Rhône-Alpes	FR	45.81667	4.9	287
 Gotegaon		Madhya Pradesh	IN	23.02888	79.48233	374
 Oak Forest		Illinois	US	41.60281	-87.74394	205
@@ -20796,7 +20796,7 @@ Jhawarian		Punjab	PK	32.36192	72.62275	193
 Rangia		Assam	IN	26.44931	91.61356	62
 Maywood		California	US	33.98668	-118.18535	46
 Melgaço	Melgaco	Pará	BR	-1.80444	-50.71222	11
-Königsbrunn	Koenigsbrunn	Bavaria	DE	48.27506	10.89178	516
+Königsbrunn	Konigsbrunn	Bavaria	DE	48.27506	10.89178	516
 South Riverdale		Ontario	CA	43.64929	-79.33565	73
 Kolpashevo		Tomsk Oblast	RU	58.32007	82.90295	64
 Bungu		Pwani	TZ	-7.63369	39.05818	163
@@ -20931,7 +20931,7 @@ Sitges		Catalonia	ES	41.23506	1.81193	18
 Lucas		Mato Grosso	BR	-16.33333	-55.93333	134
 Brufut		Western	GM	13.38885	-16.75005	32
 Rexburg		Idaho	US	43.82602	-111.78969	1483
-Hörde	Hoerde	North Rhine-Westphalia	DE	51.48371	7.5003	119
+Hörde	Horde	North Rhine-Westphalia	DE	51.48371	7.5003	119
 Lagoa Vermelha		Rio Grande do Sul	BR	-28.20861	-51.52583	793
 Phuntsholing		Chukha	BT	26.85164	89.38837	330
 Aarschot		Flanders	BE	50.98715	4.83695	14
@@ -21130,7 +21130,7 @@ Pulupandan		Western Visayas	PH	10.51784	122.80259	1
 Cisterna di Latina		Lazio	IT	41.5908	12.82808	77
 Saint-Constant		Quebec	CA	45.36678	-73.56588	26
 Yamagata		Gifu	JP	35.47619	136.7721	156
-Malargüe	Malarguee	Mendoza	AR	-35.47791	-69.58521	1423
+Malargüe	Malargue	Mendoza	AR	-35.47791	-69.58521	1423
 Kālānwāli	Kalanwali	Haryana	IN	29.83573	74.9717	204
 Ibo Town		Banjul	GM	13.43528	-16.67639	14
 Akesalayi		Xinjiang	CN	37.1692	79.68984	1352
@@ -21187,7 +21187,7 @@ Lindenhurst		New York	US	40.68677	-73.37345	9
 Lapão	Lapao	Bahia	BR	-11.38333	-41.83194	775
 El Viso		Madrid	ES	40.44626	-3.68411	712
 Mueda		Cabo Delgado Province	MZ	-11.66278	39.55056	850
-Zürich (Kreis 4) / Aussersihl	Zuerich (Kreis 4) / Aussersihl	Zurich	CH	47.37752	8.52127	416
+Zürich (Kreis 4) / Aussersihl	Zurich (Kreis 4) / Aussersihl	Zurich	CH	47.37752	8.52127	416
 Santo Amaro da Imperatriz		Santa Catarina	BR	-27.68806	-48.77861	29
 Teyateyaneng		Berea	LS	-29.14719	27.74895	1693
 Taverny		Île-de-France	FR	49.02542	2.21691	82
@@ -21331,7 +21331,7 @@ Kekem		West	CM	5.15689	10.01996	714
 Yigai'erqi		Xinjiang	CN	38.34075	77.46915	1216
 Babat		East Java	ID	-7.11282	112.16354	12
 Catarroja		Valencia	ES	39.4	-0.4	11
-Märsta	Maersta	Stockholm	SE	59.62157	17.85476	19
+Märsta	Marsta	Stockholm	SE	59.62157	17.85476	19
 Kobylisy		Prague	CZ	50.12366	14.45209	285
 Brilon		North Rhine-Westphalia	DE	51.39462	8.57146	443
 Rejon placu Grunwaldzkiego		Lower Silesia	PL	51.11669	17.06126	119
@@ -21465,7 +21465,7 @@ Dushi		Chongqing	CN	29.15002	106.53283	275
 Hiragi		Kagawa	JP	34.2706	134.13074	29
 Atotonilco el Alto		Jalisco	MX	20.55084	-102.50822	1604
 Sannois		Île-de-France	FR	48.96667	2.25	107
-Rösrath	Roesrath	North Rhine-Westphalia	DE	50.89559	7.18175	89
+Rösrath	Rosrath	North Rhine-Westphalia	DE	50.89559	7.18175	89
 Stabat		North Sumatra	ID	3.73335	98.45025	12
 Piešťany	Piestany	Trnava Region	SK	48.59479	17.82591	161
 Boscoreale		Campania	IT	40.77274	14.48118	65
@@ -21497,7 +21497,7 @@ Mūţ	Mut	New Valley	EG	25.48742	28.97918	114
 Edacchēri	Edaccheri	Kerala	IN	11.68178	75.6248	12
 Independence		Kentucky	US	38.94312	-84.54411	274
 Nkambe		North-West	CM	6.63333	10.66667	1078
-Lübbecke	Luebbecke	North Rhine-Westphalia	DE	52.30699	8.61423	76
+Lübbecke	Lubbecke	North Rhine-Westphalia	DE	52.30699	8.61423	76
 Chinguar		Bíe	AO	-12.55708	16.33805	1819
 Triggiano		Apulia	IT	41.06549	16.92501	60
 Funabori		Tokyo	JP	35.6821	139.86641	4
@@ -21510,7 +21510,7 @@ Bolton		Ontario	CA	43.87952	-79.73791	221
 Srīnivāspur	Srinivaspur	Karnataka	IN	13.33914	78.21175	828
 Sayula		Jalisco	MX	19.88372	-103.60073	1351
 Ilha Solteira		São Paulo	BR	-20.43278	-51.3425	372
-Mühlacker	Muehlacker	Baden-Wurttemberg	DE	48.94754	8.83675	225
+Mühlacker	Muhlacker	Baden-Wurttemberg	DE	48.94754	8.83675	225
 Den Den		Manouba	TN	36.80753	10.11061	27
 Rocha		Rocha Department	UY	-34.47995	-54.33064	8
 Budafok		Budapest	HU	47.42393	19.03635	131
@@ -21518,7 +21518,7 @@ Bor		Jonglei	SS	6.20889	31.55861	429
 Watertown		New York	US	43.97478	-75.91076	142
 Salou		Catalonia	ES	41.07663	1.14163	6
 Naqādah	Naqadah	Qena	EG	25.90107	32.72392	82
-Görogly	Goerogly	Dasoguz	TM	41.65041	59.9164	86
+Görogly	Gorogly	Dasoguz	TM	41.65041	59.9164	86
 Santa Helena		Paraná	BR	-24.86028	-54.33278	254
 Qarah Ẕīā’ od Dīn	Qarah Zia' od Din	West Azerbaijan	IR	38.8915	45.0255	1090
 Palavakkam		Tamil Nadu	IN	12.9535	80.2572	8
@@ -21754,7 +21754,7 @@ North Creek		Washington	US	47.81954	-122.17624	110
 El Amria		Aïn Témouchent	DZ	35.52439	-1.01577	101
 Lauf an der Pegnitz		Bavaria	DE	49.51386	11.28247	334
 Sant Andreu de la Barca		Catalonia	ES	41.44659	1.97187	61
-Sprockhövel	Sprockhoevel	North Rhine-Westphalia	DE	51.34669	7.24343	228
+Sprockhövel	Sprockhovel	North Rhine-Westphalia	DE	51.34669	7.24343	228
 Marneuli		Kvemo Kartli	GE	41.48758	44.79845	420
 Esquina		Corrientes	AR	-30.01476	-59.5289	44
 Cinco Saltos		Rio Negro	AR	-38.82225	-68.06293	288
@@ -21853,7 +21853,7 @@ Norco		California	US	33.93113	-117.54866	195
 Isla		Veracruz	MX	18.0278	-95.52946	67
 Baden		Lower Austria	AT	48.00543	16.23264	230
 Chinnalapatti		Tamil Nadu	IN	10.28481	77.92332	293
-Budapest V. kerület	Budapest V. keruelet	Budapest	HU	47.49958	19.05115	115
+Budapest V. kerület	Budapest V. kerulet	Budapest	HU	47.49958	19.05115	115
 San Jerónimo	San Jeronimo	México	MX	19.28279	-99.5929	2606
 Narasannapeta		Andhra Pradesh	IN	18.41428	84.04463	31
 Wasco		California	US	35.59412	-119.34095	100
@@ -21973,7 +21973,7 @@ Ban Talat Bueng		Chon Buri	TH	13.07147	101.00314	42
 South Laurel		Maryland	US	39.06983	-76.85025	49
 Garrafão do Norte	Garrafao do Norte	Pará	BR	-1.93417	-47.0525	43
 Guépaouo	Guepaouo	Goh-Djiboua	CI	6.47268	-5.70615	240
-Stuttgart Mühlhausen	Stuttgart Muehlhausen	Baden-Wurttemberg	DE	48.84232	9.23028	214
+Stuttgart Mühlhausen	Stuttgart Muhlhausen	Baden-Wurttemberg	DE	48.84232	9.23028	214
 Tōno	Tono	Iwate	JP	39.31667	141.53333	328
 Malazgirt		Muş	TR	39.1465	42.53536	1510
 Kodoli		Maharashtra	IN	17.67023	74.03469	665
@@ -22153,7 +22153,7 @@ Forest Hills		Michigan	US	42.95947	-85.48975	192
 Santa Isabel do Rio Negro		Amazonas	BR	-0.41389	-65.01917	45
 Mégrine	Megrine	Tunis Governorate	TN	36.76917	10.23639	6
 Muhamma		Kerala	IN	9.60886	76.36083	4
-Qo‘rg‘ontepa	Qo`rg`ontepa	Andijan Region	UZ	40.73192	72.76177	709
+Qo‘rg‘ontepa	Qo'rg'ontepa	Andijan Region	UZ	40.73192	72.76177	709
 Cumanacoa		Sucre	VE	10.25056	-63.91938	229
 Formosa do Rio Preto		Bahia	BR	-11.04833	-45.19306	495
 Semboku		Akita	JP	39.7093	140.74654	389
@@ -22176,7 +22176,7 @@ Maao		Western Visayas	PH	10.4896	122.9907	59
 Almassora		Valencia	ES	39.94729	-0.06313	37
 Ramsey		Minnesota	US	45.2611	-93.45	267
 Fokino		Primorye	RU	42.97096	132.41035	39
-Güroymak	Gueroymak	Bitlis	TR	38.5758	42.01558	1304
+Güroymak	Guroymak	Bitlis	TR	38.5758	42.01558	1304
 Amizour		Béjaïa	DZ	36.64022	4.90131	96
 Suitland		Maryland	US	38.84872	-76.92386	87
 Neapoli		Central Macedonia	GR	40.6532	22.94156	82
@@ -22306,7 +22306,7 @@ Noborito		Kanagawa	JP	35.62203	139.56051	27
 Hazelwood		Missouri	US	38.77144	-90.37095	171
 Troy		Ohio	US	40.0395	-84.20328	252
 Dākor	Dakor	Gujarat	IN	22.75268	73.14967	59
-Tall Rif‘at	Tall Rif`at	Aleppo	SY	36.47229	37.09471	486
+Tall Rif‘at	Tall Rif'at	Aleppo	SY	36.47229	37.09471	486
 Sepuka		Singida	TZ	-4.75	34.53333	1484
 Coquitlam West		British Columbia	CA	49.25702	-122.87883	75
 Yoshii		Gunma	JP	36.25	138.98333	125
@@ -22396,7 +22396,7 @@ New Milton		England	GB	50.75601	-1.6658	40
 Nubl		Aleppo	SY	36.37867	36.99294	413
 Poranki		Andhra Pradesh	IN	16.47771	80.70755	22
 Castelfranco Veneto		Veneto	IT	45.67146	11.92755	43
-Übach-Palenberg	UEbach-Palenberg	North Rhine-Westphalia	DE	50.91775	6.12336	121
+Übach-Palenberg	Ubach-Palenberg	North Rhine-Westphalia	DE	50.91775	6.12336	121
 Shāhedshahr	Shahedshahr	Tehran	IR	35.5729	51.085	1091
 Oltiariq		Fergana	UZ	40.39194	71.47417	463
 Pangkalan Brandan		North Sumatra	ID	4.0238	98.2782	5
@@ -22675,7 +22675,7 @@ Prachin Buri Town		Prachin Buri	TH	14.05458	101.37264	23
 Kağızman	Kagizman	Kars Province	TR	40.15669	43.13424	1276
 Butzbach		Hesse	DE	50.43395	8.67122	206
 Wyandotte		Michigan	US	42.21421	-83.14992	177
-Vezirköprü	Vezirkoeprue	Samsun	TR	41.14361	35.45472	335
+Vezirköprü	Vezirkopru	Samsun	TR	41.14361	35.45472	335
 Oga		Akita	JP	39.871	139.84926	6
 Herblay-sur-Seine		Île-de-France	FR	48.98994	2.1699	68
 Bardsīr	Bardsir	Kerman	IR	29.92266	56.57433	2047
@@ -22738,7 +22738,7 @@ Ahraura		Uttar Pradesh	IN	25.01579	83.03294	106
 Lushan		Guizhou	CN	26.65	107.78333	884
 Rampachodavaram		Andhra Pradesh	IN	17.44088	81.77558	182
 Villaricca		Campania	IT	40.92006	14.19339	105
-Hannoversch Münden	Hannoversch Muenden	Lower Saxony	DE	51.41505	9.65046	129
+Hannoversch Münden	Hannoversch Munden	Lower Saxony	DE	51.41505	9.65046	129
 Māngrol	Mangrol	Rajasthan	IN	25.33061	76.50973	242
 Campechuela		Granma Province	CU	20.23272	-77.27949	20
 Akyazı	Akyazi	Sakarya	TR	40.685	30.62222	46
@@ -22766,7 +22766,7 @@ Mercer Island		Washington	US	47.57065	-122.22207	102
 Lady Frere		Eastern Cape	ZA	-31.70312	27.2329	1020
 Elgin		Scotland	GB	57.64947	-3.31843	20
 Sohāgpur	Sohagpur	Madhya Pradesh	IN	22.70055	78.19522	333
-Lempäälä	Lempaeaelae	Pirkanmaa	FI	61.31667	23.75	85
+Lempäälä	Lempaala	Pirkanmaa	FI	61.31667	23.75	85
 Wolfsberg		Carinthia	AT	46.84056	14.84417	461
 Hattersheim		Hesse	DE	50.06906	8.48632	104
 Chandauli		Uttar Pradesh	IN	25.25803	83.26825	81
@@ -22786,7 +22786,7 @@ Pak Phanang		Nakhon Si Thammarat	TH	8.35109	100.20195	4
 Velur		Tamil Nadu	IN	11.10825	78.00113	136
 Paramathi Velur		Tamil Nadu	IN	11.1916	77.9563	153
 Mogaung		Kachin State	MM	25.30543	96.93537	150
-Härnösand	Haernoesand	Västernorrland	SE	62.63228	17.93794	25
+Härnösand	Harnosand	Västernorrland	SE	62.63228	17.93794	25
 Naubatpur		Bihar	IN	25.49856	84.96084	65
 Lainate		Lombardy	IT	45.57176	9.02681	176
 Conde		Paraíba	BR	-7.25972	-34.9075	116
@@ -22851,7 +22851,7 @@ Ecopark		Hưng Yên Province	VN	20.9621	105.9318	17
 Midstream		Gauteng	ZA	-25.91849	28.19881	1520
 Ingelheim am Rhein		Rheinland-Pfalz	DE	49.97078	8.05883	113
 Citong		Taiwan	TW	23.75751	120.49965	43
-Argüelles	Argueelles	Madrid	ES	40.42821	-3.71785	663
+Argüelles	Arguelles	Madrid	ES	40.42821	-3.71785	663
 Jarābulus	Jarabulus	Aleppo	SY	36.8175	38.01111	350
 Nossa Senhora das Dores		Sergipe	BR	-10.49167	-37.19333	201
 Brownsburg		Indiana	US	39.84338	-86.39777	269
@@ -22927,7 +22927,7 @@ Hunucmá	Hunucma	Yucatán	MX	21.0164	-89.87716	7
 Tarāna	Tarana	Madhya Pradesh	IN	23.33383	76.04253	501
 Cruces		Cienfuegos Province	CU	22.34282	-80.27082	98
 Jardín América	Jardin America	Misiones	AR	-27.04346	-55.22698	227
-‘Ara-‘Ar‘ara	`Ara-`Ar`ara	Haifa	IL	32.49565	35.09261	150
+‘Ara-‘Ar‘ara	'Ara-'Ar'ara	Haifa	IL	32.49565	35.09261	150
 Renhe		Yunnan	CN	26.41667	101.01667	2125
 Sagurē	Sagure	Oromiya	ET	7.75	39.15	2512
 Mehal Mēda	Mehal Meda	Amhara	ET	10.3121	39.65888	3080
@@ -23033,7 +23033,7 @@ Paris		Texas	US	33.66094	-95.55551	183
 Zafar		Tashkent Region	UZ	40.98333	68.9	307
 Niellé	Nielle	Savanes District	CI	10.19814	-5.62337	342
 Market Harborough		England	GB	52.4776	-0.92053	81
-Kfar Yona	KfarYona	Central District	IL	32.31517	34.9357	49
+Kfar Yona	Kfar Yona	Central District	IL	32.31517	34.9357	49
 Mō‘ili‘ili	Mo'ili'ili	Hawaii	US	21.29467	-157.83002	1
 Attendorn		North Rhine-Westphalia	DE	51.12645	7.90333	260
 Romainville		Île-de-France	FR	48.8854	2.43482	121
@@ -23079,7 +23079,7 @@ Belmont		Massachusetts	US	42.39593	-71.17867	21
 Dedham		Massachusetts	US	42.24177	-71.16616	33
 Las Heras		Santa Cruz	AR	-46.54131	-68.93227	324
 Naphegy		Pest County	HU	47.48841	19.0254	135
-Budapest I. kerület	Budapest I. keruelet	Budapest	HU	47.49705	19.03961	150
+Budapest I. kerület	Budapest I. kerulet	Budapest	HU	47.49705	19.03961	150
 Alta Vista		Ontario	CA	45.38639	-75.65806	95
 Wittenau		State of Berlin	DE	52.59319	13.32127	41
 Sandviken		Gävleborg	SE	60.61667	16.76667	66
@@ -23244,7 +23244,7 @@ Cordeirópolis	Cordeiropolis	São Paulo	BR	-22.48194	-47.45667	660
 Angatuba		São Paulo	BR	-23.48972	-48.41278	627
 Jumet		Wallonia	BE	50.4422	4.43745	172
 Dois Córregos	Dois Corregos	São Paulo	BR	-22.36611	-48.38028	673
-Gürsu	Guersu	Bursa Province	TR	40.21876	29.19487	110
+Gürsu	Gursu	Bursa Province	TR	40.21876	29.19487	110
 Gądów-Popowice Południowe	Gadow-Popowice Poludniowe	Lower Silesia	PL	51.1272	16.97027	122
 Mediouna		Casablanca-Settat	MA	33.45161	-7.51995	172
 Zdolbuniv		Rivne Oblast	UA	50.52205	26.24823	186
@@ -23292,7 +23292,7 @@ Hucheng		Chongqing	CN	30.81479	107.5418	517
 Isa		Kagoshima	JP	32.06716	130.61182	183
 Xiyu		Gansu	CN	34.05163	105.3036	1604
 Sahaspur		Uttar Pradesh	IN	29.12125	78.62273	224
-Inđija	Ingija	Vojvodina	RS	45.04816	20.08165	114
+Inđija	Indija	Vojvodina	RS	45.04816	20.08165	114
 Walsrode		Lower Saxony	DE	52.86104	9.59277	37
 Arriaga		Chiapas	MX	16.23557	-93.89972	63
 Zungeru		Niger State	NG	9.80726	6.15238	125
@@ -23405,7 +23405,7 @@ Muret		Occitanie	FR	43.45998	1.32541	174
 Bouna		Zanzan District	CI	9.26927	-2.9951	318
 Massinga		Inhambane Province	MZ	-23.32917	35.38139	111
 Cudahy		California	US	33.96057	-118.18535	37
-Aranđelovac	Arangelovac	Central Serbia	RS	44.30694	20.56	251
+Aranđelovac	Arandelovac	Central Serbia	RS	44.30694	20.56	251
 Santa Luzia do Paruá	Santa Luzia do Parua	Maranhão	BR	-2.54389	-45.77546	100
 Irauçuba	Iraucuba	Ceará	BR	-3.74611	-39.78333	150
 Ōguchi	Oguchi	Aichi	JP	35.34146	136.91108	41
@@ -23537,7 +23537,7 @@ Tak		Tak	TH	16.86968	99.12898	113
 Nesher		Haifa	IL	32.76622	35.04425	125
 Greiz		Thuringia	DE	50.65778	12.19918	269
 Muhammadābād	Muhammadabad	Uttar Pradesh	IN	26.03404	83.38114	77
-Poukham Un	PoukhamUn	Fatick	SN	14.35751	-16.41235	12
+Poukham Un	Poukham Un	Fatick	SN	14.35751	-16.41235	12
 Thị Trấn Vân Du	Thi Tran Van Du	Thanh Hóa Province	VN	20.15186	105.73097	23
 Colorado		Paraná	BR	-22.8375	-51.97306	444
 Heiloo		North Holland	NL	52.60252	4.68815	2
@@ -23547,7 +23547,7 @@ Amélia Rodrigues	Amelia Rodrigues	Bahia	BR	-12.39904	-38.75519	157
 Giarre		Sicily	IT	37.7244	15.18165	210
 Itaporã	Itapora	Mato Grosso do Sul	BR	-22.07889	-54.78944	350
 Haaksbergen		Overijssel	NL	52.15667	6.73889	27
-Poppenbüttel	Poppenbuettel	Hamburg	DE	53.65917	10.08472	24
+Poppenbüttel	Poppenbuttel	Hamburg	DE	53.65917	10.08472	24
 Barki Saria		Jharkhand	IN	24.17594	85.88938	335
 Lawndale		Pennsylvania	US	40.05039	-75.09156	40
 Adjarra		Ouémé	BJ	6.53445	2.66833	24
@@ -23583,7 +23583,7 @@ Plymstock		England	GB	50.35999	-4.09049	27
 Espera Feliz		Minas Gerais	BR	-20.65028	-41.90722	767
 Lentini		Sicily	IT	37.28556	14.99737	53
 Nola		Campania	IT	40.92606	14.52816	34
-Kungälv	Kungaelv	Västra Götaland	SE	57.87096	11.98054	13
+Kungälv	Kungalv	Västra Götaland	SE	57.87096	11.98054	13
 Radevormwald		North Rhine-Westphalia	DE	51.20219	7.36027	373
 Mambuk		Bīnshangul Gumuz	ET	11.28333	36.21667	1209
 Medjez el Bab		Béja Governorate	TN	36.64964	9.61231	51
@@ -23596,7 +23596,7 @@ Ryde		England	GB	50.72999	-1.1621	31
 Kościan	Koscian	Greater Poland	PL	52.08829	16.64866	70
 Trotwood		Ohio	US	39.79728	-84.31133	256
 Pereira Barreto		São Paulo	BR	-20.63833	-51.10917	361
-Lüdinghausen	Luedinghausen	North Rhine-Westphalia	DE	51.7683	7.44379	52
+Lüdinghausen	Ludinghausen	North Rhine-Westphalia	DE	51.7683	7.44379	52
 Areia Branca		Rio Grande do Norte	BR	-4.95611	-37.13694	11
 Hastināpur	Hastinapur	Uttar Pradesh	IN	29.16042	78.00762	221
 North Haven		Connecticut	US	41.39093	-72.85954	21
@@ -23629,7 +23629,7 @@ la Maternitat i Sant Ramon		Catalonia	ES	41.38125	2.11744	56
 Nuevo Belén	Nuevo Belen	Panamá	PA	9.08929	-79.39177	32
 Andenne		Wallonia	BE	50.48941	5.09513	78
 Chak One Hundred Twenty Nine Left		Punjab	PK	30.42919	73.04522	162
-Mevasseret Tsiyyon	MevasseretTsiyyon	Jerusalem	IL	31.80186	35.15072	711
+Mevasseret Tsiyyon	Mevasseret Tsiyyon	Jerusalem	IL	31.80186	35.15072	711
 Boo		Stockholm	SE	59.33333	18.28333	37
 Pacode		Tamil Nadu	IN	8.3352	77.21361	64
 Alto Alegre do Maranhão	Alto Alegre do Maranhao	Maranhão	BR	-4.21278	-44.44639	58
@@ -23812,7 +23812,7 @@ Dalsingh Sarai		Bihar	IN	25.66795	85.83636	52
 Makronia		Madhya Pradesh	IN	23.84765	78.79903	544
 Mosopa		Ngwaketsi	BW	-24.7718	25.42156	1136
 Zhanhe		Yunnan	CN	26.8589	100.914	2648
-Oulunkylä	Oulunkylae	Uusimaa	FI	60.22924	24.96403	34
+Oulunkylä	Oulunkyla	Uusimaa	FI	60.22924	24.96403	34
 Sliedrecht		South Holland	NL	51.82083	4.77639	-1
 Luhe		Gansu	CN	34.00918	105.34021	1625
 Batang		Chongqing	CN	29.83537	106.29271	310
@@ -23847,7 +23847,7 @@ Rădăuți	Radauti	Suceava	RO	47.85	25.91667	368
 Morrisville		North Carolina	US	35.82348	-78.82556	92
 Marshall		Texas	US	32.54487	-94.36742	126
 Squamish		British Columbia	CA	49.69925	-123.15631	5
-Döbeln	Doebeln	Saxony	DE	51.1221	13.11027	168
+Döbeln	Dobeln	Saxony	DE	51.1221	13.11027	168
 Reoti		Uttar Pradesh	IN	25.85091	84.3778	64
 Pādiyanallūr	Padiyanallur	Tamil Nadu	IN	13.20037	80.17606	24
 Nāsriganj	Nasriganj	Bihar	IN	25.0514	84.32839	102
@@ -23914,7 +23914,7 @@ Teocaltiche		Jalisco	MX	21.43434	-102.57427	1738
 Sèvres	Sevres	Île-de-France	FR	48.82292	2.21757	92
 Latri Kunda		Banjul	GM	13.44861	-16.68528	16
 Nivāri	Nivari	Madhya Pradesh	IN	25.34911	78.79974	239
-Wipperfürth	Wipperfuerth	North Rhine-Westphalia	DE	51.1161	7.39865	290
+Wipperfürth	Wipperfurth	North Rhine-Westphalia	DE	51.1161	7.39865	290
 M’Batto	M'Batto	Comoé District	CI	6.47197	-4.35781	124
 Fougères	Fougeres	Brittany	FR	48.35157	-1.19961	115
 Mkoani		Pemba South	TZ	-5.36667	39.65	25
@@ -23992,7 +23992,7 @@ Baileys Crossroads		Virginia	US	38.85039	-77.1297	78
 Groß-Gerau	Gross-Gerau	Hesse	DE	49.92139	8.48255	95
 Arbroath		Scotland	GB	56.56317	-2.58736	10
 Mariāni	Mariani	Assam	IN	26.65725	94.31529	118
-Oberschöneweide	Oberschoeneweide	State of Berlin	DE	52.46106	13.52108	36
+Oberschöneweide	Oberschoneweide	State of Berlin	DE	52.46106	13.52108	36
 Banko		Faranah	GN	10.71667	-10.71667	546
 Semi		Ouémé	BJ	6.36667	2.61667	8
 Saint-Pol-sur-Mer		Hauts-de-France	FR	51.03116	2.33983	4
@@ -24100,7 +24100,7 @@ Funehikimachi-funehiki		Fukushima	JP	37.44722	140.5771	441
 San Martín de los Andes	San Martin de los Andes	Neuquen	AR	-40.15789	-71.35337	651
 Paiporta		Valencia	ES	39.42814	-0.41765	32
 Kiomboi		Singida	TZ	-4.26667	34.36667	1545
-Nagykőrös	Nagykoroes	Pest County	HU	47.03419	19.77857	113
+Nagykőrös	Nagykoros	Pest County	HU	47.03419	19.77857	113
 Mudkhed		Maharashtra	IN	19.15657	77.50304	373
 Ogōri-shimogō	Ogori-shimogo	Yamaguchi	JP	34.1	131.4	4
 Shivpur Charcha		Chhattisgarh	IN	23.32888	82.52809	581
@@ -24352,7 +24352,7 @@ Pallandri		Azad Kashmir	PK	33.71527	73.68366	1323
 Loanda		Paraná	BR	-22.92306	-53.13722	464
 Kozyatyn		Vinnytsia	UA	49.7164	28.83858	307
 Motul		Yucatán	MX	21.09571	-89.28332	15
-Ängelholm	AEngelholm	Skåne	SE	56.2428	12.86219	11
+Ängelholm	Angelholm	Skåne	SE	56.2428	12.86219	11
 Gallup		New Mexico	US	35.52808	-108.74258	1985
 Coreaú	Coreau	Ceará	BR	-3.55097	-40.65724	51
 Schijndel		North Brabant	NL	51.6225	5.43194	10
@@ -24466,7 +24466,7 @@ Heanor		England	GB	53.01372	-1.35383	127
 Pacific Palisades		California	US	34.04806	-118.52647	100
 Palm City		Florida	US	27.16783	-80.26616	2
 Polasara		Odisha	IN	19.69386	84.81401	84
-Vänersborg	Vaenersborg	Västra Götaland	SE	58.38075	12.3234	54
+Vänersborg	Vanersborg	Västra Götaland	SE	58.38075	12.3234	54
 Víbora	Vibora	Havana	CU	23.09387	-82.37191	39
 Hoheluft-Ost		Hamburg	DE	53.58399	9.97585	13
 Middleborough		Massachusetts	US	41.89316	-70.91115	30
@@ -24491,7 +24491,7 @@ Moulins		Auvergne-Rhône-Alpes	FR	46.56459	3.33243	219
 Dampit		East Java	ID	-8.21162	112.74934	430
 Annaberg-Buchholz		Saxony	DE	50.57953	13.00627	627
 Vero Beach South		Florida	US	27.61638	-80.41308	7
-Björlanda	Bjoerlanda	Västra Götaland	SE	57.76667	11.83333	8
+Björlanda	Bjorlanda	Västra Götaland	SE	57.76667	11.83333	8
 Ringsted		Zealand	DK	55.4426	11.79011	54
 Orcasitas		Madrid	ES	40.36863	-3.71242	607
 Nakūr	Nakur	Uttar Pradesh	IN	29.91964	77.30438	272
@@ -24511,7 +24511,7 @@ Pinamungahan		Central Visayas	PH	10.2708	123.5839	2
 Pallikonda		Tamil Nadu	IN	12.90518	78.9427	262
 Piteå	Pitea	Norrbotten	SE	65.31717	21.47944	6
 Wudil		Kano State	NG	11.80937	8.84422	419
-Lütgendortmund	Luetgendortmund	North Rhine-Westphalia	DE	51.49885	7.34806	90
+Lütgendortmund	Lutgendortmund	North Rhine-Westphalia	DE	51.49885	7.34806	90
 Jurm		Badakhshan	AF	36.86477	70.83421	1564
 Jacksonville Beach		Florida	US	30.29469	-81.39314	3
 Yakınca	Yakinca	Malatya	TR	38.30533	38.23828	1030
@@ -24588,7 +24588,7 @@ Aalsmeer		North Holland	NL	52.25917	4.75972	-4
 Mojtame‘-e Maskūnī-ye Nāmjū	Mojtame'-e Maskuni-ye Namju	Tehran	IR	35.4723	51.724	1072
 São Jorge de Arroios	Sao Jorge de Arroios	Lisbon	PT	38.7289	-9.13806	71
 Hukeri		Karnataka	IN	16.23082	74.60244	652
-Lidköping	Lidkoeping	Västra Götaland	SE	58.50517	13.15765	52
+Lidköping	Lidkoping	Västra Götaland	SE	58.50517	13.15765	52
 Azla		Tanger-Tetouan-Al Hoceima	MA	35.55303	-5.24472	9
 Otradnaya		Krasnodar Krai	RU	44.39318	41.51929	431
 Kakuma		Turkana County	KE	3.71363	34.8572	603
@@ -24664,7 +24664,7 @@ Comrat		Gagauzia	MD	46.29488	28.65713	62
 Duderstadt		Lower Saxony	DE	51.51312	10.25951	186
 San Antonio de Areco		Buenos Aires	AR	-34.25083	-59.46944	35
 Santa Luzia		Maranhão	BR	-7.64265	-47.21738	197
-Neusäß	Neusaess	Bavaria	DE	48.39249	10.83333	483
+Neusäß	Neusass	Bavaria	DE	48.39249	10.83333	483
 Saidpur		Uttar Pradesh	IN	25.53749	83.22378	82
 Sibbo		Uusimaa	FI	60.37752	25.26906	27
 Khā̃dbāri̇̄	Khadbari	Koshi	NP	27.37647	87.20773	1049
@@ -24788,7 +24788,7 @@ Baravāt	Baravat	Kerman	IR	29.0663	58.4046	1003
 Barro		Ceará	BR	-7.17846	-38.78003	579
 The Crossings		Florida	US	25.67066	-80.40117	2
 Ibi		Taraba State	NG	8.18122	9.74431	109
-‘Izrā	`Izra	Karak	JO	31.15889	35.69278	1111
+‘Izrā	'Izra	Karak	JO	31.15889	35.69278	1111
 Valley Station		Kentucky	US	38.11118	-85.87024	136
 Itambé	Itambe	Bahia	BR	-15.245	-40.62444	357
 Morrinhos		Ceará	BR	-3.22944	-40.125	59
@@ -24806,7 +24806,7 @@ Tortona		Piedmont	IT	44.89784	8.86374	122
 Droichead Nua		Leinster	IE	53.18194	-6.79667	92
 Gunjur		Western	GM	13.20194	-16.73389	25
 Melíssia	Melissia	Attica	GR	38.05	23.83333	273
-Sühbaatar	Suehbaatar	Selenge Province	MN	50.23139	106.20778	619
+Sühbaatar	Suhbaatar	Selenge Province	MN	50.23139	106.20778	619
 Undurkhaan		Hentiy	MN	47.31944	110.65556	1030
 Nový Jičín	Novy Jicin	Moravian-Silesian Region	CZ	49.59438	18.01028	285
 Dugda		Jharkhand	IN	23.74516	86.17175	213
@@ -24828,7 +24828,7 @@ Tràm Chim	Tram Chim	Dong Thap	VN	10.67001	105.56469	6
 Hutto		Texas	US	30.5427	-97.54667	202
 Comillas		Madrid	ES	40.3935	-3.71196	598
 Chorwād	Chorwad	Gujarat	IN	21.02947	70.23302	14
-Pulü	Pulue	Chongqing	CN	29.81796	106.15927	265
+Pulü	Pulu	Chongqing	CN	29.81796	106.15927	265
 Le Puy-en-Velay		Auvergne-Rhône-Alpes	FR	45.04366	3.88523	640
 Laguna City		Kwun Tong District	HK	22.30554	114.22861	19
 Dabeiba		Antioquia	CO	7.00017	-76.26915	488
@@ -24860,7 +24860,7 @@ Kampot		Kampot	KH	10.61041	104.18145	7
 Katghora		Chhattisgarh	IN	22.50247	82.54279	325
 ‘Ewa Gentry	'Ewa Gentry	Hawaii	US	21.33999	-158.03039	12
 Godalming		England	GB	51.1858	-0.61489	46
-Matinkylä	Matinkylae	Uusimaa	FI	60.15885	24.74241	4
+Matinkylä	Matinkyla	Uusimaa	FI	60.15885	24.74241	4
 Da Nyin Kone		Yangon	MM	16.93342	96.0931	5
 Mingda		Chongqing	CN	30.7263	107.65726	475
 Kirovgrad		Sverdlovsk Oblast	RU	57.43134	60.06172	270
@@ -24975,7 +24975,7 @@ Valdagno		Veneto	IT	45.64498	11.29886	230
 Medvedevo		Mariy-El Republic	RU	56.63402	47.8035	114
 Hastings		Minnesota	US	44.7433	-92.85243	221
 Rāman	Raman	Punjab	IN	29.95045	74.97852	207
-Enköping	Enkoeping	Uppsala	SE	59.63607	17.07768	16
+Enköping	Enkoping	Uppsala	SE	59.63607	17.07768	16
 Somerset East		Eastern Cape	ZA	-32.72173	25.58804	748
 Barbate		Andalusia	ES	36.19237	-5.92186	18
 Kahuta		Punjab	PK	33.59183	73.38736	610
@@ -25014,7 +25014,7 @@ Kamal		East Java	ID	-7.16778	112.71917	7
 Baswa		Rajasthan	IN	27.14955	76.58345	299
 Rājmahal	Rajmahal	Jharkhand	IN	25.05303	87.83048	34
 Itinga do Maranhão	Itinga do Maranhao	Maranhão	BR	-4.44972	-47.52556	154
-Qiryat Shmona	QiryatShmona	Northern District	IL	33.21204	35.57044	122
+Qiryat Shmona	Qiryat Shmona	Northern District	IL	33.21204	35.57044	122
 Nambol		Manipur	IN	24.69557	93.81974	771
 Mutxamel		Valencia	ES	38.4158	-0.44529	70
 Le Plessis-Robinson		Île-de-France	FR	48.78889	2.27078	159
@@ -25106,7 +25106,7 @@ Orobó	Orobo	Pernambuco	BR	-7.745	-35.60222	392
 Vreden		North Rhine-Westphalia	DE	52.03792	6.828	41
 Ngawi		East Java	ID	-7.4038	111.4461	57
 Ishikawa		Okinawa	JP	26.42333	127.82139	11
-Büdingen	Buedingen	Hesse	DE	50.29013	9.1114	136
+Büdingen	Budingen	Hesse	DE	50.29013	9.1114	136
 Molde		Møre og Romsdal	NO	62.73752	7.15912	3
 Quba		Quba	AZ	41.36108	48.51341	600
 Kailāshahar	Kailashahar	Tripura	IN	24.33199	92.00391	32
@@ -25241,7 +25241,7 @@ Lordelo do Ouro		Porto	PT	41.15059	-8.64845	33
 Cerro Azul		Veracruz	MX	21.192	-97.74088	141
 Buan		Jeollabuk-do	KR	35.72806	126.73194	18
 Demba		Kasai-Central	CD	-5.49573	22.26962	632
-Büren	Bueren	North Rhine-Westphalia	DE	51.55109	8.55956	243
+Büren	Buren	North Rhine-Westphalia	DE	51.55109	8.55956	243
 Hingorja		Sindh	PK	27.21088	68.41598	55
 Koprivnica		Koprivnica-Križevci	HR	46.16364	16.8297	118
 Oakdale		California	US	37.76659	-120.84715	48
@@ -25567,7 +25567,7 @@ Marsberg		North Rhine-Westphalia	DE	51.46171	8.84949	254
 Costillares		Madrid	ES	40.47665	-3.66852	741
 Dubnica nad Váhom	Dubnica nad Vahom	Trenčín Region	SK	48.95981	18.16634	220
 Xinmin		Chongqing	CN	30.90343	109.46682	633
-Sankt Pölten	Sankt Poelten	Lower Austria	AT	48.20762	15.63725	265
+Sankt Pölten	Sankt Polten	Lower Austria	AT	48.20762	15.63725	265
 Nishiarai		Tokyo	JP	35.78469	139.77882	6
 Reyes Acozac		México	MX	19.7755	-98.98079	2259
 Seesen		Lower Saxony	DE	51.89095	10.17847	214
@@ -25694,7 +25694,7 @@ Tāzah Khūrmātū	Tazah Khurmatu	Kirkuk	IQ	35.30236	44.32637	243
 Santa María Atzompa	Santa Maria Atzompa	Oaxaca	MX	17.10165	-96.77686	1597
 Kutná Hora	Kutna Hora	Central Bohemia	CZ	49.94839	15.26816	254
 Aghajari		Khuzestan	IR	30.7006	49.8315	151
-Küçükçiğli	Kuecuekcigli	İzmir Province	TR	38.502	27.053	90
+Küçükçiğli	Kucukcigli	İzmir Province	TR	38.502	27.053	90
 Jainagar		Bihar	IN	26.59048	86.13791	76
 Ubiaja		Edo State	NG	6.65581	6.38494	286
 Torrelodones		Madrid	ES	40.57654	-3.92658	856
@@ -25880,7 +25880,7 @@ Māndalgarh	Mandalgarh	Rajasthan	IN	25.19407	75.07215	380
 The Beaches		Ontario	CA	43.67372	-79.29539	93
 Edgewater		Florida	US	28.98888	-80.90228	1
 Polkowice		Lower Silesia	PL	51.50391	16.07261	179
-Eckernförde	Eckernfoerde	Schleswig-Holstein	DE	54.46854	9.83824	4
+Eckernförde	Eckernforde	Schleswig-Holstein	DE	54.46854	9.83824	4
 Deuil-la-Barre		Île-de-France	FR	48.97674	2.32722	54
 H̱ura	Hura	Southern District	IL	31.30084	34.93606	425
 Cuenca		Calabarzon	PH	13.902	121.0521	300
@@ -25978,7 +25978,7 @@ Srisailam Project RFC Township		Andhra Pradesh	IN	16.07331	78.87412	443
 Masatepe		Masaya Department	NI	11.91445	-86.14458	456
 Sintra-Nema		Bissau	GW	11.86236	-15.59736	11
 Belén de Umbría	Belen de Umbria	Risaralda Department	CO	5.20199	-75.86753	1475
-Französisch Buchholz	Franzoesisch Buchholz	State of Berlin	DE	52.60242	13.43019	46
+Französisch Buchholz	Franzosisch Buchholz	State of Berlin	DE	52.60242	13.43019	46
 Cikcilli		Antalya	TR	36.55403	32.02962	75
 Old Trafford		England	GB	53.45756	-2.28818	30
 Shahpur Chakar		Sindh	PK	26.15411	68.65013	29
@@ -26043,7 +26043,7 @@ Eldama Ravine		Baringo	KE	0.05196	35.72734	2142
 Orós	Oros	Ceará	BR	-6.24444	-38.91361	193
 Perdões	Perdoes	Minas Gerais	BR	-21.09083	-45.09139	842
 Paxtakor Shahri		Jizzakh Region	UZ	40.31181	67.95667	306
-Siilinjärvi	Siilinjaervi	North Savo	FI	63.08333	27.66667	83
+Siilinjärvi	Siilinjarvi	North Savo	FI	63.08333	27.66667	83
 Evans		Colorado	US	40.37637	-104.69219	1418
 Mandan		North Dakota	US	46.82666	-100.88958	502
 East End-Danforth		Ontario	CA	43.68417	-79.29936	131
@@ -26195,7 +26195,7 @@ Santa Cruz de Mora		Mérida	VE	8.39925	-71.64082	600
 Cassano Magnago		Lombardy	IT	45.67206	8.82691	261
 Rancho San Diego		California	US	32.74727	-116.9353	110
 Iriona		Colón Department	HN	15.96777	-85.09323	6
-Löbtau	Loebtau	Saxony	DE	51.04358	13.69444	132
+Löbtau	Lobtau	Saxony	DE	51.04358	13.69444	132
 Sampués	Sampues	Sucre Department	CO	9.18361	-75.38167	154
 Pirkkala		Pirkanmaa	FI	61.46125	23.63228	101
 Taurage		Tauragė County	LT	55.25222	22.28972	36
@@ -26221,7 +26221,7 @@ Terek		Kabardino-Balkariya Republic	RU	43.48329	44.13781	259
 Eppingen		Baden-Wurttemberg	DE	49.13645	8.91229	190
 Caia		Sofala	MZ	-17.82028	35.34417	35
 Chhor		Sindh	PK	25.5126	69.78437	6
-Västervik	Vaestervik	Kalmar	SE	57.7584	16.63733	11
+Västervik	Vastervik	Kalmar	SE	57.7584	16.63733	11
 Hawthorn South		Victoria	AU	-37.8329	145.0367	48
 Glenferrie		Victoria	AU	-37.83333	145.05	53
 Itapoá	Itapoa	Santa Catarina	BR	-26.11694	-48.61611	20
@@ -26337,7 +26337,7 @@ Būndu	Bundu	Jharkhand	IN	23.16095	85.59007	325
 Conway		South Carolina	US	33.836	-79.04781	10
 Laurelton		New York	US	40.67019	-73.74659	5
 Muxaluando		Bengo	AO	-8.12307	14.28838	566
-Püttlingen	Puettlingen	Saarland	DE	49.2855	6.88723	227
+Püttlingen	Puttlingen	Saarland	DE	49.2855	6.88723	227
 March		England	GB	52.55131	0.08828	3
 Lino Lakes		Minnesota	US	45.16024	-93.08883	270
 Zhuantang		Chongqing	CN	28.8963	106.66835	269
@@ -26430,13 +26430,13 @@ Gunnaur		Uttar Pradesh	IN	28.23995	78.43994	182
 East Ridge		Tennessee	US	35.01424	-85.2519	237
 Ji’an	Ji'an	Chongqing	CN	29.15897	105.74703	440
 Bordon		England	GB	51.11357	-0.86245	93
-Zürich (Kreis 3) / Sihlfeld	Zuerich (Kreis 3) / Sihlfeld	Zurich	CH	47.37382	8.51164	416
+Zürich (Kreis 3) / Sihlfeld	Zurich (Kreis 3) / Sihlfeld	Zurich	CH	47.37382	8.51164	416
 Çermik	Cermik	Diyarbakır Province	TR	38.13538	39.445	690
 Santa Vitória	Santa Vitoria	Minas Gerais	BR	-18.83861	-50.12139	474
 Germersheim		Rheinland-Pfalz	DE	49.2144	8.36687	108
 Lista		Madrid	ES	40.43202	-3.67583	696
 Makakilo-Makaīwa Hills-Kunia	Makakilo-Makaiwa Hills-Kunia	Hawaii	US	21.36676	-158.07326	181
-Mäntsälä	Maentsaelae	Uusimaa	FI	60.63333	25.31667	59
+Mäntsälä	Mantsala	Uusimaa	FI	60.63333	25.31667	59
 Dugulubgey		Kabardino-Balkariya Republic	RU	43.6625	43.53694	450
 Chaudfontaine		Wallonia	BE	50.5828	5.6341	218
 Pālakkodu	Palakkodu	Tamil Nadu	IN	12.30696	78.07022	509
@@ -26548,7 +26548,7 @@ Valkeakoski		Pirkanmaa	FI	61.26421	24.03122	98
 Sidney		Ohio	US	40.28422	-84.1555	290
 Birmingham		Michigan	US	42.5467	-83.21132	237
 Sālamedu	Salamedu	Tamil Nadu	IN	11.90876	79.49188	46
-Sömmerda	Soemmerda	Thuringia	DE	51.15914	11.11524	140
+Sömmerda	Sommerda	Thuringia	DE	51.15914	11.11524	140
 Alfafar		Valencia	ES	39.41667	-0.38333	7
 Yongning		Yunnan	CN	27.83333	100.66667	2770
 Unterhaching		Bavaria	DE	48.06598	11.61564	562
@@ -26675,7 +26675,7 @@ Simpsonville		South Carolina	US	34.73706	-82.25428	262
 Latham		New York	US	42.74702	-73.75901	108
 Sant'Anastasia		Campania	IT	40.86842	14.40196	150
 Darien		Connecticut	US	41.07871	-73.46929	14
-Wülfrath	Wuelfrath	North Rhine-Westphalia	DE	51.28195	7.03821	189
+Wülfrath	Wulfrath	North Rhine-Westphalia	DE	51.28195	7.03821	189
 Heqing		Hainan	CN	19.52831	109.63279	138
 Pleasant Prairie		Wisconsin	US	42.55308	-87.93341	212
 Elektrogorsk		Moscow Oblast	RU	55.88431	38.7864	136
@@ -26804,7 +26804,7 @@ Geseke		North Rhine-Westphalia	DE	51.64091	8.5109	103
 Ensley		Florida	US	30.51881	-87.27275	41
 Were Īlu	Were Ilu	Amhara	ET	10.58964	39.43767	2699
 Jumunjin		Gangwon-do	KR	37.89139	128.82583	9
-Evka-Üç	Evka-UEc	İzmir Province	TR	38.47071	27.25094	137
+Evka-Üç	Evka-Uc	İzmir Province	TR	38.47071	27.25094	137
 Ea Drăng	Ea Drang	Dak Lak	VN	13.2045	108.21029	585
 Heide		Schleswig-Holstein	DE	54.19562	9.09742	14
 Frameries		Wallonia	BE	50.40578	3.89603	113
@@ -26846,7 +26846,7 @@ Vasind		Maharashtra	IN	19.40844	73.26285	37
 Morteros		Cordoba	AR	-30.71066	-62.00714	90
 Boudjima		Tizi Ouzou	DZ	36.80218	4.15187	295
 Chorfa		Bouira	DZ	36.36505	4.32636	342
-Mödling	Moedling	Lower Austria	AT	48.08605	16.28921	222
+Mödling	Modling	Lower Austria	AT	48.08605	16.28921	222
 Failsworth		England	GB	53.50484	-2.16568	97
 Paulistana		Piauí	BR	-8.14361	-41.14972	357
 American Canyon		California	US	38.17492	-122.2608	14
@@ -26893,13 +26893,13 @@ Eggenberg		Styria	AT	47.07	15.39871	369
 Rojales		Valencia	ES	38.08799	-0.72544	12
 Mairena del Alcor		Andalusia	ES	37.37301	-5.74951	135
 Zhongshan		Chongqing	CN	28.85541	106.33602	306
-Bruchköbel	Bruchkoebel	Hesse	DE	50.17853	8.92315	116
+Bruchköbel	Bruchkobel	Hesse	DE	50.17853	8.92315	116
 Komatipoort		Mpumalanga	ZA	-25.43321	31.95478	159
 Moss Park		Ontario	CA	43.65498	-79.37153	87
 Wutongshu		Ningxia	CN	38.18333	106.28333	1116
 Bekalta		Monastir Governorate	TN	35.61739	10.99466	3
 Cocalzinho de Goiás	Cocalzinho de Goias	Goiás	BR	-15.79444	-48.77583	1100
-Fröndenberg	Froendenberg	North Rhine-Westphalia	DE	51.47563	7.76946	163
+Fröndenberg	Frondenberg	North Rhine-Westphalia	DE	51.47563	7.76946	163
 Égkomi	Egkomi	Ammochostos	CY	35.16272	33.88322	12
 Mehdiabad		Abşeron	AZ	40.49691	49.8517	65
 Kercha		Oromiya	ET	5.78009	38.40887	1959
@@ -26959,7 +26959,7 @@ Kalach		Voronezh Oblast	RU	50.425	41.01595	84
 Junqueirópolis	Junqueiropolis	São Paulo	BR	-21.51472	-51.43361	421
 Rongxi		Chongqing	CN	28.52485	108.88038	393
 Paraisópolis	Paraisopolis	Minas Gerais	BR	-22.55417	-45.78	931
-Bülach	Buelach	Zurich	CH	47.52197	8.54049	419
+Bülach	Bulach	Zurich	CH	47.52197	8.54049	419
 Risca		Wales	GB	51.60799	-3.10081	49
 Keevallur		Kerala	IN	11.89703	75.53099	38
 Nangli		Punjab	IN	31.68633	74.88747	231
@@ -27027,7 +27027,7 @@ Mafemani		Mpumalanga	ZA	-24.78864	31.07938	538
 Rio Formoso		Pernambuco	BR	-8.66877	-35.16277	87
 Itororó	Itororo	Bahia	BR	-15.11694	-40.07028	253
 Darende		Malatya	TR	38.54583	37.50583	1036
-Budapest XXIII. kerület	Budapest XXIII. keruelet	Budapest	HU	47.39788	19.11492	105
+Budapest XXIII. kerület	Budapest XXIII. kerulet	Budapest	HU	47.39788	19.11492	105
 Humacao		Humacao	PR	18.14968	-65.82738	22
 Zhuoshui		Chongqing	CN	29.30309	108.7702	419
 Sensuntepeque		Cabanas	SV	13.87583	-88.62727	702
@@ -27061,7 +27061,7 @@ Tombôco	Tomboco	Zaire	AO	-6.80517	13.33017	396
 Jhālu	Jhalu	Uttar Pradesh	IN	29.33609	78.22608	241
 Lindsay		Ontario	CA	44.35012	-78.73286	261
 Cofradía	Cofradia	Cortés Department	HN	15.4	-88.15	111
-Nördlingen	Noerdlingen	Bavaria	DE	48.85122	10.48868	430
+Nördlingen	Nordlingen	Bavaria	DE	48.85122	10.48868	430
 Mamfe		South-West	CM	5.75132	9.3137	93
 Harvey		Louisiana	US	29.90354	-90.07729	1
 Abaré	Abare	Bahia	BR	-8.72028	-39.11389	316
@@ -27213,7 +27213,7 @@ Quiterianópolis	Quiterianopolis	Ceará	BR	-5.84426	-40.70195	516
 Adlershof		State of Berlin	DE	52.43548	13.54825	37
 Azacualpa		Santa Bárbara Department	HN	14.71218	-88.0901	370
 San Lorenzo de Esmeraldas		Esmeraldas	EC	1.28626	-78.83514	14
-Zülpich	Zuelpich	North Rhine-Westphalia	DE	50.69447	6.65414	174
+Zülpich	Zulpich	North Rhine-Westphalia	DE	50.69447	6.65414	174
 Jaruco		Mayabeque	CU	23.044	-82.00919	134
 Burqin		Xinjiang	CN	47.70283	86.86375	471
 Algete		Madrid	ES	40.59711	-3.49743	721
@@ -27242,7 +27242,7 @@ Berkel en Rodenrijs		South Holland	NL	51.99313	4.47865	0
 Sulphur		Louisiana	US	30.23659	-93.37738	5
 Shelby		North Carolina	US	35.29235	-81.53565	262
 Kafr Mandā	Kafr Manda	Northern District	IL	32.81095	35.26071	176
-Thị Trấn Đất Đỏ	Thi Tran GJat GJo	Ho Chi Minh City (HCMC)	VN	10.49093	107.27014	42
+Thị Trấn Đất Đỏ	Thi Tran Dat Do	Ho Chi Minh City (HCMC)	VN	10.49093	107.27014	42
 Ma Tau Wai		Kowloon City	HK	22.32074	114.18743	26
 Takanabe		Miyazaki	JP	32.13333	131.5	11
 Greenville		Sinoe County	LR	5.01133	-9.0388	10
@@ -27391,7 +27391,7 @@ Corabia		Olt	RO	43.77513	24.50146	46
 Rastede		Lower Saxony	DE	53.24508	8.19718	10
 Khowai		Tripura	IN	24.07964	91.59972	33
 Sing Buri		Sing Buri	TH	14.88786	100.40464	18
-Zürich (Kreis 6) / Unterstrass	Zuerich (Kreis 6) / Unterstrass	Zurich	CH	47.3953	8.53721	476
+Zürich (Kreis 6) / Unterstrass	Zurich (Kreis 6) / Unterstrass	Zurich	CH	47.3953	8.53721	476
 Puerto Leguízamo	Puerto Leguizamo	Putumayo Department	CO	-0.19337	-74.78189	189
 Govardhan		Uttar Pradesh	IN	27.49658	77.46263	189
 Gilly		Wallonia	BE	50.42449	4.4789	152
@@ -27401,7 +27401,7 @@ Mahembe		Western Province	RW	-2.2386	29.2929	1777
 Mill Creek		Washington	US	47.8601	-122.2043	115
 Paravai		Tamil Nadu	IN	9.96453	78.0667	144
 Barañáin	Baranain	Navarre	ES	42.80567	-1.67731	441
-Sürmene	Suermene	Trabzon	TR	40.90588	40.12792	81
+Sürmene	Surmene	Trabzon	TR	40.90588	40.12792	81
 Pace		Florida	US	30.59936	-87.16108	18
 San Giovanni Lupatoto		Veneto	IT	45.38193	11.04474	42
 ‘Inak	'Inak	Eastern Province	SA	26.51959	50.02715	7
@@ -27418,7 +27418,7 @@ Emiliano Zapata		Tabasco	MX	17.74058	-91.76635	27
 Gabane		Kweneng	BW	-24.66667	25.78222	1090
 Ampthill		England	GB	52.02694	-0.49567	95
 Salgado		Sergipe	BR	-11.03194	-37.475	103
-Flörsheim	Floersheim	Hesse	DE	50.01311	8.42779	94
+Flörsheim	Florsheim	Hesse	DE	50.01311	8.42779	94
 Karuizawa		Nagano	JP	36.35	138.63333	952
 Bukit Beruntung		Selangor	MY	3.41558	101.55709	76
 Palm Valley		Florida	US	30.17746	-81.38758	1
@@ -27623,7 +27623,7 @@ Chebli		Blida	DZ	36.57722	3.00917	56
 Blansko		South Moravian	CZ	49.36304	16.64446	276
 Anūppur	Anuppur	Madhya Pradesh	IN	23.10344	81.69083	503
 Dickinson		Texas	US	29.46079	-95.05132	3
-Hörstel	Hoerstel	North Rhine-Westphalia	DE	52.29763	7.58382	46
+Hörstel	Horstel	North Rhine-Westphalia	DE	52.29763	7.58382	46
 Moirāng	Moirang	Manipur	IN	24.4975	93.77791	773
 Mar’ina Gorka	Mar'ina Gorka	Minsk	BY	53.509	28.147	178
 Vesoul		Bourgogne-Franche-Comté	FR	47.62604	6.14251	236
@@ -27663,7 +27663,7 @@ Les Pennes-Mirabeau		Provence-Alpes-Côte d'Azur	FR	43.41012	5.30838	151
 Sirka		Jharkhand	IN	23.64561	85.43333	342
 Dhaunkal		Punjab	PK	32.40613	74.13706	236
 Steinhagen		North Rhine-Westphalia	DE	52	8.4	96
-Mátyásföld	Matyasfoeld	Budapest	HU	47.50949	19.21128	144
+Mátyásföld	Matyasfold	Budapest	HU	47.50949	19.21128	144
 Băicoi	Baicoi	Prahova	RO	45.03333	25.85	312
 Brezno		Banská Bystrica Region	SK	48.80431	19.63631	492
 Boriavi		Gujarat	IN	22.61124	72.93283	37
@@ -27819,7 +27819,7 @@ Udangudi		Tamil Nadu	IN	8.42918	78.02968	12
 Monção	Moncao	Viana do Castelo	PT	42.07892	-8.48076	34
 Kivsharivka		Kharkiv	UA	49.63026	37.6775	98
 New Canaan		Connecticut	US	41.14676	-73.49484	97
-Günzburg	Guenzburg	Bavaria	DE	48.45599	10.27695	470
+Günzburg	Gunzburg	Bavaria	DE	48.45599	10.27695	470
 Saint-Gratien		Île-de-France	FR	48.9735	2.28729	45
 Inza		Ulyanovsk	RU	53.85342	46.3513	159
 Albany		California	US	37.88687	-122.29775	13
@@ -27914,7 +27914,7 @@ Zinguédéssé	Zinguedesse	Centre	BF	12.24661	-1.58402	309
 Jatibonico		Sancti Spíritus Province	CU	21.94332	-79.16745	94
 Nalco		Odisha	IN	20.86544	85.18283	197
 Miracatu		São Paulo	BR	-24.28139	-47.45972	44
-Bo‘ka	Bo`ka	Tashkent Region	UZ	40.81108	69.19417	341
+Bo‘ka	Bo'ka	Tashkent Region	UZ	40.81108	69.19417	341
 Zhongzhai		Gansu	CN	33.19133	104.42009	1375
 Bagnols-sur-Cèze	Bagnols-sur-Ceze	Occitanie	FR	44.16259	4.61974	63
 Dekoa		Kémo	CF	6.32229	19.07922	546
@@ -27997,7 +27997,7 @@ Monforte de Lemos		Galicia	ES	42.52165	-7.51422	295
 Diamante		Entre Rios	AR	-32.0671	-60.64267	17
 Trostyanets		Sumy	UA	50.48478	34.96567	120
 Dingshi		Chongqing	CN	28.77549	108.54646	561
-Kröpeliner-Tor-Vorstadt	Kroepeliner-Tor-Vorstadt	Mecklenburg-Vorpommern	DE	54.08849	12.11539	9
+Kröpeliner-Tor-Vorstadt	Kropeliner-Tor-Vorstadt	Mecklenburg-Vorpommern	DE	54.08849	12.11539	9
 Neftegorsk		Samara Oblast	RU	52.80135	51.16551	96
 San Isidro		Canary Islands	ES	28.07617	-16.558	207
 Kiliya		Odesa	UA	45.44445	29.26396	4
@@ -28011,7 +28011,7 @@ Poperinge		Flanders	BE	50.85386	2.72659	19
 Herceg Novi		Herceg Novi	ME	42.45306	18.5375	87
 Fukumitsu		Toyama	JP	36.55751	136.86945	90
 Carnaíba	Carnaiba	Pernambuco	BR	-7.80528	-37.79389	495
-Waldbröl	Waldbroel	North Rhine-Westphalia	DE	50.87576	7.61688	278
+Waldbröl	Waldbrol	North Rhine-Westphalia	DE	50.87576	7.61688	278
 Tadjoura		Tadjourah	DJ	11.78778	42.88222	3
 Krasnystaw		Lublin	PL	50.98464	23.1742	184
 Teltow		Brandenburg	DE	52.4031	13.26014	39
@@ -28191,7 +28191,7 @@ Bear		Delaware	US	39.62928	-75.65826	21
 Gnago		Bas-Sassandra District	CI	5.24032	-5.79516	74
 Kakdwip		West Bengal	IN	21.87914	88.1913	4
 Canto do Buriti		Piauí	BR	-8.11	-42.94444	272
-Norrtälje	Norrtaelje	Stockholm	SE	59.75799	18.70496	13
+Norrtälje	Norrtalje	Stockholm	SE	59.75799	18.70496	13
 Chalatenango		Chalatenango Department	SV	14.04138	-88.93951	400
 Tamenglong		Manipur	IN	25.0164	93.48545	1151
 Pueblo Nuevo		Durango	MX	23.38359	-105.37084	1761
@@ -28259,7 +28259,7 @@ Cabildo		Valparaiso	CL	-32.43134	-71.07167	201
 Raja Pur Khurd		Delhi	IN	28.63517	77.03303	207
 Padua		Tolima Department	CO	5.13429	-75.14001	2041
 Khānāpur	Khanapur	Karnataka	IN	15.63969	74.50847	674
-Hässleholm	Haessleholm	Skåne	SE	56.15905	13.76638	58
+Hässleholm	Hassleholm	Skåne	SE	56.15905	13.76638	58
 Bellwood		Illinois	US	41.88142	-87.88312	193
 M’Bahiakro	M'Bahiakro	Lacs District	CI	7.45728	-4.33993	127
 Clydach		Wales	GB	51.68333	-3.9	12
@@ -28306,7 +28306,7 @@ Al ‘Aqīq	Al 'Aqiq	Al Bahah Region	SA	20.65	41.41667	1395
 Al ‘Aqīq	Al 'Aqiq	Al Bahah Region	SA	20.27358	41.66434	1560
 Pinole		California	US	38.00437	-122.29886	31
 Helin		Chongqing	CN	30.58123	107.68064	466
-Bremervörde	Bremervoerde	Lower Saxony	DE	53.48513	9.14644	4
+Bremervörde	Bremervorde	Lower Saxony	DE	53.48513	9.14644	4
 Budai		Taiwan	TW	23.37795	120.16154	7
 Vakkam		Kerala	IN	8.68447	76.76755	19
 Spoleto		Umbria	IT	42.74071	12.73899	396
@@ -28348,7 +28348,7 @@ Vendôme	Vendome	Centre-Val de Loire	FR	47.79292	1.06556	85
 Strășeni	Straseni	Strășeni	MD	47.14216	28.60774	107
 Chhaprauli		Uttar Pradesh	IN	29.20989	77.17454	234
 Degema Hulk		Rivers State	NG	4.76145	6.74957	6
-Bückeburg	Bueckeburg	Lower Saxony	DE	52.26065	9.04939	68
+Bückeburg	Buckeburg	Lower Saxony	DE	52.26065	9.04939	68
 Louviers		Normandy	FR	49.21667	1.16667	23
 Haslett		Michigan	US	42.74698	-84.40108	264
 Sardulgarh		Punjab	IN	29.69224	75.23608	213
@@ -28371,7 +28371,7 @@ Rodas		Cienfuegos Province	CU	22.34185	-80.5558	26
 Kalabahi		East Nusa Tenggara	ID	-8.2151	124.5458	33
 Gombe		Bengo	AO	-8.12439	14.29081	592
 Schifferstadt		Rheinland-Pfalz	DE	49.38417	8.3775	104
-Jämsä	Jaemsae	Central Finland	FI	61.8642	25.19002	83
+Jämsä	Jamsa	Central Finland	FI	61.8642	25.19002	83
 Kuala Ketil		Kedah	MY	5.6	100.65	23
 Goderich		Western Area	SL	8.42756	-13.28598	10
 Hoopstad		Free State	ZA	-27.83273	25.90833	1253
@@ -28381,7 +28381,7 @@ Blythe		California	US	33.6103	-114.59635	83
 Laur		Central Luzon	PH	15.5865	121.1834	73
 Lumphat		Ratanakiri	KH	13.49146	106.98022	101
 Jiangluo		Gansu	CN	33.90139	105.82194	1175
-Ottobrunn bei München	Ottobrunn bei Muenchen	Bavaria	DE	48.06489	11.66327	558
+Ottobrunn bei München	Ottobrunn bei Munchen	Bavaria	DE	48.06489	11.66327	558
 Silverdale		Washington	US	47.64454	-122.69487	3
 The Peak		Central and Western	HK	22.26202	114.15649	321
 Budadiri		Eastern Region	UG	1.14806	34.32611	1417
@@ -28552,7 +28552,7 @@ East Massapequa		New York	US	40.67343	-73.43651	4
 Jirkov		Ústí nad Labem Region	CZ	50.49979	13.44769	305
 Amherst Center		Massachusetts	US	42.37537	-72.51925	93
 Montrose		Colorado	US	38.47832	-107.87617	1770
-Värnamo	Vaernamo	Jönköping	SE	57.18604	14.04001	156
+Värnamo	Varnamo	Jönköping	SE	57.18604	14.04001	156
 Peterhead		Scotland	GB	57.50517	-1.78435	11
 Malanday		Central Luzon	PH	14.71694	120.95806	5
 Dharmkot		Punjab	IN	30.94559	75.23239	222
@@ -28613,7 +28613,7 @@ Lumbala		Moxico	AO	-14.10165	21.43531	1122
 Anshing		Maharashtra	IN	20.0409	77.31501	549
 Porta Palazzo		Piedmont	IT	45.07669	7.68371	235
 São Tiago de Custoias	Sao Tiago de Custoias	Porto	PT	41.2	-8.63333	84
-Hässelby Villastad	Haesselby Villastad	Stockholm	SE	59.38	17.80867	30
+Hässelby Villastad	Hasselby Villastad	Stockholm	SE	59.38	17.80867	30
 Likisá	Likisa	Liquiçá	TL	-8.5875	125.34194	23
 Columbia City		Washington	US	47.56399	-122.2754	17
 Leposaviq		Mitrovica	XK	43.10389	20.80278	468
@@ -28688,7 +28688,7 @@ Sélestat	Selestat	Grand Est	FR	48.26195	7.4489	175
 Kharsia		Chhattisgarh	IN	21.98953	83.10476	262
 Stonegate		California	US	33.70534	-117.74009	90
 Nahorkatiya		Assam	IN	27.286	95.328	118
-Sarayköy	Saraykoey	Denizli	TR	37.92448	28.92516	163
+Sarayköy	Saraykoy	Denizli	TR	37.92448	28.92516	163
 Dīzīcheh	Dizicheh	Isfahan	IR	32.38753	51.51022	1645
 Burlata		Navarre	ES	42.82562	-1.61671	439
 Torhout		Flanders	BE	51.0656	3.10085	22
@@ -28879,7 +28879,7 @@ Banūr	Banur	Punjab	IN	30.55407	76.71948	287
 Fossano		Piedmont	IT	44.55077	7.71922	375
 Niquero		Granma Province	CU	20.04592	-77.58042	8
 Sai Wan Ho		Eastern District	HK	22.28449	114.2232	12
-Gürgentepe	Guergentepe	Ordu	TR	40.78995	37.60073	1276
+Gürgentepe	Gurgentepe	Ordu	TR	40.78995	37.60073	1276
 Henderson		Auckland	NZ	-36.88012	174.61975	13
 Shushenskoye		Krasnoyarsk Krai	RU	53.32361	91.93614	278
 Gioia Tauro		Calabria	IT	38.4251	15.8975	29
@@ -28935,7 +28935,7 @@ Dongjia		Chongqing	CN	30.22352	107.70574	447
 Compostela		Central Visayas	PH	10.455	124.0106	11
 Huby		Lower Silesia	PL	51.08928	17.04113	124
 Idhnā	Idhna	West Bank	PS	31.55874	34.97436	471
-Bad Münder am Deister	Bad Muender am Deister	Lower Saxony	DE	52.19551	9.46421	118
+Bad Münder am Deister	Bad Munder am Deister	Lower Saxony	DE	52.19551	9.46421	118
 Kundgol		Karnataka	IN	15.25612	75.24735	645
 Neuilly-Plaisance		Île-de-France	FR	48.86342	2.506	59
 Murbād	Murbad	Maharashtra	IN	19.25395	73.38993	79
@@ -28978,7 +28978,7 @@ Villanueva		La Guajira Department	CO	10.60768	-72.97901	235
 Utazu		Kagawa	JP	34.3	133.81667	33
 Zastron		Free State	ZA	-30.30225	27.08395	1668
 Bur Dubai		Dubai	AE	25.26038	55.29891	11
-Bad Dürkheim	Bad Duerkheim	Rheinland-Pfalz	DE	49.4618	8.17236	133
+Bad Dürkheim	Bad Durkheim	Rheinland-Pfalz	DE	49.4618	8.17236	133
 Kungsbacka		Halland	SE	57.48719	12.07612	6
 Pālda	Palda	Madhya Pradesh	IN	22.68004	75.89391	568
 Horwich		England	GB	53.60126	-2.54975	135
@@ -29094,7 +29094,7 @@ Sachsenheim		Baden-Wurttemberg	DE	48.96	9.06472	246
 Galich		Kostroma Oblast	RU	58.37884	42.34633	110
 Morristown		New Jersey	US	40.79677	-74.48154	110
 Lom		Montana	BG	43.8317	23.23793	37
-Eslöv	Esloev	Skåne	SE	55.83928	13.30393	68
+Eslöv	Eslov	Skåne	SE	55.83928	13.30393	68
 La Paragua		Bolívar	VE	6.83333	-63.33333	281
 Tonggu		Chongqing	CN	30.93409	109.7311	927
 Bormujos		Andalusia	ES	37.37358	-6.07233	113
@@ -29263,7 +29263,7 @@ Avion		Hauts-de-France	FR	50.41038	2.83053	35
 Bedlington		England	GB	55.13061	-1.59319	49
 Ūttangarai	Uttangarai	Tamil Nadu	IN	12.26713	78.53783	339
 Deshnoke		Rajasthan	IN	27.79836	73.34297	275
-Mölln	Moelln	Schleswig-Holstein	DE	53.62072	10.68748	34
+Mölln	Molln	Schleswig-Holstein	DE	53.62072	10.68748	34
 Mukandgarh		Rajasthan	IN	27.95208	75.22431	362
 Chicholi		Maharashtra	IN	21.26644	79.11559	293
 Onalaska		Wisconsin	US	43.88441	-91.23514	216
@@ -29352,7 +29352,7 @@ Honjō	Honjo	Miyazaki	JP	31.98333	131.33333	20
 Złotów	Zlotow	Greater Poland	PL	53.36346	17.04082	114
 Buhuşi	Buhusi	Bacău County	RO	46.71667	26.7	254
 Kaitang		Guizhou	CN	26.72028	108.12972	749
-Myyrmäki	Myyrmaeki	Uusimaa	FI	60.26711	24.84713	41
+Myyrmäki	Myyrmaki	Uusimaa	FI	60.26711	24.84713	41
 General Mamerto Natividad		Central Luzon	PH	15.6025	121.0515	60
 Kinel’-Cherkassy	Kinel'-Cherkassy	Samara Oblast	RU	53.4669	51.4941	70
 Inhapi		Alagoas	BR	-9.22139	-37.74861	407
@@ -29369,7 +29369,7 @@ Curacaví	Curacavi	Santiago Metropolitan	CL	-33.39762	-71.12708	213
 Aydūn	Aydun	Irbid	JO	32.50528	35.85809	657
 Santa Rosa		Bolívar	CO	10.44472	-75.36972	38
 Gálvez	Galvez	Santa Fe	AR	-32.02957	-61.22097	57
-Löbau	Loebau	Saxony	DE	51.09954	14.66738	272
+Löbau	Lobau	Saxony	DE	51.09954	14.66738	272
 Jussara		Goiás	BR	-15.865	-50.86806	324
 Moram		Maharashtra	IN	17.78812	76.47077	586
 Tsukawaki		Oita	JP	33.27668	131.15628	336
@@ -29381,7 +29381,7 @@ Cluain Meala		Munster	IE	52.355	-7.70389	24
 Kādīpur	Kadipur	Delhi	IN	28.77404	77.16308	210
 Baependi		Minas Gerais	BR	-21.95889	-44.89	903
 Natchitoches		Louisiana	US	31.76072	-93.08627	36
-Donauwörth	Donauwoerth	Bavaria	DE	48.71804	10.7793	410
+Donauwörth	Donauworth	Bavaria	DE	48.71804	10.7793	410
 Mitake		Gifu	JP	35.41667	137.13333	232
 Olten		Solothurn	CH	47.34999	7.90329	406
 Rufino		Santa Fe	AR	-34.26237	-62.71128	116
@@ -29391,7 +29391,7 @@ Solonópole	Solonopole	Ceará	BR	-5.73333	-39.0075	157
 Clydesdale		Eastern Cape	ZA	-30.29831	29.93772	796
 Braniewo		Warmia-Masuria	PL	54.37971	19.81959	17
 Vila Franca de Xira		Lisbon	PT	38.95525	-8.98966	15
-Köping	Koeping	Västmanland	SE	59.51404	15.99255	14
+Köping	Koping	Västmanland	SE	59.51404	15.99255	14
 Borikhan		Bolikhamsai	LA	18.56286	103.72671	165
 Cudahy		Wisconsin	US	42.95974	-87.86147	220
 Montecristi		Manabí	EC	-1.04576	-80.65889	135
@@ -29675,7 +29675,7 @@ Indiaroba		Sergipe	BR	-11.51917	-37.51167	7
 Campo do Brito		Sergipe	BR	-10.73333	-37.49333	207
 Heckmondwike		England	GB	53.70646	-1.67747	61
 Longlin		Gansu	CN	33.94278	105.06739	1316
-Gämi	Gaemi	Ahal	TM	37.90735	58.47039	244
+Gämi	Gami	Ahal	TM	37.90735	58.47039	244
 Jaguaretama		Ceará	BR	-5.61278	-38.76694	123
 Lavāsān	Lavasan	Tehran	IR	35.82159	51.64444	1681
 Artik		Shirak	AM	40.61918	43.97207	1782
@@ -29736,7 +29736,7 @@ Kikube		Western Region	UG	1.35639	31.22222	1063
 Cobourg		Ontario	CA	43.95977	-78.16515	82
 Heiligensee		State of Berlin	DE	52.61449	13.24501	39
 Xiaochuan		Gansu	CN	33.6806	105.56156	1261
-Äußere Neustadt	AEussere Neustadt	Saxony	DE	51.06859	13.75591	121
+Äußere Neustadt	Aussere Neustadt	Saxony	DE	51.06859	13.75591	121
 Humanes de Madrid		Madrid	ES	40.25038	-3.83062	680
 Jālq	Jalq	Sistan and Baluchestan	IR	27.60287	62.71023	840
 Müllheim	Mullheim	Baden-Wurttemberg	DE	47.8082	7.63035	268
@@ -29821,7 +29821,7 @@ Nigrán	Nigran	Galicia	ES	42.14153	-8.80656	39
 Camocim de São Félix	Camocim de Sao Felix	Pernambuco	BR	-8.35861	-35.76194	674
 Futog		Vojvodina	RS	45.23874	19.71416	78
 Kattur		Kerala	IN	10.37315	76.16678	19
-Pitäjänmäki	Pitaejaenmaeki	Uusimaa	FI	60.22287	24.86103	27
+Pitäjänmäki	Pitajanmaki	Uusimaa	FI	60.22287	24.86103	27
 Oak Bay		British Columbia	CA	48.44964	-123.3026	45
 Vadamadurai		Tamil Nadu	IN	10.44081	78.09784	293
 Fundão	Fundao	Espírito Santo	BR	-19.93408	-40.40473	37
@@ -29960,7 +29960,7 @@ Aldrich Bay		Eastern District	HK	22.28203	114.22474	0
 Callosa de Segura		Valencia	ES	38.12497	-0.87822	23
 Leland		North Carolina	US	34.25628	-78.04471	7
 Lívingston	Livingston	Izabal Department	GT	15.82826	-88.75039	16
-Zürich (Kreis 11) / Oerlikon	Zuerich (Kreis 11) / Oerlikon	Zurich	CH	47.40823	8.54258	459
+Zürich (Kreis 11) / Oerlikon	Zurich (Kreis 11) / Oerlikon	Zurich	CH	47.40823	8.54258	459
 Altstadt Nord		North Rhine-Westphalia	DE	50.93893	6.95752	59
 Bentleigh		Victoria	AU	-37.91806	145.03544	31
 Uetersen		Schleswig-Holstein	DE	53.68878	9.66197	6
@@ -30047,7 +30047,7 @@ Narasimhanaickenpalayam		Tamil Nadu	IN	11.11732	76.93631	455
 Shibetsu		Hokkaido	JP	44.17137	142.39517	127
 Rozdilna		Odesa	UA	46.85479	30.07091	134
 Tarabya		Istanbul	TR	41.13361	29.04639	63
-Zürich (Kreis 11) / Seebach	Zuerich (Kreis 11) / Seebach	Zurich	CH	47.42181	8.54779	436
+Zürich (Kreis 11) / Seebach	Zurich (Kreis 11) / Seebach	Zurich	CH	47.42181	8.54779	436
 Osuna		Andalusia	ES	37.2376	-5.10311	289
 Adiyanuthu		Tamil Nadu	IN	10.33075	77.98118	292
 Dormentes		Pernambuco	BR	-8.44722	-40.77111	486
@@ -30215,7 +30215,7 @@ Mahudha		Gujarat	IN	22.82082	72.94032	49
 Oxon Hill		Maryland	US	38.80345	-76.9897	57
 Formosa da Serra Negra		Maranhão	BR	-6.44458	-46.18883	340
 Amersham on the Hill		England	GB	51.67468	-0.60742	152
-Nässjö	Naessjoe	Jönköping	SE	57.65307	14.69676	303
+Nässjö	Nassjo	Jönköping	SE	57.65307	14.69676	303
 Sacavém	Sacavem	Lisbon	PT	38.79202	-9.10801	39
 Vrouo		Sassandra-Marahoue	CI	7.69644	-6.55352	297
 Pirapemas		Maranhão	BR	-3.72667	-44.22333	36
@@ -30333,7 +30333,7 @@ Bellaria-Igea Marina		Emilia-Romagna	IT	44.14255	12.47154	3
 Yongcheng		Chongqing	CN	29.02133	106.82012	352
 Templin		Brandenburg	DE	53.11865	13.5022	61
 Kherli		Rajasthan	IN	27.27359	76.98613	223
-‘Anjarah	`Anjarah	Ajloun	JO	32.30667	35.75443	869
+‘Anjarah	'Anjarah	Ajloun	JO	32.30667	35.75443	869
 Port Melbourne		Victoria	AU	-37.83961	144.94228	7
 Rahimatpur		Maharashtra	IN	17.5921	74.19966	649
 Cariré	Carire	Ceará	BR	-3.95056	-40.47333	162
@@ -30350,7 +30350,7 @@ Brightwood		District of Columbia	US	38.96122	-77.02748	89
 Ciénaga de Oro	Cienaga de Oro	Córdoba	CO	8.87443	-75.62028	16
 Pipili		Odisha	IN	20.11357	85.83147	15
 Kotsyubynske		Kyiv Oblast	UA	50.48836	30.32957	157
-Mühldorf	Muehldorf	Bavaria	DE	48.2467	12.52155	415
+Mühldorf	Muhldorf	Bavaria	DE	48.2467	12.52155	415
 Sigatoka		Western	FJ	-18.14307	177.50691	6
 Santiago Momoxpan		Puebla	MX	19.07361	-98.26694	2142
 Tijucas do Sul		Paraná	BR	-25.92842	-49.18008	917
@@ -30363,7 +30363,7 @@ San Vito dei Normanni		Apulia	IT	40.65642	17.70814	108
 Altai		Govi-Altai Province	MN	46.37222	96.25833	2156
 Babana		Niger State	NG	10.42949	3.81495	291
 Nova Bavariya		Kharkiv	UA	49.94522	36.15006	177
-Äänekoski	AEaenekoski	Central Finland	FI	62.6	25.73333	102
+Äänekoski	Aanekoski	Central Finland	FI	62.6	25.73333	102
 Pio IX		Piauí	BR	-6.83535	-40.61297	584
 Lindenwold		New Jersey	US	39.82428	-74.99767	29
 Jiayi		Xinjiang	CN	36.85481	81.63545	1410
@@ -30406,7 +30406,7 @@ Aci Castello		Sicily	IT	37.55564	15.14535	15
 Ad Dasmah		Al Asimah	KW	29.365	48.00139	9
 Gameleira		Pernambuco	BR	-8.58444	-35.38667	100
 Dunbage		Xinjiang	CN	38.85739	77.50474	1168
-Mölnlycke	Moelnlycke	Västra Götaland	SE	57.65893	12.11792	55
+Mölnlycke	Molnlycke	Västra Götaland	SE	57.65893	12.11792	55
 Allendale		Michigan	US	42.97225	-85.95365	199
 Maharda		Hama	SY	35.2479	36.5725	268
 University City		Pennsylvania	US	39.95071	-75.19476	6
@@ -30519,7 +30519,7 @@ Palera		Madhya Pradesh	IN	25.02013	79.22818	237
 Baymak		Bashkortostan Republic	RU	52.59172	58.31132	482
 Puerto Rico		Misiones	AR	-26.8089	-55.02147	188
 Ilām	Ilam	Koshi	NP	26.90943	87.92824	1218
-Taşköprü	Taskoeprue	Kastamonu	TR	41.5098	34.21414	556
+Taşköprü	Taskopru	Kastamonu	TR	41.5098	34.21414	556
 Warminster		England	GB	51.20434	-2.17873	120
 Indri		Haryana	IN	29.87999	77.05972	262
 Ariccia		Lazio	IT	41.72063	12.6723	412
@@ -30601,7 +30601,7 @@ Nova Era		Minas Gerais	BR	-19.75	-43.0375	632
 Nīsang	Nisang	Haryana	IN	29.69229	76.75464	246
 Panoor		Kerala	IN	11.75938	75.57835	27
 Soisy-sous-Montmorency		Île-de-France	FR	48.98813	2.30156	49
-Bad Tölz	Bad Toelz	Bavaria	DE	47.76111	11.5589	662
+Bad Tölz	Bad Tolz	Bavaria	DE	47.76111	11.5589	662
 Bischheim		Grand Est	FR	48.61612	7.75343	147
 Amet		Rajasthan	IN	25.30609	73.9258	584
 Matões do Norte	Matoes do Norte	Maranhão	BR	-3.63222	-44.55583	42
@@ -30612,7 +30612,7 @@ Puthūr	Puthur	Kerala	IN	10.4874	76.27929	20
 Kavisuryanagar		Odisha	IN	19.58148	84.76006	36
 San Pedro		Belize District	BZ	17.91598	-87.9659	4
 Nordstadt		Lower Saxony	DE	52.38561	9.71586	58
-Nümbrecht	Nuembrecht	North Rhine-Westphalia	DE	50.90427	7.54063	287
+Nümbrecht	Numbrecht	North Rhine-Westphalia	DE	50.90427	7.54063	287
 Pedregal		Chiriquí Province	PA	8.37698	-82.42947	11
 Kadoorie		Kowloon City	HK	22.32247	114.17556	26
 Aoi		Tokyo	JP	35.77432	139.81654	2
@@ -30674,7 +30674,7 @@ Lebbeke		Flanders	BE	51.00464	4.13457	6
 Bagdogra		West Bengal	IN	26.69929	88.31177	149
 Indergarh		Uttar Pradesh	IN	26.93521	79.6712	148
 Boksitogorsk		Leningradskaya Oblast'	RU	59.4778	33.85008	109
-Hummelsbüttel	Hummelsbuettel	Hamburg	DE	53.64773	10.04149	20
+Hummelsbüttel	Hummelsbuttel	Hamburg	DE	53.64773	10.04149	20
 Enkhuizen		North Holland	NL	52.70333	5.29167	2
 Moosburg		Bavaria	DE	48.47089	11.93811	415
 Kantyshevo		Ingushetiya Republic	RU	43.22824	44.63322	542
@@ -30802,7 +30802,7 @@ Dadhar		Balochistan	PK	29.47489	67.65167	160
 Calne		England	GB	51.43879	-2.00571	77
 Mūlki	Mulki	Karnataka	IN	13.09101	74.79353	26
 Arinos		Minas Gerais	BR	-15.91694	-46.10556	517
-Wörth am Rhein	Woerth am Rhein	Rheinland-Pfalz	DE	49.04888	8.25959	116
+Wörth am Rhein	Worth am Rhein	Rheinland-Pfalz	DE	49.04888	8.25959	116
 Kāttatturai	Kattatturai	Tamil Nadu	IN	8.28486	77.27551	73
 Canby		Oregon	US	45.2629	-122.69259	48
 Chiquinquirá	Chiquinquira	Zulia	VE	10.44333	-71.64722	1
@@ -30823,7 +30823,7 @@ Tui		Galicia	ES	42.04713	-8.64435	50
 Casa Blanca		Puebla	MX	19.04222	-98.11889	2232
 Mannarai		Tamil Nadu	IN	11.11723	77.37256	296
 Suvorovskaya		Stavropol Kray	RU	44.1901	42.6595	456
-Schlüchtern	Schluechtern	Hesse	DE	50.34891	9.52532	211
+Schlüchtern	Schluchtern	Hesse	DE	50.34891	9.52532	211
 Pollença	Pollenca	Balearic Islands	ES	39.87678	3.01626	47
 Glanerbrug		Overijssel	NL	52.21583	6.97083	41
 Mala		Lima region	PE	-12.65806	-76.63083	34
@@ -30844,12 +30844,12 @@ Palangarai		Tamil Nadu	IN	11.19782	77.30583	331
 Chenini Nahal		Gabès Governorate	TN	33.87223	10.05521	30
 Slaný	Slany	Central Bohemia	CZ	50.23046	14.08693	282
 Virajpet		Karnataka	IN	12.19644	75.80512	899
-Pieksämäki	Pieksaemaeki	South Savo	FI	62.3	27.13333	119
+Pieksämäki	Pieksamaki	South Savo	FI	62.3	27.13333	119
 Arsk		Tatarstan Republic	RU	56.09254	49.87819	128
 Əhmədbəyli	Ahmadbayli	Saatlı	AZ	39.88074	48.39158	-11
 Nārnaund	Narnaund	Haryana	IN	29.22047	76.14278	230
 Redland		Maryland	US	39.14539	-77.14415	150
-Zürich (Kreis 11) / Affoltern	Zuerich (Kreis 11) / Affoltern	Zurich	CH	47.41814	8.5122	466
+Zürich (Kreis 11) / Affoltern	Zurich (Kreis 11) / Affoltern	Zurich	CH	47.41814	8.5122	466
 Tak Bai		Narathiwat	TH	6.25947	102.05461	9
 Cocal do Sul		Santa Catarina	BR	-28.59914	-49.32334	104
 Pudūr	Pudur	Tamil Nadu	IN	11.436	77.67603	177
@@ -30876,7 +30876,7 @@ Bilthra		Uttar Pradesh	IN	26.12705	83.89148	71
 Alnāvar	Alnavar	Karnataka	IN	15.42727	74.74111	576
 Resplendor		Minas Gerais	BR	-19.32556	-41.25528	99
 Nantwich		England	GB	53.06878	-2.52051	40
-Tekkeköy	Tekkekoey	Samsun	TR	41.21167	36.46	27
+Tekkeköy	Tekkekoy	Samsun	TR	41.21167	36.46	27
 Kuna		Idaho	US	43.49183	-116.42012	821
 Khowa		Eastern Cape	ZA	-31.33306	27.85	1451
 Lima Duarte		Minas Gerais	BR	-21.8425	-43.79306	758
@@ -30940,7 +30940,7 @@ Dolores		Soriano	UY	-33.53009	-58.21701	22
 Tena		Napo	EC	-0.9961	-77.81315	610
 Santa Bárbara	Santa Barbara	Suchitepeque	GT	14.43563	-91.22685	425
 Yirkā	Yirka	Northern District	IL	32.95435	35.21197	339
-Falköping	Falkoeping	Västra Götaland	SE	58.17347	13.55068	217
+Falköping	Falkoping	Västra Götaland	SE	58.17347	13.55068	217
 Barrett Town		Saint James Parish	JM	18.51491	-77.80178	53
 Serinhisar		Denizli	TR	37.58105	29.26639	958
 Chisasa		North-Western	ZM	-12.10932	25.49613	1359
@@ -31028,7 +31028,7 @@ Kampung Bertam Ulu		Melaka	MY	2.2898	102.1928	15
 Bom Jesus do Tocantins		Pará	BR	-5.05139	-48.60889	173
 Gubadag		Dasoguz	TM	42.07948	59.94964	80
 Corbélia	Corbelia	Paraná	BR	-24.79889	-53.30667	639
-Zürich (Kreis 10) / Höngg	Zuerich (Kreis 10) / Hoengg	Zurich	CH	47.40313	8.4971	468
+Zürich (Kreis 10) / Höngg	Zurich (Kreis 10) / Hongg	Zurich	CH	47.40313	8.4971	468
 Gescher		North Rhine-Westphalia	DE	51.954	7.00481	62
 Naarden		North Holland	NL	52.29583	5.1625	5
 Rotherbaum		Hamburg	DE	53.56707	9.98097	9
@@ -31142,7 +31142,7 @@ Heysham		England	GB	54.04367	-2.89322	31
 Eravattūr	Eravattur	Kerala	IN	11.58006	75.73841	22
 Holden		Massachusetts	US	42.35176	-71.86341	250
 Tapauá	Tapaua	Amazonas	BR	-5.62833	-63.18333	48
-Taxkowrük	Taxkowruek	Xinjiang	CN	43.89257	81.30604	627
+Taxkowrük	Taxkowruk	Xinjiang	CN	43.89257	81.30604	627
 Nawābganj	Nawabganj	Uttar Pradesh	IN	26.86396	82.14103	100
 Karratha		Western Australia	AU	-20.73765	116.84629	20
 Villaquilambre		Castille and León	ES	42.64685	-5.55835	893
@@ -31347,7 +31347,7 @@ Sultanpur		Punjab	IN	31.21468	75.19602	217
 Kutiyāna	Kutiyana	Gujarat	IN	21.6241	69.98494	21
 Råsunda	Rasunda	Stockholm	SE	59.36588	17.99569	27
 Centerville		Utah	US	40.918	-111.87216	1335
-Đakovo	GJakovo	County of Osijek-Baranja	HR	45.30833	18.41056	107
+Đakovo	Dakovo	County of Osijek-Baranja	HR	45.30833	18.41056	107
 Parkside		California	US	37.74197	-122.4863	85
 San Jorge		Santa Fe	AR	-31.89706	-61.85993	109
 Boa Vista do Tupim		Bahia	BR	-12.6623	-40.60652	300
@@ -31609,7 +31609,7 @@ Ozumba de Alzate		México	MX	19.03689	-98.79516	2342
 Atalaya		Ucayali	PE	-10.73067	-73.75867	232
 Pacho		Cundinamarca	CO	5.13278	-74.15977	1783
 North Decatur		Georgia	US	33.79038	-84.30603	303
-Türkmengala	Tuerkmengala	Mary	TM	37.42469	62.33821	256
+Türkmengala	Turkmengala	Mary	TM	37.42469	62.33821	256
 Vilshofen		Bavaria	DE	48.62695	13.19222	319
 Tōbetsu	Tobetsu	Hokkaido	JP	43.21694	141.51694	14
 Brixham		England	GB	50.39431	-3.51585	13
@@ -31673,7 +31673,7 @@ Lemay		Missouri	US	38.53339	-90.27928	144
 Mangueirinha		Paraná	BR	-25.94111	-52.17556	882
 Jhūsi	Jhusi	Uttar Pradesh	IN	25.43745	81.9055	95
 Gennep		Limburg	NL	51.69833	5.97361	14
-Ürgüp	UErguep	Nevşehir Province	TR	38.6296	34.91199	1067
+Ürgüp	Urgup	Nevşehir Province	TR	38.6296	34.91199	1067
 Fartura		São Paulo	BR	-23.38833	-49.51	508
 Wassenberg		North Rhine-Westphalia	DE	51.10009	6.15484	48
 Natiaboani		Est	BF	11.69917	0.50611	255
@@ -31889,7 +31889,7 @@ Bánovce nad Bebravou	Banovce nad Bebravou	Trenčín Region	SK	48.7213	18.25754	
 Khātra	Khatra	West Bengal	IN	22.97617	86.85462	148
 Uthal		Balochistan	PK	25.80722	66.62194	43
 Lower Moyamensing		Pennsylvania	US	39.91956	-75.16475	2
-Zürich (Kreis 9) / Albisrieden	Zuerich (Kreis 9) / Albisrieden	Zurich	CH	47.37398	8.49007	428
+Zürich (Kreis 9) / Albisrieden	Zurich (Kreis 9) / Albisrieden	Zurich	CH	47.37398	8.49007	428
 Phum Ânlŭng Vĭl	Phum Anlung Vil	Battambang	KH	13.08339	103.23503	16
 Novoukrayinka		Kirovohrad	UA	48.31661	31.52355	139
 Gunzenhausen		Bavaria	DE	49.11663	10.75971	430
@@ -31918,7 +31918,7 @@ Petitgoa I		Bas-Sassandra District	CI	6.12024	-6.71253	171
 Tasbuget		Kyzylorda	KZ	44.77018	65.55461	128
 Wadern		Saarland	DE	49.54122	6.88774	296
 Fairhaven		Massachusetts	US	41.6376	-70.90365	6
-Suurmetsä	Suurmetsae	Uusimaa	FI	60.26961	25.05395	24
+Suurmetsä	Suurmetsa	Uusimaa	FI	60.26961	25.05395	24
 Avon		Indiana	US	39.76282	-86.39972	254
 Innere Stadt		Vienna	AT	48.20906	16.37135	171
 Tita		Centre-Ouest	BF	11.92092	-2.51536	285
@@ -31959,7 +31959,7 @@ Sam Shing		Tuen Mun	HK	22.38128	113.97872	1
 Concord		Missouri	US	38.5245	-90.35734	190
 Burgdorf		Bern	CH	47.05901	7.62786	535
 Andes		Antioquia	CO	5.65576	-75.87959	1282
-Königslutter am Elm	Koenigslutter am Elm	Lower Saxony	DE	52.25116	10.81683	136
+Königslutter am Elm	Konigslutter am Elm	Lower Saxony	DE	52.25116	10.81683	136
 Flowing Wells		Arizona	US	32.29396	-111.00982	692
 Kogarah		New South Wales	AU	-33.9681	151.13564	24
 ‘Ewa Beach	'Ewa Beach	Hawaii	US	21.31556	-158.00722	3
@@ -32033,7 +32033,7 @@ The Gap		Queensland	AU	-27.44187	152.93861	64
 Kishapu		Shinyanga	TZ	-3.61667	33.86667	1169
 Aki		Kochi	JP	33.5	133.9	13
 Schofield Barracks		Hawaii	US	21.49837	-158.06515	272
-Hückeswagen	Hueckeswagen	North Rhine-Westphalia	DE	51.14979	7.34471	258
+Hückeswagen	Huckeswagen	North Rhine-Westphalia	DE	51.14979	7.34471	258
 Las Gabias		Andalusia	ES	37.13548	-3.67029	686
 Búzi	Buzi	Sofala	MZ	-19.86439	34.46735	39
 Kamuhanda / Ruyenzi		Southern Province	RW	-1.96571	29.98462	1366
@@ -32093,7 +32093,7 @@ Shuzenji		Shizuoka	JP	34.97008	138.92187	114
 Kotapārh	Kotaparh	Chhattisgarh	IN	19.14256	82.32536	561
 Sunnyside		Washington	US	46.32374	-120.00865	227
 Lebanon		Oregon	US	44.53651	-122.90703	108
-Hünfeld	Huenfeld	Hesse	DE	50.67966	9.76727	277
+Hünfeld	Hunfeld	Hesse	DE	50.67966	9.76727	277
 Laxou		Grand Est	FR	48.68372	6.14929	225
 Ishinari		Saga	JP	33.36154	130.40476	42
 Bayshore Gardens		Florida	US	27.42532	-82.59038	4
@@ -32244,7 +32244,7 @@ Arhavi		Artvin	TR	41.35121	41.30456	6
 Cotorra		Córdoba	CO	9.03886	-75.78969	9
 Boppard		Rheinland-Pfalz	DE	50.23085	7.58992	80
 Surkhakhi		Ingushetiya Republic	RU	43.1875	44.90194	651
-Đại Lộc	GJai Loc	Da Nang City	VN	15.88214	108.12092	14
+Đại Lộc	Dai Loc	Da Nang City	VN	15.88214	108.12092	14
 Magdalena		Jalisco	MX	20.90686	-103.9769	1352
 Halstenbek		Schleswig-Holstein	DE	53.63301	9.83945	14
 Sa‘īdābād	Sa'idabad	Tehran	IR	35.6677	51.1858	1137
@@ -32430,7 +32430,7 @@ Mwansabombwe		Luapula Province	ZM	-9.82202	28.76038	967
 Saint-Leu-la-Forêt	Saint-Leu-la-Foret	Île-de-France	FR	49.01667	2.25	81
 Bhiloda		Gujarat	IN	23.7676	73.24704	211
 Fraccionamiento Ciudad Olmeca		Veracruz	MX	18.15056	-94.5525	19
-Zürich (Kreis 2) / Wollishofen	Zuerich (Kreis 2) / Wollishofen	Zurich	CH	47.3401	8.53134	447
+Zürich (Kreis 2) / Wollishofen	Zurich (Kreis 2) / Wollishofen	Zurich	CH	47.3401	8.53134	447
 Svitavy		Pardubice Region	CZ	49.75594	16.46829	442
 Aguadilla		Aguadilla	PR	18.42745	-67.15407	7
 Yulong		Chongqing	CN	29.54615	105.81044	380
@@ -32485,7 +32485,7 @@ Glenwood		New South Wales	AU	-33.73333	150.93284	69
 Ora-dong		Jeju-do	KR	33.48194	126.50639	122
 Weg naar Zee		Paramaribo District	SR	5.87126	-55.2149	2
 Tonga		West	CM	4.96667	10.7	809
-Đinh Văn	GJinh Van	Lam Dong	VN	11.78624	108.24282	848
+Đinh Văn	Dinh Van	Lam Dong	VN	11.78624	108.24282	848
 Świerczewo	Swierczewo	West Pomerania	PL	53.4273	14.51303	33
 Ea Pốc	Ea Poc	Dak Lak	VN	12.77795	108.07114	456
 Worcester Park		England	GB	51.37992	-0.24445	24
@@ -32580,7 +32580,7 @@ Abington		Massachusetts	US	42.10482	-70.94532	32
 Issoire		Auvergne-Rhône-Alpes	FR	45.54422	3.24901	393
 Beckingen		Saarland	DE	49.4	6.7	216
 Belén Gualcho	Belen Gualcho	Ocotepeque Department	HN	14.48333	-88.8	1783
-Phú Đô	Phu GJo	Hanoi	VN	21.01667	105.76667	9
+Phú Đô	Phu Do	Hanoi	VN	21.01667	105.76667	9
 Duncraig		Western Australia	AU	-31.83291	115.7759	50
 Balaungi		Punjab	IN	30.73058	76.69368	317
 Vicente Guerrero		Durango	MX	23.73267	-103.98247	1956
@@ -32666,7 +32666,7 @@ Keflavík	Keflavik	Southern Peninsula	IS	64.00492	-22.56242	5
 Pèrèrè	Perere	Borgou	BJ	9.79721	2.98403	424
 Grenchen		Solothurn	CH	47.1921	7.39586	454
 Burlington		Kentucky	US	39.02756	-84.72411	256
-Västra Frölunda	Vaestra Froelunda	Västra Götaland	SE	57.64667	11.92944	4
+Västra Frölunda	Vastra Frolunda	Västra Götaland	SE	57.64667	11.92944	4
 Lijia		Chongqing	CN	29.67878	106.49312	351
 Ciudad de Armería	Ciudad de Armeria	Colima	MX	18.93695	-103.96482	79
 Olecko		Warmia-Masuria	PL	54.03374	22.50704	155
@@ -32701,7 +32701,7 @@ Rura		Uttar Pradesh	IN	26.49001	79.90108	140
 La Marque		Texas	US	29.36857	-94.97131	5
 Messica		Manica	MZ	-18.99161	33.08226	639
 L'Assomption		Quebec	CA	45.82318	-73.4294	13
-Pigüé	Piguee	Buenos Aires	AR	-37.60255	-62.40836	297
+Pigüé	Pigue	Buenos Aires	AR	-37.60255	-62.40836	297
 Saint-Égrève	Saint-Egreve	Auvergne-Rhône-Alpes	FR	45.23313	5.68154	219
 North Arlington		New Jersey	US	40.78843	-74.1332	42
 La Palma		California	US	33.8464	-118.04673	14
@@ -32777,7 +32777,7 @@ Bruckmühl	Bruckmuhl	Bavaria	DE	47.87859	11.91098	514
 Akjoujt		Inchiri	MR	19.74163	-14.38534	137
 Albufeira		Faro	PT	37.08819	-8.2503	14
 Baguim do Monte		Porto	PT	41.19203	-8.54118	143
-Binyamina-Giv‘at ‘Ada	Binyamina-Giv`at `Ada	Haifa	IL	32.52305	34.94487	17
+Binyamina-Giv‘at ‘Ada	Binyamina-Giv'at 'Ada	Haifa	IL	32.52305	34.94487	17
 Binyamina-Giv'at Ada		Haifa	IL	32.51824	34.95398	26
 Srivaikuntam		Tamil Nadu	IN	8.62931	77.91281	19
 Abhayāpuri	Abhayapuri	Assam	IN	26.32255	90.68526	44
@@ -32947,7 +32947,7 @@ La Grange		Illinois	US	41.80503	-87.86923	197
 Mont-Saint-Hilaire		Quebec	CA	45.56515	-73.1868	39
 Maruim		Sergipe	BR	-10.7375	-37.08167	12
 Lido		Veneto	IT	45.4105	12.36649	2
-Zürich (Kreis 10) / Wipkingen	Zuerich (Kreis 10) / Wipkingen	Zurich	CH	47.39503	8.52529	434
+Zürich (Kreis 10) / Wipkingen	Zurich (Kreis 10) / Wipkingen	Zurich	CH	47.39503	8.52529	434
 Weener		Lower Saxony	DE	53.16541	7.34966	3
 Coronel João Sá	Coronel Joao Sa	Bahia	BR	-10.28417	-37.92639	206
 Great Bend		Kansas	US	38.36446	-98.76481	564
@@ -33034,7 +33034,7 @@ Colorado do Oeste		Rondônia	BR	-13.11667	-60.54167	433
 Greenwood Village		Colorado	US	39.61721	-104.95081	1666
 Le Hochet		Pamplemousses	MU	-20.13859	57.53013	35
 Peniche		Leiria	PT	39.3558	-9.38112	17
-Königstein im Taunus	Koenigstein im Taunus	Hesse	DE	50.17943	8.47132	364
+Königstein im Taunus	Konigstein im Taunus	Hesse	DE	50.17943	8.47132	364
 Manthani		Telangana	IN	18.65087	79.66501	135
 Yumare		Yaracuy	VE	10.59703	-68.67328	63
 Gradačac	Gradacac	Federation of B&H	BA	44.87851	18.42764	139
@@ -33118,7 +33118,7 @@ Agaram		Tamil Nadu	IN	10.44325	77.94848	234
 Baben		Gujarat	IN	21.13725	73.09647	23
 Berck		Hauts-de-France	FR	50.4	1.6	3
 Salangaippālaiyam	Salangaippalaiyam	Tamil Nadu	IN	11.42599	77.57074	192
-Füssen	Fuessen	Bavaria	DE	47.57143	10.70171	808
+Füssen	Fussen	Bavaria	DE	47.57143	10.70171	808
 Vitória do Xingu	Vitoria do Xingu	Pará	BR	-2.88	-52.01	6
 Baberu		Uttar Pradesh	IN	25.54711	80.70443	129
 Pa Sang		Lamphun	TH	18.52617	98.93936	295
@@ -33255,7 +33255,7 @@ Carlet		Valencia	ES	39.2266	-0.52142	55
 Pedregulho		São Paulo	BR	-20.25694	-47.47667	1044
 La Solana		Castille-La Mancha	ES	38.94422	-3.2381	765
 Gaogu		Chongqing	CN	29.39557	108.06579	240
-Zürich (Kreis 8)	Zuerich (Kreis 8)	Zurich	CH	47.3548	8.56097	430
+Zürich (Kreis 8)	Zurich (Kreis 8)	Zurich	CH	47.3548	8.56097	430
 Lognes		Île-de-France	FR	48.83541	2.62998	92
 Leteri		Madhya Pradesh	IN	24.05979	77.40858	534
 Wombwell		England	GB	53.52189	-1.39698	53
@@ -33288,10 +33288,10 @@ Hernando		Mississippi	US	34.82399	-89.9937	116
 Hayange		Grand Est	FR	49.32881	6.06278	192
 Kellabine		Sfax Governorate	TN	34.70882	11.2147	3
 Hurricane		Utah	US	37.17526	-113.28995	990
-Giv`at H̱ananya	Giv`at Hananya	Jerusalem	IL	31.76667	35.23333	676
+Giv`at H̱ananya	Giv'at Hananya	Jerusalem	IL	31.76667	35.23333	676
 Ban Houakhoua		Bokeo	LA	20.2467	100.45401	361
 Bortnychi		Kyiv City	UA	50.38489	30.69542	105
-Väståboland	Vaestaboland	Southwest Finland	FI	60.29972	22.3004	0
+Väståboland	Vastaboland	Southwest Finland	FI	60.29972	22.3004	0
 Plainfield		Connecticut	US	41.67649	-71.91507	60
 Barra de Santa Rosa		Paraíba	BR	-6.71972	-36.06056	452
 Fengping		Chongqing	CN	30.83481	109.50499	782
@@ -33362,7 +33362,7 @@ Majd el Kurūm	Majd el Kurum	Northern District	IL	32.92094	35.25438	198
 Kosigi		Andhra Pradesh	IN	15.8551	77.24463	386
 Atwater Village		California	US	34.1164	-118.25646	123
 Winnie Mandela		Free State	ZA	-28.70025	26.4581	1402
-Angermünde	Angermuende	Brandenburg	DE	53.01499	13.99924	47
+Angermünde	Angermunde	Brandenburg	DE	53.01499	13.99924	47
 Stapleford		England	GB	52.91667	-1.26667	63
 Brāhmanān di Bāri	Brahmanan di Bari	Jammu and Kashmir	IN	32.64398	74.91099	329
 Zhen’an	Zhen'an	Chongqing	CN	31.15226	108.31675	198
@@ -33401,7 +33401,7 @@ Primeira Cruz		Maranhão	BR	-2.51	-43.43833	6
 Juan Aldama		Zacatecas	MX	24.29072	-103.39339	1996
 Béré	Bere	Tandjilé	TD	9.3202	16.1552	361
 Greenwood		Mississippi	US	33.51623	-90.17953	40
-Bilderstöckchen	Bilderstoeckchen	North Rhine-Westphalia	DE	50.96983	6.92997	51
+Bilderstöckchen	Bilderstockchen	North Rhine-Westphalia	DE	50.96983	6.92997	51
 Santafé	Santafe	Andalusia	ES	37.18856	-3.71887	582
 Tavares		Florida	US	28.80416	-81.72563	23
 Obock		Obock	DJ	11.96693	43.28835	13
@@ -33510,7 +33510,7 @@ Dornakal		Telangana	IN	17.44475	80.14905	153
 Davorlim		Goa	IN	15.27221	73.99242	25
 Cullman		Alabama	US	34.17482	-86.84361	242
 Vişeu de Sus	Viseu de Sus	Maramureş	RO	47.7079	24.42953	479
-Bürstadt	Buerstadt	Hesse	DE	49.64266	8.45936	95
+Bürstadt	Burstadt	Hesse	DE	49.64266	8.45936	95
 San Luis del Palmar		Corrientes	AR	-27.50766	-58.55625	61
 Morampudi		Andhra Pradesh	IN	16.98005	81.83715	74
 Live Oak		Texas	US	29.56523	-98.3364	278
@@ -33523,7 +33523,7 @@ Roanoke Rapids		North Carolina	US	36.46154	-77.65415	48
 Payson		Arizona	US	34.23087	-111.32514	1500
 Storrs		Connecticut	US	41.80843	-72.24952	187
 Ấp Bình Châu	Ap Binh Chau	Ho Chi Minh City (HCMC)	VN	10.55	107.55	4
-Taka-Töölö	Taka-Toeoeloe	Uusimaa	FI	60.18434	24.91948	23
+Taka-Töölö	Taka-Toolo	Uusimaa	FI	60.18434	24.91948	23
 Sárvár	Sarvar	Vas County	HU	47.25395	16.93525	158
 Penha de França	Penha de Franca	Goa	IN	15.51705	73.83537	55
 Ea T’ling	Ea T'ling	Lam Dong	VN	12.58904	107.89578	349
@@ -33590,7 +33590,7 @@ Brownsville		Florida	US	25.82176	-80.24116	3
 Wailuku		Hawaii	US	20.89133	-156.50604	76
 Rockingham		Western Australia	AU	-32.27682	115.72978	8
 Prestons		New South Wales	AU	-33.94185	150.8717	32
-Altdorf bei Nürnberg	Altdorf bei Nuernberg	Bavaria	DE	49.3856	11.3573	444
+Altdorf bei Nürnberg	Altdorf bei Nurnberg	Bavaria	DE	49.3856	11.3573	444
 Bhauri		Rajasthan	IN	24.66094	72.91401	323
 Veys		Khuzestan	IR	31.48595	48.87515	28
 Bevere		Flanders	BE	50.8496	3.5873	21
@@ -33998,7 +33998,7 @@ Rochedale South		Queensland	AU	-27.59521	153.12332	59
 Amīngarh	Amingarh	Karnataka	IN	16.05662	75.94773	560
 Hatton		Central Province	LK	6.8916	80.5955	1271
 Cambuci		Rio de Janeiro	BR	-21.57528	-41.91111	53
-Künzelsau	Kuenzelsau	Baden-Wurttemberg	DE	49.2818	9.68352	220
+Künzelsau	Kunzelsau	Baden-Wurttemberg	DE	49.2818	9.68352	220
 Panth Pīplia	Panth Piplia	Madhya Pradesh	IN	24.19511	75.00603	469
 Front Royal		Virginia	US	38.91817	-78.19444	173
 Weston		Wisconsin	US	44.8908	-89.54762	381

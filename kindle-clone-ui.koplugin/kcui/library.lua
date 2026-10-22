@@ -2088,6 +2088,8 @@ local STATUSES = { "new", "reading", "abandoned", "complete" }
 
 local HISTORY_STATUSES = { "new", "reading", "abandoned", "complete", "deleted" }
 
+local COLLECTION_LINES = 4
+
 local function collectionSection(collections, current, choose)
     local ReadCollection = require("readcollection")
     local names = {}
@@ -2107,7 +2109,7 @@ local function collectionSection(collections, current, choose)
             action = function() choose(current ~= name and name or nil) end,
         })
     end
-    return { title = _("Collections"), rows = { chips } }
+    return { key = "collections", title = _("Collections"), max_lines = COLLECTION_LINES, rows = { chips } }
 end
 
 local function filterLabel(status, collection, collections)
@@ -2259,6 +2261,7 @@ function Sheet:init()
         height = math.floor(U(63.81) * 17 / 132),
         alpha = true,
     }
+    self.offsets = {}
     self:build()
     self.ges_events = {
         TapSheet = { GestureRange:new{ ges = "tap", range = self.dimen } },
@@ -2275,12 +2278,34 @@ function Sheet:release()
     end
 end
 
+function Sheet:scrollOffset(key, chips, lines, shown)
+    local offset = self.offsets[key]
+    if offset == nil then
+        offset = 0
+        for _i, chip in ipairs(chips) do
+            if chip.selected then
+                offset = math.floor(chip.line / shown) * shown
+                break
+            end
+        end
+    end
+    offset = math.max(0, math.min(lines - shown, offset))
+    self.offsets[key] = offset
+    return offset
+end
+
 function Sheet:build()
+    self.line_cap = nil
+    self:layout()
+end
+
+function Sheet:layout()
     self:release()
-    self.widgets, self.chips, self.rules, self.headings = {}, {}, {}, {}
+    self.widgets, self.chips, self.rules, self.headings, self.scrolls = {}, {}, {}, {}, {}
     local w = self.dimen.w
     local inset = U(45)
     local chip_h, chip_gap, chip_pad = U(41), U(8), U(17)
+    local pitch = chip_h + chip_gap
     local icon_size, icon_gap = U(20), U(15)
     local face = U.face("cfont", 15)
     local heading_face = U.face("cfont", 17)
@@ -2301,7 +2326,7 @@ function Sheet:build()
                 table.insert(self.rules, { x = inset, y = y + U(7.5), w = w - 2 * inset, h = U.ceil(1), color = Gray.divider })
                 y = y + U(22.5)
             end
-            local x = inset
+            local x, line = inset, 0
             local placed = 0
             local breaks, total = {}, 0
             for _i, size in ipairs(section.row_sizes or {}) do
@@ -2324,18 +2349,41 @@ function Sheet:build()
                 local chip_w = content + 2 * chip_pad
                 if x > inset and (x + chip_w > w - inset or breaks[placed]) then
                     x = inset
-                    y = y + chip_h + chip_gap
+                    line = line + 1
                 end
-                chip.rect = Geom:new{ x = x, y = y, w = chip_w, h = chip_h }
+                chip.line = line
+                chip.rect = Geom:new{ x = x, y = y + line * pitch, w = chip_w, h = chip_h }
                 chip.label_x = x + chip_w - chip_pad - chip.label:getSize().w
-                table.insert(self.chips, chip)
                 placed = placed + 1
                 x = x + chip_w + chip_gap
             end
-            y = y + chip_h
+            local lines = line + 1
+            local cap = section.max_lines and math.min(section.max_lines, self.line_cap or section.max_lines)
+            local shown = math.min(lines, cap or lines)
+            local offset = 0
+            if shown < lines then
+                offset = self:scrollOffset(section.key, row, lines, shown)
+                table.insert(self.scrolls, { key = section.key, top = y, h = shown * pitch - chip_gap, lines = lines, shown = shown, offset = offset })
+            end
+            for _i, chip in ipairs(row) do
+                if chip.line >= offset and chip.line < offset + shown then
+                    chip.rect.y = chip.rect.y - offset * pitch
+                    table.insert(self.chips, chip)
+                end
+            end
+            y = y + shown * pitch - chip_gap
         end
     end
     self.height = y + U(15)
+    local overflow = self.height - (self.dimen.h - U(45))
+    local scroll = self.scrolls[1]
+    if overflow > 0 and scroll then
+        local cap = scroll.shown - math.ceil(overflow / pitch)
+        if cap >= 1 then
+            self.line_cap = cap
+            return self:layout()
+        end
+    end
     self.top = self.dimen.h - self.height
 end
 
@@ -2368,6 +2416,23 @@ function Sheet:paintTo(bb, x, y)
         end
         chip.label:paintTo(bb, x + chip.label_x, top + r.y + math.floor((r.h - chip.label:getSize().h) / 2))
     end
+    for _i, scroll in ipairs(self.scrolls) do
+        local track_x = x + self.dimen.w - U(22)
+        local track_top = top + scroll.top
+        bb:paintRect(track_x + U(1), track_top, U.ceil(1), scroll.h, Gray.divider)
+        local thumb_h = math.max(U(12), math.floor(scroll.h * scroll.shown / scroll.lines))
+        local thumb_y = track_top + math.floor((scroll.h - thumb_h) * scroll.offset / (scroll.lines - scroll.shown))
+        bb:paintRect(track_x, thumb_y, U(3), thumb_h, BLACK)
+    end
+end
+
+function Sheet:scrollAt(pos)
+    for _i, scroll in ipairs(self.scrolls) do
+        local top = self.top + scroll.top
+        if pos.y >= top and pos.y < top + scroll.h then
+            return scroll
+        end
+    end
 end
 
 function Sheet:dismiss()
@@ -2399,6 +2464,20 @@ function Sheet:onAnyKeyPressed()
 end
 
 function Sheet:onSwipeSheet(_ev, ges)
+    local scroll = self:scrollAt(ges.pos)
+    if scroll and (ges.direction == "north" or ges.direction == "south") then
+        local step = ges.direction == "north" and scroll.shown or -scroll.shown
+        local offset = math.max(0, math.min(scroll.lines - scroll.shown, scroll.offset + step))
+        if offset ~= scroll.offset then
+            self.offsets[scroll.key] = offset
+            self:build()
+            UIManager:setDirty(self, "ui", self:region())
+            return true
+        end
+        if ges.direction == "north" then
+            return true
+        end
+    end
     if ges.direction == "south" then
         return self:dismiss()
     end

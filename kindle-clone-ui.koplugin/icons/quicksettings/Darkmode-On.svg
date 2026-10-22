@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="56px" viewBox="0 0 56 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Darkmode - ON</title>
+    <g id="Quick-Actions-Specs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Quick-Actions-Components" transform="translate(-459.000000, -319.000000)">
+            <g id="Darkmode---ON" transform="translate(459.000000, 319.000000)">
+                <circle id="Oval-Copy-13" stroke="#000000" stroke-width="2" fill="#000000" cx="28" cy="28" r="27"></circle>
+                <g id="Dark-Mode---On" stroke-width="1" transform="translate(14.000000, 14.000000)">
+                    <g id="Group-Copy-2">
+                        <circle id="Oval" stroke="#FFFFFF" stroke-width="2" fill="#000000" cx="14" cy="14" r="14"></circle>
+                        <path d="M14,0 L14,28 C6.2680135,28 0,21.7319865 0,14 C0,6.2680135 6.2680135,0 14,0 L14,0 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

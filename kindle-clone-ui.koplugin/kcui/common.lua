@@ -13,7 +13,7 @@ local filemanagerutil = require("apps/filemanager/filemanagerutil")
 local lfs = require("libs/libkoreader-lfs")
 local logger = require("logger")
 local sha2 = require("ffi/sha2")
-local C_ = require("gettext").pgettext
+local C_ = require("kcui/gettext").pgettext
 local Device = require("device")
 local Screen = Device.screen
 

@@ -16,7 +16,7 @@ local OverlapGroup = require("ui/widget/overlapgroup")
 local TextWidget = require("ui/widget/textwidget")
 local UIManager = require("ui/uimanager")
 local Widget = require("ui/widget/widget")
-local _ = require("gettext")
+local _ = require("kcui/gettext")
 local Common = require("kcui/common")
 local T = require("ffi/util").template
 local Screen = Device.screen
@@ -527,8 +527,8 @@ local function searchBar(menu, w, h, geo, on_submit, hint)
         return widget
     end
     local glass = ImageWidget:new{ original_in_nightmode = false, file = ICONS .. "/search.svg", width = U(17), height = U(17), alpha = true }
-    local glass_x = pill_x + U(28)
-    local input_x = glass_x + glass:getSize().w + U(17)
+    local glass_x = pill_x + U(18)
+    local input_x = glass_x + glass:getSize().w + U(12)
     local pill = Pill:new{ width = pill_w, height = geo.pill_h }
     pill.overlap_offset = { pill_x, pill_top }
 
@@ -538,7 +538,7 @@ local function searchBar(menu, w, h, geo, on_submit, hint)
     local input = InputText:new{
         text = prefill,
         hint = hint or _("Search KOReader"),
-        face = U.face("cfont", 18),
+        face = U.face("cfont", 16),
         width = pill_x + pill_w - U(20) - input_x,
         bordersize = 0,
         padding = 0,
@@ -632,7 +632,9 @@ function Toolbar.new(menu, w)
     local sort = icon("sort.svg", U(24), U(24))
     local glass = icon("search.svg", U(17), U(17))
     local search = icon("search.svg", U(19), U(19))
-    local label = TextWidget:new{ text = _("Search KOReader"), face = U.face("cfont", 18) }
+    
+    local label_text = _("Search KOReader")
+    local label_face = U.face("cfont", 16)
 
     local filter_x = pad
     local sort_x = w - pad - sort:getSize().w
@@ -658,8 +660,18 @@ function Toolbar.new(menu, w)
     end
     local pill = Pill:new{ width = pill_w, height = pill_h }
     pill.overlap_offset = { pill_x, top }
-    local glass_x = pill_x + U(28)
-    local label_x = glass_x + glass:getSize().w + U(17)
+    
+    local glass_x = pill_x + U(18)
+    local label_x = glass_x + glass:getSize().w + U(12)
+    
+    local max_w = pill_x + pill_w - U(20) - label_x
+    if max_w < U(20) then max_w = U(20) end
+
+    local label = TextWidget:new{
+        text = label_text,
+        face = label_face,
+        max_width = max_w
+    }
 
     local layout = OverlapGroup:new{
         dimen = Geom:new{ w = w, h = h },
@@ -881,13 +893,13 @@ function Toolbar.history(menu, w)
         local pill = Pill:new{ width = pill_w, height = pill_h }
         pill.overlap_offset = { pill_x, top }
         local glass = ImageWidget:new{ original_in_nightmode = false, file = ICONS .. "/search.svg", width = U(17), height = U(17), alpha = true }
-        local glass_x = pill_x + U(28)
-        local text_x = glass_x + glass:getSize().w + U(17)
+        local glass_x = pill_x + U(18)
+        local text_x = glass_x + glass:getSize().w + U(12)
         table.insert(layout, pill)
         table.insert(layout, place(glass, glass_x))
         table.insert(layout, place(TextWidget:new{
             text = query,
-            face = U.face("cfont", 18),
+            face = U.face("cfont", 16),
             max_width = pill_x + pill_w - U(20) - text_x,
         }, text_x))
         table.insert(layout, place(ImageWidget:new{ original_in_nightmode = false, file = ICONS .. "/close.svg", width = close_size, height = close_size, alpha = true }, close_x))
@@ -1099,13 +1111,13 @@ function Toolbar.results(menu, w, query)
         return widget
     end
     local glass = ImageWidget:new{ original_in_nightmode = false, file = ICONS .. "/search.svg", width = U(17), height = U(17), alpha = true }
-    local glass_x = pill_x + U(28)
-    local text_x = glass_x + glass:getSize().w + U(17)
+    local glass_x = pill_x + U(18)
+    local text_x = glass_x + glass:getSize().w + U(12)
     local pill = Pill:new{ width = pill_w, height = pill_h }
     pill.overlap_offset = { pill_x, top }
     local text = TextWidget:new{
         text = query or "",
-        face = U.face("cfont", 18),
+        face = U.face("cfont", 16),
         max_width = pill_x + pill_w - U(20) - text_x,
     }
     local layout = OverlapGroup:new{

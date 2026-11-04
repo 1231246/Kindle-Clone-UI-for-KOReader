@@ -20,7 +20,7 @@ local UIManager = require("ui/uimanager")
 local VerticalGroup = require("ui/widget/verticalgroup")
 local VerticalSpan = require("ui/widget/verticalspan")
 local Widget = require("ui/widget/widget")
-local _ = require("gettext")
+local _ = require("kcui/gettext")
 local CenterContainer = require("ui/widget/container/centercontainer")
 local DocumentRegistry = require("document/documentregistry")
 local FileChooser = require("ui/widget/filechooser")
@@ -88,6 +88,7 @@ local Library = {
     SORTS = {
         { id = "kcui_title", text = _("Title") },
         { id = "kcui_author", text = _("Author (surname)") },
+        { id = "kcui_filename", text = _("Filename") },
     },
 }
 
@@ -625,6 +626,10 @@ end
 local function setKeys(item, details)
     item.kcui_title = titleKey(details.title or item.text:gsub("%.[^.]+$", ""))
     item.kcui_author = authorKey(details.first_author)
+    -- Real filename on disk (without path), for "Filename" sort
+    local path = item.path or item.file or item.text or ""
+    local name = path:match("([^/]+)$") or path
+    item.kcui_filename = name:lower()
 end
 
 local function readPending()
@@ -659,6 +664,38 @@ local function attachKeys(item, ui)
     setKeys(item, details or {})
 end
 
+-- Android-like filename order: names starting with digits first, then letters;
+-- within digit runs compare numerically (2 before 10).
+-- Example: 1.epub, 2.epub, 10.epub, book.epub, Азбука.epub
+local function androidFilenameCmp(a, b)
+    local i, j, na, nb = 1, 1, #a, #b
+    while i <= na and j <= nb do
+        local ca, cb = a:byte(i), b:byte(j)
+        local da = ca >= 48 and ca <= 57
+        local db = cb >= 48 and cb <= 57
+        if da and db then
+            local sa, sb = i, j
+            while i <= na and a:byte(i) >= 48 and a:byte(i) <= 57 do i = i + 1 end
+            while j <= nb and b:byte(j) >= 48 and b:byte(j) <= 57 do j = j + 1 end
+            local numa = a:sub(sa, i - 1):gsub("^0+", "")
+            local numb = b:sub(sb, j - 1):gsub("^0+", "")
+            if numa == "" then numa = "0" end
+            if numb == "" then numb = "0" end
+            if #numa ~= #numb then return #numa < #numb end
+            if numa ~= numb then return numa < numb end
+            local lena, lenb = i - sa, j - sb
+            if lena ~= lenb then return lena < lenb end
+        elseif da ~= db then
+            -- digit before letter/symbol (as in Android file managers)
+            return da
+        else
+            -- remaining suffixes: plain lexicographic (works for UTF-8 Cyrillic too)
+            return a:sub(i) < b:sub(j)
+        end
+    end
+    return na < nb
+end
+
 local function byKey(key)
     return function(cache)
         local natsort
@@ -674,6 +711,9 @@ local function byKey(key)
                     return (kb == nil) ~= reverse
                 end
             elseif ka ~= kb then
+                if key == "kcui_filename" then
+                    return androidFilenameCmp(ka, kb)
+                end
                 return natsort(ka, kb)
             end
             return natsort(a.kcui_title or "", b.kcui_title or "")
@@ -1034,9 +1074,19 @@ local function placeholder(title, w, h, bg)
     }
 end
 
+local function useFilenameAsTitle()
+    -- When user sorts by filename, show the real on-disk name (like vanilla KOReader)
+    return G_reader_settings:readSetting("collate") == "kcui_filename"
+end
+
 local function bookTitle(entry, cached)
-    local title = cached and cached.title or entry.text:gsub("%.[^.]+$", "")
     local file = entry.file or entry.path
+    -- Prefer real filename when "Filename" sort is active
+    if useFilenameAsTitle() and file then
+        local name = file:match("([^/]+)$") or file
+        return name
+    end
+    local title = cached and cached.title or entry.text:gsub("%.[^.]+$", "")
     local ext = file and isDocument(file) and file:match("%.([^./]+)$")
     if ext and title:sub(-#ext - 1):lower() ~= "." .. ext:lower() then
         return title .. "." .. ext
@@ -2219,7 +2269,11 @@ local function sortSections(fm)
         table.insert(sorts, {
             text = entry.text,
             selected = collate == entry.id,
-            action = function() fm:onSetSortBy(entry.id) end,
+            action = function()
+                fm:onSetSortBy(entry.id)
+                -- Refresh so titles switch between metadata / filename
+                fm.file_chooser:refreshPath()
+            end,
         })
     end
     local function direction(text, descending)
@@ -2240,10 +2294,18 @@ local function sortSections(fm)
             end,
         }
     end
+    -- 3 sort modes: Title, Author, Filename — put Filename on its own row so it is always visible
+    local sort_row1 = { sorts[1], sorts[2] }
+    local sort_row2 = { sorts[3] }
     return {
         {
             title = _("Sort by"),
-            rows = { sorts, { direction(_("Ascending"), false), direction(_("Descending"), true) } },
+            row_sizes = { 2, 1, 2 },
+            rows = {
+                sort_row1,
+                sort_row2,
+                { direction(_("Ascending"), false), direction(_("Descending"), true) },
+            },
         },
         {
             title = _("View options"),

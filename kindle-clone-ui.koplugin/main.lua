@@ -43,7 +43,7 @@ local VerticalGroup = require("ui/widget/verticalgroup")
 local WidgetContainer = require("ui/widget/container/widgetcontainer")
 local filemanagerutil = require("apps/filemanager/filemanagerutil")
 local logger = require("logger")
-local _ = require("gettext")
+local _ = require("kcui/gettext")
 local Common = require("kcui/common")
 local Screen = Device.screen
 local Books = Library.Books
@@ -134,8 +134,8 @@ local function bottomBar(fm, active, menu)
     local right_slot = math.floor((w - cover_w) / 2) - right_pad
     local face = U.face("cfont", 18)
 
-    local library = TextWidget:new{ text = _("Library"), face = face, bold = active ~= "history" }
-    local history = TextWidget:new{ text = _("History"), face = face, bold = active == "history" }
+    local library = TextWidget:new{ text = _("Library"), face = face, bold = active ~= "history", max_width = left_slot - U(4) }
+    local history = TextWidget:new{ text = _("History"), face = face, bold = active == "history", max_width = right_slot - U(4) }
     local label_h = library:getSize().h
     local line_h = U.ceil(2)
     local line_outline = U.ceil(5)

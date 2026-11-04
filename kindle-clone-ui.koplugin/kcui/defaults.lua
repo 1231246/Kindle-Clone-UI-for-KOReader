@@ -14,7 +14,7 @@ local ffiUtil = require("ffi/util")
 local lfs = require("libs/libkoreader-lfs")
 local logger = require("logger")
 local util = require("util")
-local _ = require("gettext")
+local _ = require("kcui/gettext")
 local N_ = _.ngettext
 local T = ffiUtil.template
 

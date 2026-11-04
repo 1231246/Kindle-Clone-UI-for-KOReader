@@ -4,6 +4,7 @@ local ConfirmBox = require("ui/widget/confirmbox")
 local Device = require("device")
 local DocSettings = require("docsettings")
 local Event = require("ui/event")
+local Font = require("ui/font")
 local FrameContainer = require("ui/widget/container/framecontainer")
 local Geom = require("ui/geometry")
 local GestureRange = require("ui/gesturerange")
@@ -21,7 +22,7 @@ local Toolbar = require("kcui/toolbar")
 local UIManager = require("ui/uimanager")
 local Widget = require("ui/widget/widget")
 local filemanagerutil = require("apps/filemanager/filemanagerutil")
-local _ = require("gettext")
+local _ = require("kcui/gettext")
 local Common = require("kcui/common")
 local T = require("ffi/util").template
 local Screen = Device.screen
@@ -876,10 +877,20 @@ function Panel:init()
     if self.kind == "quick" then
         local w = self.dimen.w
         local collections = self.ui and self.ui.collections
-        local half = math.floor(U(199.4) * (1 + U.fit()) / 2)
+        
+        -- Адаптивность: на широких экранах (ПК) делаем кнопки чуть крупнее, но не гигантскими
+        local is_large = Screen:getWidth() > 1200
+        local action_size = is_large and U(60) or U(47.3)
+        local action_face = is_large and U.face("cfont", 20) or U.face("cfont", 17)
+        local icon_gap = is_large and U(20) or U(15)
+        
         local shift = top_h - U(80)
-        local row1_top, row1_label = U(94) + shift, U(157) + shift
-        local row2_top, row2_label = U(201.6) + shift, U(265) + shift
+        local row1_top = U(94) + shift
+        local row1_label = row1_top + action_size + icon_gap
+        
+        local row2_top = U(201.6) + shift
+        local row2_label = row2_top + action_size + icon_gap
+        
         local cx = math.floor(w / 2)
         local localsend_tile
         local localsend = self.ui and (self.ui.localsend or self.ui.LocalSend)
@@ -975,6 +986,11 @@ function Panel:init()
             for _i, tile in ipairs({ collections_action, dark_mode, settings }) do table.insert(actions, tile) end
             rows = { #actions }
         end
+        
+        -- Распределение по ширине: на ПК растягиваем на 80% экрана, на телефоне оставляем компактно
+        local half = is_large and math.floor(w * 0.4) or math.floor(U(160) * (1 + U.fit() * 0.5) / 2)
+        half = math.min(half, math.floor(w / 2) - U(16))
+        
         local index = 0
         for r, count in ipairs(rows) do
             local top, label_top = r == 1 and row1_top or row2_top, r == 1 and row1_label or row2_label
@@ -982,20 +998,28 @@ function Panel:init()
             if count == 2 then
                 left, right = cx - math.floor(half / 2), cx + math.floor(half / 2)
             end
-            local spacing = (right - left) / (count - 1)
+            local spacing = (right - left) / math.max(1, count - 1)
             for i = 1, count do
                 index = index + 1
                 local action = actions[index]
                 action.cx = left + math.floor(spacing * (i - 1) + 0.5)
                 action.top, action.label_top = top, label_top
-                action.max_w = math.min(U(170), math.floor(spacing) - U(8))
+                -- Ограничиваем ширину, чтобы текст не наезжал
+                action.max_w = math.floor(spacing) - U(16)
             end
         end
         self.actions = actions
-        self.action_size = U(47.3)
-        self.action_face = U.face("cfont", 17)
+        self.action_size = action_size
+        self.action_face = action_face
         self:buildActions()
-        self.divider_y = (#rows == 1 and U(308.3) - (row2_top - row1_top) or U(308.3)) + shift
+        
+        -- Динамически вычисляем позицию разделителя (чтобы не было пустоты)
+        local max_bottom = 0
+        for _, action in ipairs(self.actions) do
+            max_bottom = math.max(max_bottom, action.bottom)
+        end
+        self.divider_y = max_bottom + U(40)
+        
         self.sliders = lightSliders(self.ui)
         local cy = self.divider_y + U(30.3)
         local margin = U(32.5)
@@ -1207,6 +1231,46 @@ function Panel:onPanPanel(_ev, ges)
 end
 
 function Panel:buildActions()
+    local base_face = self.action_face
+    local min_max_w = U(1000)
+
+    local function measure(text, f)
+        local widget = TextWidget:new{ text = text, face = f }
+        local tw = widget:getSize().w
+        widget:free()
+        return tw
+    end
+
+    local longest_word = ""
+    local max_word_w = 0
+    
+    for _, action in ipairs(self.actions) do
+        if action.max_w < min_max_w then
+            min_max_w = action.max_w
+        end
+        local label = type(action.label) == "function" and action.label() or action.label
+        for word in label:gmatch("%S+") do
+            local word_w = measure(word, base_face)
+            if word_w > max_word_w then
+                max_word_w = word_w
+                longest_word = word
+            end
+        end
+    end
+
+    local global_face = base_face
+    if max_word_w > min_max_w then
+        local size = base_face.orig_size
+        while size > 9 do
+            size = size - 1
+            local nf = Font:getFace(base_face.orig_font, size)
+            if measure(longest_word, nf) <= min_max_w then
+                global_face = nf
+                break
+            end
+        end
+    end
+
     for _i, action in ipairs(self.actions) do
         local icon = type(action.icon) == "function" and action.icon() or action.icon
         local label = type(action.label) == "function" and action.label() or action.label
@@ -1219,33 +1283,32 @@ function Panel:buildActions()
             height = self.action_size,
             alpha = true,
         }
+
         local max_w = action.max_w or U(170)
-        local face = self.action_face
-        local function width(text)
-            local widget = TextWidget:new{ text = text, face = face }
-            local tw = widget:getSize().w
-            widget:free()
-            return tw
-        end
-        local first, rest = label, nil
-        if width(label) > max_w then
-            local words = {}
-            for word in label:gmatch("%S+") do table.insert(words, word) end
-            local n = 1
-            while n < #words and width(table.concat(words, " ", 1, n + 1)) <= max_w do
-                n = n + 1
-            end
-            if n < #words then
-                first, rest = table.concat(words, " ", 1, n), table.concat(words, " ", n + 1)
+        local lines_text = {}
+        local words = {}
+        for word in label:gmatch("%S+") do table.insert(words, word) end
+        local current_line = ""
+        for _, word in ipairs(words) do
+            if current_line == "" then
+                current_line = word
+            elseif measure(current_line .. " " .. word, global_face) <= max_w then
+                current_line = current_line .. " " .. word
+            else
+                table.insert(lines_text, current_line)
+                current_line = word
             end
         end
-        action.lines = { TextWidget:new{ text = first, face = self.action_face, max_width = max_w } }
-        if rest then
-            table.insert(action.lines, TextWidget:new{ text = rest, face = self.action_face, max_width = max_w })
+        if current_line ~= "" then table.insert(lines_text, current_line) end
+
+        action.lines = {}
+        for _, line in ipairs(lines_text) do
+            table.insert(action.lines, TextWidget:new{ text = line, face = global_face, max_width = max_w })
         end
-        action.line_h = math.floor(self.action_face.size * 1.3 + 0.5)
-        action.x = action.cx - U(80)
-        action.w = U(160)
+
+        action.line_h = math.floor(global_face.size * 1.3 + 0.5)
+        action.x = action.cx - math.floor(max_w / 2) - U(4)
+        action.w = max_w + U(8)
         action.bottom = action.label_top + action.lines[1]:getSize().h + (#action.lines - 1) * action.line_h
     end
 end
@@ -1263,7 +1326,7 @@ function Panel:paintTo(bb, x, y)
         for _i, action in ipairs(self.actions) do
             action.image:paintTo(bb, action.cx - math.floor(self.action_size / 2), action.top)
             for i, line in ipairs(action.lines) do
-                local offset = line:getBaseline() - math.floor(self.action_face.size * 0.667 + 0.5)
+                local offset = line:getBaseline() - math.floor(line.face.size * 0.667 + 0.5)
                 line:paintTo(bb, action.cx - math.floor(line:getSize().w / 2), action.label_top + (i - 1) * action.line_h - offset)
             end
         end

@@ -40,7 +40,7 @@ local VerticalGroup = require("ui/widget/verticalgroup")
 local VerticalSpan = require("ui/widget/verticalspan")
 local Widget = require("ui/widget/widget")
 local filemanagerutil = require("apps/filemanager/filemanagerutil")
-local _ = require("gettext")
+local _ = require("kcui/gettext")
 local N_ = _.ngettext
 local T = require("ffi/util").template
 local Common = require("kcui/common")
@@ -559,13 +559,13 @@ local function installEndOfBook()
 end
 
 local TITLES = {
-    ["appbar.filebrowser"] = _("Library"),
-    ["appbar.navigation"] = _("Navigation"),
-    ["appbar.typeset"] = _("Typeset"),
-    ["appbar.settings"] = _("Config"),
-    ["appbar.tools"] = _("Tools"),
-    ["appbar.search"] = _("Exploration"),
-    ["appbar.menu"] = _("Navigate"),
+    ["appbar.filebrowser"] = "Library",
+    ["appbar.navigation"] = "Navigation",
+    ["appbar.typeset"] = "Type",
+    ["appbar.settings"] = "Config",
+    ["appbar.tools"] = "Tools",
+    ["appbar.search"] = "Info",
+    ["appbar.menu"] = "Menu",
 }
 
 local KINDLE_ICONS = {
@@ -582,8 +582,8 @@ local function restyleTabs(menu)
     local face = U.face("cfont", 11)
     for k, button in ipairs(bar.icon_widgets) do
         local tab = menu.tab_item_table[k]
-        local title = tab and TITLES[tab.icon]
-        if title then
+        local key = tab and TITLES[tab.icon]
+        if key then
             local w, h = button.dimen.w, button.dimen.h
             local size = math.floor(button.image:getSize().h * 0.62 + 0.5)
             button.image:free()
@@ -599,7 +599,26 @@ local function restyleTabs(menu)
             else
                 button.image = IconWidget:new{ icon = tab.icon, width = size, height = size }
             end
-            local label = TextWidget:new{ text = title, face = face, bold = true, max_width = w }
+            
+            local title = _(key)
+            local probe = TextWidget:new{ text = title, face = face, bold = true }
+            local final_face = face
+            
+            if probe:getSize().w > w then
+                probe:free()
+                title = _.short(key)
+                probe = TextWidget:new{ text = title, face = face, bold = true }
+                
+                if probe:getSize().w > w then
+                    probe:free()
+                    final_face = U.face("cfont", 10)
+                    probe = TextWidget:new{ text = title, face = final_face, bold = true }
+                end
+            end
+            
+            local label = TextWidget:new{ text = title, face = final_face, bold = true, max_width = w }
+            probe:free()
+            
             local extra = U(5)
             button[1] = CenterContainer:new{
                 dimen = Geom:new{ w = w, h = h + extra },

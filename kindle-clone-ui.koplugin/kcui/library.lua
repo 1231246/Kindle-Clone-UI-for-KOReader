@@ -885,10 +885,8 @@ function Series.arrange(chooser, path, items, listing)
     if grouped then
         Series.sortByName(chooser, arranged)
     end
-    for index, item in ipairs(focused and arranged or {}) do
-        if item._kcui_series == focused then
-            listing.index = index
-        end
+    if focused then
+        listing.match = { _kcui_series = focused }
     end
     return arranged
 end
@@ -952,8 +950,8 @@ function Series.install()
         local ok, items = pcall(chooser.genItemTableFromPath, chooser, chooser.path)
         chooser._kcui_listing = nil
         if not ok then error(items, 0) end
-        local match = not listing.index and listing.focus and { path = listing.focus } or nil
-        chooser:switchItemTable(nil, items, listing.index or chooser.path_items[Series.key(chooser)], match)
+        local match = listing.match or listing.focus and { path = listing.focus } or nil
+        chooser:switchItemTable(nil, items, chooser.path_items[Series.key(chooser)], match)
     end
     local changeToPath = FileChooser.changeToPath
     FileChooser.changeToPath = function(chooser, ...)

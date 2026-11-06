@@ -23,6 +23,8 @@ local Widget = require("ui/widget/widget")
 local _ = require("gettext")
 local CenterContainer = require("ui/widget/container/centercontainer")
 local DocumentRegistry = require("document/documentregistry")
+local Epub = require("kcui/epub")
+local DocSettings = require("docsettings")
 local FileChooser = require("ui/widget/filechooser")
 local ProgressWidget = require("ui/widget/progresswidget")
 local ffiUtil = require("ffi/util")
@@ -59,8 +61,10 @@ local IMAGE_FORMATS = {
 local MAX_IMAGE_BYTES = 32 * 1024 * 1024
 local THUMB_H = 640
 local DETAILS = "details"
+local DETAILS_VERSION = 2
 local PRELOADED = "preloaded_home"
 local VIEW = "kcui_library_view"
+local GROUP_SERIES = "kcui_group_series"
 local GRID = "grid"
 local LIST = "list"
 local GRID_COLUMNS = 3
@@ -144,7 +148,9 @@ local function skipInterrupted()
     if interrupted[file] >= MAX_INTERRUPTIONS then
         local entry = newEntry(file)
         db:saveSetting(file, entry)
-        db:readSetting(DETAILS, {})[file] = { mtime = entry.mtime, first_author = false }
+        db:readSetting(DETAILS, {})[file] = {
+            mtime = entry.mtime, first_author = false, series = false, version = DETAILS_VERSION,
+        }
         interrupted[file] = nil
         logger.warn("Books: giving up on", file, "after repeated interruptions")
     end
@@ -220,7 +226,24 @@ local function readProps(ui, file)
     if not (ok and props) then return end
     local authors = props.authors and props.authors:gsub("\n", ", ")
     local first_author = props.authors and props.authors:match("[^\n&;]*[^\n&;%s][^\n&;]*")
-    return props.display_title or props.title, authors, first_author
+    return props.display_title or props.title, authors, first_author, props.series, props.series_index
+end
+
+local function customProps(file)
+    local path = DocSettings:findCustomMetadataFile(file)
+    return path and DocSettings.openSettingsFile(path):readSetting("custom_props") or {}
+end
+
+local function seriesFields(file, series, index)
+    local read, own_series, own_index = Epub.series(file)
+    if read then
+        series, index = own_series, own_index
+    end
+    local custom = customProps(file)
+    if custom.series ~= nil then series = custom.series end
+    if custom.series_index ~= nil then index = custom.series_index end
+    series = type(series) == "string" and series:match("^%s*(.-)%s*$") or ""
+    return series ~= "" and series or nil, tonumber(index)
 end
 
 local function scheduleFlush()
@@ -241,11 +264,22 @@ local function noteProgress()
     scheduleFlush()
 end
 
+local function isCurrent(entry, stamp)
+    return entry ~= nil and entry.mtime == stamp and entry.version == DETAILS_VERSION
+end
+
+local function knownDetails(file)
+    local entry = open():readSetting(DETAILS, {})[file]
+    if isCurrent(entry, mtime(file)) then
+        return entry
+    end
+end
+
 function Books.details(ui, file)
     local all = open():readSetting(DETAILS, {})
     local stamp = mtime(file)
     local entry = all[file]
-    if entry and entry.mtime == stamp and entry.first_author ~= nil then
+    if isCurrent(entry, stamp) then
         if Books.get(file) == nil then
             Books.extract(ui, file, entry)
             noteProgress()
@@ -253,15 +287,19 @@ function Books.details(ui, file)
         return entry
     end
     startReading(file)
-    local title, authors, first_author
+    local title, authors, first_author, series, series_index
     if not isImage(file) then
-        title, authors, first_author = readProps(ui, file)
+        title, authors, first_author, series, series_index = readProps(ui, file)
+        series, series_index = seriesFields(file, series, series_index)
     end
     entry = {
         mtime = stamp,
+        version = DETAILS_VERSION,
         title = title,
         authors = authors,
         first_author = first_author or false,
+        series = series or false,
+        series_index = series_index,
     }
     doneReading()
     all[file] = entry
@@ -270,13 +308,6 @@ function Books.details(ui, file)
     end
     noteProgress()
     return entry
-end
-
-local function knownDetails(file)
-    local entry = open():readSetting(DETAILS, {})[file]
-    if entry and entry.mtime == mtime(file) and entry.first_author ~= nil then
-        return entry
-    end
 end
 
 function Books.describe(file)
@@ -717,6 +748,179 @@ end
 
 hasMatchingBookIn = hasMatchingBook
 
+local Series = {}
+
+function Library.groupsSeries()
+    return G_reader_settings:nilOrTrue(GROUP_SERIES)
+end
+
+function Library.inSeries(chooser)
+    return chooser._kcui_series ~= nil
+end
+
+function Series.key(menu)
+    local inside = menu._kcui_series
+    return inside and menu.path .. "//" .. inside.key or menu.path
+end
+
+function Series.byIndex(a, b)
+    if a.index ~= b.index then
+        if a.index == nil or b.index == nil then return b.index == nil end
+        return a.index < b.index
+    end
+    return a.at < b.at
+end
+
+function Series.groups(items)
+    local groups, owner = {}, {}
+    for at, item in ipairs(items) do
+        local details = item.is_file and knownDetails(item.path)
+        if details and details.series then
+            local key = (details.series:lower():gsub("%s+", " "))
+            local group = groups[key]
+            if not group then
+                group = { key = key, name = details.series, at = at, files = {} }
+                groups[key] = group
+            end
+            owner[item] = group
+            table.insert(group.files, { item = item, index = details.series_index, at = at, authors = details.authors })
+        end
+    end
+    for _key, group in pairs(groups) do
+        table.sort(group.files, Series.byIndex)
+        group.authors = group.files[1].authors
+        for i, member in ipairs(group.files) do
+            group.files[i] = member.item
+        end
+    end
+    return groups, owner
+end
+
+function Series.listing(path, group)
+    local items = { { text = group.name, path = path .. "/..", is_go_up = true } }
+    table.move(group.files, 1, #group.files, 2, items)
+    return items
+end
+
+function Series.readingOrder(items)
+    local owner = select(2, Series.groups(items))
+    local ordered = {}
+    for at, item in ipairs(items) do
+        local own = owner[item]
+        if not (own and #own.files > 1) then
+            table.insert(ordered, item)
+        elseif own.at == at then
+            table.move(own.files, 1, #own.files, #ordered + 1, ordered)
+        end
+    end
+    return ordered
+end
+
+function Series.isOwnSort(id)
+    for _i, entry in ipairs(Library.SORTS) do
+        if entry.id == id then return true end
+    end
+    return false
+end
+
+function Series.sortByName(chooser, arranged)
+    local collate, id = chooser:getCollate()
+    if not Series.isOwnSort(id) then return end
+    local first = 1
+    while arranged[first] and not (arranged[first].is_file or arranged[first]._kcui_series) do
+        first = first + 1
+    end
+    local entries = table.move(arranged, first, #arranged, 1, {})
+    table.sort(entries, chooser:getSortingFunction(collate, G_reader_settings:isTrue("reverse_collate")))
+    table.move(entries, 1, #entries, first, arranged)
+end
+
+function Series.arrange(chooser, path, items, listing)
+    local groups, owner = {}, {}
+    if Library.groupsSeries() then
+        groups, owner = Series.groups(items)
+    end
+    local inside = chooser._kcui_series
+    if inside and inside.path ~= path then
+        inside = nil
+    end
+    if not inside and Series.reopening and Series.reopening.path == path then
+        inside = Series.reopening
+    end
+    if not inside and listing.focus and Series.last and Series.last.path == path then
+        for item, group in pairs(owner) do
+            if item.path == listing.focus then
+                inside = group.key == Series.last.key and Series.last or nil
+                break
+            end
+        end
+    end
+    local group = inside and groups[inside.key]
+    chooser._kcui_series = group and inside or nil
+    if group then
+        inside.name = group.name
+        inside.group = group
+        return Series.listing(path, group)
+    end
+    local arranged, grouped, focused = {}, false, nil
+    for at, item in ipairs(items) do
+        local own = owner[item]
+        if not (own and #own.files > 1) then
+            table.insert(arranged, item)
+        else
+            if own.at == at then
+                table.insert(arranged, {
+                    text = own.name,
+                    kcui_title = titleKey(own.name),
+                    kcui_author = own.files[1].kcui_author,
+                    _kcui_series = own,
+                })
+                grouped = true
+            end
+            if item.path == listing.focus then
+                focused = own
+            end
+        end
+    end
+    if grouped then
+        Series.sortByName(chooser, arranged)
+    end
+    for index, item in ipairs(focused and arranged or {}) do
+        if item._kcui_series == focused then
+            listing.index = index
+        end
+    end
+    return arranged
+end
+
+function Library.openSeries(chooser, group)
+    chooser._kcui_series = { path = chooser.path, key = group.key, name = group.name }
+    Series.last = chooser._kcui_series
+    chooser.path_items[Series.key(chooser)] = nil
+    chooser:refreshPath()
+end
+
+function Library.closeSeries(chooser)
+    local first = chooser.item_table[2]
+    chooser._kcui_series = nil
+    Series.last = nil
+    chooser.focused_path = first and first.path
+    chooser:refreshPath()
+end
+
+function Library.listedFiles(menu)
+    local files = {}
+    for _i, item in ipairs(menu.item_table) do
+        if item.is_file then
+            table.insert(files, item.path)
+        end
+        for _i, member in ipairs(item._kcui_series and item._kcui_series.files or {}) do
+            table.insert(files, member.path)
+        end
+    end
+    return files
+end
+
 local function installPreload()
     local genItemTableFromPath = FileChooser.genItemTableFromPath
     FileChooser.genItemTableFromPath = function(chooser, path)
@@ -726,8 +930,88 @@ local function installPreload()
         local items = genItemTableFromPath(chooser, path)
         if chooser.name == "filemanager" then
             noteFolder(path, items)
+            if chooser._kcui_listing then
+                items = Series.arrange(chooser, path, items, chooser._kcui_listing)
+            end
+        end
+        if Series.reading_order then
+            items = Series.readingOrder(items)
         end
         return items
+    end
+end
+
+function Series.install()
+    local refreshPath = FileChooser.refreshPath
+    FileChooser.refreshPath = function(chooser)
+        if chooser.name ~= "filemanager" then return refreshPath(chooser) end
+        Screen:setWindowTitle(select(2, util.splitFilePathName(chooser.path)))
+        local listing = { focus = chooser.focused_path }
+        chooser.focused_path = nil
+        chooser._kcui_listing = listing
+        local ok, items = pcall(chooser.genItemTableFromPath, chooser, chooser.path)
+        chooser._kcui_listing = nil
+        if not ok then error(items, 0) end
+        local match = not listing.index and listing.focus and { path = listing.focus } or nil
+        chooser:switchItemTable(nil, items, listing.index or chooser.path_items[Series.key(chooser)], match)
+    end
+    local changeToPath = FileChooser.changeToPath
+    FileChooser.changeToPath = function(chooser, ...)
+        if chooser.name == "filemanager" then
+            chooser._kcui_series = nil
+            Series.last = nil
+        end
+        return changeToPath(chooser, ...)
+    end
+    local onMenuSelect = FileChooser.onMenuSelect
+    FileChooser.onMenuSelect = function(chooser, item)
+        if item._kcui_series then
+            Library.openSeries(chooser, item._kcui_series)
+            return true
+        end
+        if item.is_go_up and chooser._kcui_series then
+            Library.closeSeries(chooser)
+            return true
+        end
+        return onMenuSelect(chooser, item)
+    end
+    local onFolderUp = FileChooser.onFolderUp
+    FileChooser.onFolderUp = function(chooser, ...)
+        if chooser._kcui_series then
+            Library.closeSeries(chooser)
+            return true
+        end
+        return onFolderUp(chooser, ...)
+    end
+    local getNextOrPreviousFileInFolder = FileChooser.getNextOrPreviousFileInFolder
+    FileChooser.getNextOrPreviousFileInFolder = function(chooser, ...)
+        Series.reading_order = Library.groupsSeries()
+        local ok, file = pcall(getNextOrPreviousFileInFolder, chooser, ...)
+        Series.reading_order = false
+        if not ok then error(file, 0) end
+        return file
+    end
+    local FileManager = require("apps/filemanager/filemanager")
+    for _i, name in ipairs({ "reinit", "rotate" }) do
+        local rebuild = FileManager[name]
+        FileManager[name] = function(fm, ...)
+            Series.reopening = fm.file_chooser and fm.file_chooser._kcui_series
+            local ok, err = pcall(rebuild, fm, ...)
+            Series.reopening = nil
+            if not ok then error(err, 0) end
+        end
+    end
+    local selectAllFilesInFolder = FileChooser.selectAllFilesInFolder
+    FileChooser.selectAllFilesInFolder = function(chooser, do_select)
+        local selected = chooser.ui and chooser.ui.selected_files
+        if do_select and selected then
+            for _i, item in ipairs(chooser.item_table) do
+                for _i, member in ipairs(item._kcui_series and item._kcui_series.files or {}) do
+                    selected[member.path] = true
+                end
+            end
+        end
+        return selectAllFilesInFolder(chooser, do_select)
     end
 end
 
@@ -772,6 +1056,7 @@ function Library.install()
     installCollectionFilter()
     installFolderFilter()
     installPreload()
+    Series.install()
     for order, entry in ipairs(Library.SORTS) do
         BookList.collates[entry.id] = {
             text = entry.text:lower(),
@@ -818,16 +1103,30 @@ local function collectionSize(name)
     return count
 end
 
-local function checkMark(x, center_y)
+local function slotIcon(name, x, center_y, ratio)
     local size = U(21.27)
+    local w = math.floor(size * (ratio or 1) + 0.5)
     return ImageWidget:new{
         original_in_nightmode = false,
-        file = ICONS .. "/selected.svg",
-        width = size,
+        file = ICONS .. "/" .. name .. ".svg",
+        width = w,
         height = size,
         alpha = true,
-        overlap_offset = { x, center_y - math.floor(size / 2) },
+        overlap_offset = { x + math.floor((size - w) / 2), center_y - math.floor(size / 2) },
     }
+end
+
+local function checkMark(x, center_y)
+    return slotIcon("selected", x, center_y)
+end
+
+function Series.picked(series, menu)
+    local selected = menu.ui and menu.ui.selected_files
+    local count = 0
+    for _i, item in ipairs(selected and series.files or {}) do
+        if selected[item.path] then count = count + 1 end
+    end
+    return count
 end
 
 local function addRowLines(row, w, h, pad, selected)
@@ -925,6 +1224,42 @@ function ProgressBar:paintTo(bb, x, y)
     end
 end
 
+local function relative(w, px)
+    return math.floor(w * px / 292 + 0.5)
+end
+
+local function stackLines(w)
+    local stroke = math.max(U.ceil(1), relative(w, 4))
+    local gap = math.max(U.ceil(1), relative(w, 5))
+    return { stroke = stroke, gap = gap, h = 2 * (stroke + gap) }
+end
+
+local function paintStack(bb, x, y, w, lines)
+    local color = Blitbuffer.Color8(0x66)
+    local outer = math.floor(w * 0.03)
+    local inner = math.floor(w * 0.015)
+    bb:paintRect(x + outer, y, w - 2 * outer, lines.stroke, color)
+    bb:paintRect(x + inner, y + lines.stroke + lines.gap, w - 2 * inner, lines.stroke, color)
+end
+
+local Stack = Widget:extend{
+    lines = nil,
+}
+
+function Stack:getSize()
+    local size = self[1]:getSize()
+    return Geom:new{ w = size.w, h = size.h + self.lines.h }
+end
+
+function Stack:paintTo(bb, x, y)
+    paintStack(bb, x, y, self[1]:getSize().w, self.lines)
+    self[1]:paintTo(bb, x, y + self.lines.h)
+end
+
+function Stack:free()
+    if self[1].free then self[1]:free() end
+end
+
 local Tile = Widget:extend{
     width = nil,
     height = nil,
@@ -934,11 +1269,9 @@ local Tile = Widget:extend{
 
 function Tile:init()
     local w = self.width
-    local function rel(px) return math.floor(w * px / 292 + 0.5) end
-    self.stroke = math.max(U.ceil(1), rel(4))
-    self.stack_gap = math.max(U.ceil(1), rel(5))
+    self.lines = stackLines(w)
     self.border = Size.border.thin
-    self.frame_y = 2 * (self.stroke + self.stack_gap)
+    self.frame_y = self.lines.h
     local frame_h = self.height - self.frame_y
     self.header_h = math.floor(frame_h * 0.3)
     local icon_h = math.max(U(10), math.floor(frame_h * 0.1))
@@ -949,7 +1282,7 @@ function Tile:init()
         height = icon_h,
         alpha = true,
     }
-    self.inset = math.max(U(3), rel(11))
+    self.inset = math.max(U(3), relative(w, 11))
     if self.name then
         self.label = TextBoxWidget:new{
             text = self.name,
@@ -970,11 +1303,7 @@ end
 
 function Tile:paintTo(bb, x, y)
     local w, h = self.width, self.height
-    local stack = Blitbuffer.Color8(0x66)
-    local outer = math.floor(w * 0.03)
-    local inner = math.floor(w * 0.015)
-    bb:paintRect(x + outer, y, w - 2 * outer, self.stroke, stack)
-    bb:paintRect(x + inner, y + self.stroke + self.stack_gap, w - 2 * inner, self.stroke, stack)
+    paintStack(bb, x, y, w, self.lines)
     local fy = y + self.frame_y
     local fh = h - self.frame_y
     local b = self.border
@@ -1078,6 +1407,21 @@ local function fileIcon(w, h)
     }
 end
 
+local function bookCover(file, title, cached, w, h, bg, box_h)
+    local image = cached and coverImage(file, w, h)
+    if image then return image end
+    if cached and Books.tracked(file) then return placeholder(title, w, box_h or h, bg) end
+    return fileIcon(w, box_h or h)
+end
+
+function Series.cover(series, w, h, bg, box_h)
+    local first = series.files[1]
+    local cached = Books.get(first.path)
+    local lines = stackLines(w)
+    local cover = bookCover(first.path, bookTitle(first, cached), cached, w, h - lines.h, bg, box_h and box_h - lines.h)
+    return Stack:new{ lines = lines, cover }, cached == nil
+end
+
 local Row = InputContainer:extend{
     entry = nil,
     menu = nil,
@@ -1087,10 +1431,11 @@ local Row = InputContainer:extend{
 
 function Row:init()
     local entry = self.entry
-    self.file = entry.file or entry.path or entry.folder
-    local is_book = entry.file ~= nil or entry.is_file
-    local is_shortcut = not is_book and entry.folder ~= nil
-    local book_style = is_book or is_shortcut
+    local series = entry._kcui_series
+    self.file = series and series.files[1].path or entry.file or entry.path or entry.folder
+    local is_book = not series and (entry.file ~= nil or entry.is_file)
+    local is_shortcut = not (is_book or series) and entry.folder ~= nil
+    local book_style = is_book or is_shortcut or series ~= nil
     local deleted = isDeleted(entry)
     local selected = isSelected(entry)
     local w, h = self.dimen.w, self.dimen.h
@@ -1103,30 +1448,29 @@ function Row:init()
     local dots_gap = w - right_pad - (more_x + math.ceil(more_size * 14 / 24))
     local check = U(21.27)
     local check_x = dots_left - U(24.6) - check
-    local text_right = (more_size > 0 and selected) and check_x or dots_left
+    local text_right = (more_size > 0 and (selected or series)) and check_x or dots_left
     local text_w = more_size > 0 and text_right - dots_gap - text_x or more_x - text_x
     local bg = selected and Gray.selected or Blitbuffer.COLOR_WHITE
     local gap = Size.padding.small
 
     local cover, title, authors, percent, kind, count
-    if is_book then
+    if series then
+        title = series.name
+        authors = series.authors
+        cover, self.needs_extract = Series.cover(series, cover_w, cover_h, bg)
+    elseif is_book then
         local cached = Books.get(self.file)
         self.needs_extract = not deleted and cached == nil
         title = deleted and entry.text or bookTitle(entry, cached)
         authors = deleted and _("Deleted") or cached and cached.authors
         kind = fileType(self.file)
-        local image = not deleted and cached and coverImage(self.file, cover_w, cover_h)
         if deleted then
             cover = LineWidget:new{
                 dimen = Geom:new{ w = cover_w, h = cover_h },
                 background = Blitbuffer.Color8(0xEE),
             }
-        elseif image then
-            cover = image
-        elseif cached and Books.tracked(self.file) then
-            cover = placeholder(title, cover_w, cover_h, bg)
         else
-            cover = fileIcon(cover_w, cover_h)
+            cover = bookCover(self.file, title, cached, cover_w, cover_h, bg)
         end
         percent = readState(self.file)
     else
@@ -1178,6 +1522,19 @@ function Row:init()
             HorizontalSpan:new{ width = 5 * gap },
             label,
         })
+    end
+    if series then
+        local total = #series.files
+        table.insert(below, HorizontalGroup:new{
+            align = "center",
+            line(_("Series")),
+            HorizontalSpan:new{ width = 5 * gap },
+            line(T(_.ngettext("%1 item", "%1 items", total), total)),
+        })
+        local picked = Series.picked(series, self.menu)
+        if picked > 0 then
+            table.insert(below, tag(T(_("%1 selected"), picked)))
+        end
     end
     if kind and not has_authors then table.insert(below, line(kind)) end
     if is_book and self.menu._kcui_tab == "history" and entry.time then
@@ -1266,6 +1623,8 @@ function Row:init()
         self.more_x = more_x - U(10)
         if selected then
             table.insert(self[1], checkMark(check_x, center_y))
+        elseif series then
+            table.insert(self[1], slotIcon("series", check_x, center_y, 22 / 24))
         end
     end
     addRowLines(self, w, h, pad, selected)
@@ -1345,13 +1704,60 @@ function PickRow:onHoldSelect()
     return true
 end
 
-local function showActions(widget, cx, cy)
-    Toolbar.present(function() widget.menu:onMenuHold(widget.entry) end, {
+function Series.select(menu, series, on)
+    local selected = menu.ui.selected_files
+    if not selected then return end
+    for _i, item in ipairs(series.files) do
+        selected[item.path] = on or nil
+        item.dim = on or nil
+    end
+    menu:updateItems(nil, true)
+end
+
+function Series.showActions(menu, series, anchor)
+    local fm = menu.ui
+    local button
+    if fm.selected_files then
+        local all = Series.picked(series, menu) == #series.files
+        button = {
+            text = all and _("Deselect all in series") or _("Select all in series"),
+            callback = function() Series.select(menu, series, not all) end,
+        }
+    else
+        button = {
+            text = _("Select series"),
+            callback = function()
+                fm:onToggleSelectMode()
+                Series.select(menu, series, true)
+            end,
+        }
+    end
+    UIManager:show(Toolbar.Dropdown:new{
+        buttons = { { button } },
+        anchor_right = anchor.right,
+        anchor_top = anchor.top,
+        notch_x = anchor.notch_x,
+        fit = true,
+        close_first = true,
+    })
+end
+
+local function actionAnchor(cx, cy)
+    return {
         right = Screen:getWidth() - U(8),
         top = cy + U(14) + U(Common.Paint.NOTCH),
         notch_x = cx,
         fit = true,
-    })
+    }
+end
+
+local function showActions(widget, cx, cy)
+    local anchor = actionAnchor(cx, cy)
+    local series = widget.entry._kcui_series
+    if series then
+        return Series.showActions(widget.menu, series, anchor)
+    end
+    Toolbar.present(function() widget.menu:onMenuHold(widget.entry) end, anchor)
 end
 
 function Row:showActions()
@@ -1460,20 +1866,34 @@ local Cell = InputContainer:extend{
 
 function Cell:init()
     local entry = self.entry
-    self.file = entry.file or entry.path or entry.folder
+    local series = entry._kcui_series
+    self.file = series and series.files[1].path or entry.file or entry.path or entry.folder
     local w, h = self.dimen.w, self.dimen.h
     local box_h = math.min(h, math.floor(w * GRID_ASPECT))
-    if entry.is_file then
+    if series then
+        self.cover, self.needs_extract = Series.cover(series, w, h, WHITE, box_h)
+        self.count = TextWidget:new{
+            text = tostring(#series.files),
+            face = U.face(KindleFonts.found.ui_heavy or "cfont", 13),
+            bold = KindleFonts.found.ui_heavy == nil,
+            fgcolor = WHITE,
+        }
+        local size = U(21.27)
+        self.count_disc = ImageWidget:new{
+            original_in_nightmode = false,
+            file = ICONS .. "/series-count.svg",
+            width = size,
+            height = size,
+            alpha = true,
+        }
+        local picked = Series.picked(series, self.menu)
+        if picked > 0 then
+            self.picked = tag(T(_("%1 selected"), picked))
+        end
+    elseif entry.is_file then
         local cached = Books.get(self.file)
         self.needs_extract = cached == nil
-        local image = cached and coverImage(self.file, w, h)
-        if image then
-            self.cover = image
-        elseif cached and Books.tracked(self.file) then
-            self.cover = placeholder(bookTitle(entry, cached), w, box_h, Blitbuffer.COLOR_WHITE)
-        else
-            self.cover = fileIcon(w, box_h)
-        end
+        self.cover = bookCover(self.file, bookTitle(entry, cached), cached, w, h, WHITE, box_h)
         local percent = readState(self.file)
         self.read = (percent or 0) >= 100
         if percent and percent < 100 then
@@ -1538,10 +1958,31 @@ function Cell:paintTo(bb, x, y)
         bb:paintRoundedRect(dot_x - ring, dot_y - ring, 2 * (radius + ring), 2 * (radius + ring), Blitbuffer.COLOR_BLACK, radius + ring)
         bb:paintRoundedRect(dot_x, dot_y, 2 * radius, 2 * radius, Blitbuffer.COLOR_WHITE, radius)
     end
+    local inset = U(6)
     if self.check then
-        local inset = U(6)
         self.check:paintTo(bb, cx + inset, cy + size.h - inset - self.check:getSize().h)
     end
+    if self.count then
+        self:paintCount(bb, cx + inset, cy + size.h - inset)
+    end
+    if self.picked then
+        self.picked:paintTo(bb, cx + inset, cy + self.cover.lines.h + inset)
+    end
+end
+
+function Cell:paintCount(bb, left, bottom)
+    local text = self.count
+    local d = self.count_disc:getSize().h
+    local w = math.max(d, text:getSize().w + U(4))
+    local top = bottom - d
+    if w > d then
+        bb:paintRoundedRect(left, top, w, d, Blitbuffer.Color8(0x1D), math.floor(d / 2))
+    else
+        self.count_disc:paintTo(bb, left, top)
+    end
+    local cap = math.floor(text.face.size * 0.7 + 0.5)
+    text:paintTo(bb, left + math.floor((w - text:getSize().w) / 2),
+        top + math.floor(d / 2) - (text:getBaseline() - math.floor(cap / 2)))
 end
 
 function Cell:paintFlag(bb, right, top)
@@ -1579,6 +2020,9 @@ function Cell:free()
     if self.cover and self.cover.free then self.cover:free() end
     if self.check then self.check:free() end
     if self.flag then self.flag:free() end
+    if self.count then self.count:free() end
+    if self.count_disc then self.count_disc:free() end
+    if self.picked then self.picked:free() end
 end
 
 local function gridGeometry(w, list_h)
@@ -1886,11 +2330,16 @@ function UpRow:init()
     local arrow_x = pad - math.floor(icon * 3 / 24)
     local gap = self.text_x - arrow_x - icon
     local home = (G_reader_settings:readSetting("home_dir") or ""):gsub("/+$", "")
+    local inside = self.menu._kcui_series
+    local center_y = h - U(Toolbar.BACK_ROW_CENTER)
+    local more_size = U(25)
+    local more_x = w - pad - U(37.5)
+    local right = inside and more_x - U(20) or w - pad
     local name = TextWidget:new{
-        text = path == home and _("Library") or path:match("([^/]+)$") or path,
+        text = inside and inside.name or path == home and _("Library") or path:match("([^/]+)$") or path,
         face = U.face("cfont", 18),
         bold = true,
-        max_width = w - 2 * pad - icon - gap - U(9.5) - label:getSize().w,
+        max_width = right - pad - icon - gap - U(9.5) - label:getSize().w,
     }
     local group = HorizontalGroup:new{
         align = "center",
@@ -1902,7 +2351,7 @@ function UpRow:init()
         table.insert(group, HorizontalSpan:new{ width = U(9.5) })
         table.insert(group, label)
     end
-    group.overlap_offset = { arrow_x, h - U(Toolbar.BACK_ROW_CENTER) - math.floor(group:getSize().h / 2) }
+    group.overlap_offset = { arrow_x, center_y - math.floor(group:getSize().h / 2) }
     local border = Toolbar.border()
     self[1] = OverlapGroup:new{
         dimen = Geom:new{ w = w, h = h },
@@ -1913,12 +2362,30 @@ function UpRow:init()
             overlap_offset = { 0, h - border },
         },
     }
+    if inside and inside.group then
+        table.insert(self[1], ImageWidget:new{
+            original_in_nightmode = false,
+            file = ICONS .. "/more-filled.svg",
+            width = more_size,
+            height = more_size,
+            alpha = true,
+            overlap_offset = { more_x, center_y - math.floor(more_size / 2) },
+        })
+        self.series = inside.group
+        self.more_x = more_x - U(10)
+        self.more_center = { more_x + math.floor(more_size / 2), center_y }
+    end
     self.ges_events = {
         TapUp = { GestureRange:new{ ges = "tap", range = function() return self.dimen end } },
     }
 end
 
-function UpRow:onTapUp()
+function UpRow:onTapUp(_ev, ges)
+    if self.series and ges and ges.pos.x - self.dimen.x >= self.more_x then
+        local anchor = actionAnchor(self.dimen.x + self.more_center[1], self.dimen.y + self.more_center[2])
+        Series.showActions(self.menu, self.series, anchor)
+        return true
+    end
     self.menu:onMenuSelect(self.entry)
     return true
 end
@@ -2038,7 +2505,7 @@ local function updateItems(menu, select_number, no_recalculate_dimen)
     updatePageNumbers(menu, band_h)
     menu:mergeTitleBarIntoLayout()
     if menu.path_items and menu.path then
-        menu.path_items[menu.path] = (menu.page - 1) * menu.perpage + skip + 1
+        menu.path_items[Series.key(menu)] = (menu.page - 1) * menu.perpage + skip + 1
     end
     UIManager:setDirty(menu.show_parent, function()
         return "ui", old_dimen and old_dimen:combine(menu.dimen) or menu.dimen
@@ -2229,6 +2696,7 @@ local function sortSections(fm)
             action = function() fm:onSetReverseSorting(descending) end,
         }
     end
+    local grouping = Library.groupsSeries()
     local function layout(text, icon, id)
         return {
             text = text,
@@ -2247,7 +2715,27 @@ local function sortSections(fm)
         },
         {
             title = _("View options"),
-            rows = { { layout(_("Grid"), "grid", Library.GRID), layout(_("List"), "list", Library.LIST) } },
+            rows = { {
+                layout(_("Grid"), "grid", Library.GRID),
+                layout(_("List"), "list", Library.LIST),
+                {
+                    text = _("Group series"),
+                    icon = "series",
+                    selected_icon = "toolbar/check-white",
+                    selected = grouping,
+                    toggle = true,
+                    action = function()
+                        G_reader_settings:saveSetting(GROUP_SERIES, not grouping)
+                        fm.file_chooser:refreshPath()
+                    end,
+                },
+                {
+                    text = _("Collections"),
+                    icon = "collections",
+                    closes = true,
+                    action = function() fm.collections:onShowCollList() end,
+                },
+            } },
         },
     }
 end
@@ -2339,10 +2827,11 @@ function Sheet:layout()
                 if chip.icon then
                     chip.image = keep(ImageWidget:new{
                         original_in_nightmode = false,
-                        file = ICONS .. "/" .. chip.icon .. ".svg",
+                        file = ICONS .. "/" .. (chip.selected and chip.selected_icon or chip.icon) .. ".svg",
                         width = icon_size,
                         height = icon_size,
-                        invert = chip.selected,
+                        invert = chip.selected and not chip.selected_icon,
+                        alpha = true,
                     })
                     content = content + icon_size + icon_gap
                 end
@@ -2448,7 +2937,10 @@ function Sheet:onTapSheet(_ev, ges)
     for _i, chip in ipairs(self.chips) do
         local r = chip.rect
         if pos.x >= r.x and pos.x < r.x + r.w and pos.y >= self.top + r.y and pos.y < self.top + r.y + r.h then
-            if not chip.selected or chip.toggle then
+            if chip.closes then
+                self:dismiss()
+                chip.action()
+            elseif not chip.selected or chip.toggle then
                 chip.action()
                 self:build()
                 UIManager:setDirty(self, "ui", self:region())

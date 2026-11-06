@@ -213,7 +213,7 @@ local function bottomBar(fm, active, menu)
         elseif x < w / 2 then
             if active ~= "library" then
                 menu.close_callback()
-            elseif fm.file_chooser.path ~= filemanagerutil.getHomeFolder() then
+            elseif fm.file_chooser.path ~= filemanagerutil.getHomeFolder() or Library.inSeries(fm.file_chooser) then
                 fm.file_chooser:changeToPath(filemanagerutil.getHomeFolder())
             else
                 fm.file_chooser:onGotoPage(1)

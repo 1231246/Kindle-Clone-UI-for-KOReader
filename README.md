@@ -1,3 +1,13 @@
+```
+*Update on Fri Nov 6, 2026:
+
+- A new "Group series" toggle (on by default) and a "Collections" shortcut in the sort menu.
+
+- Fixed the battery icon not refreshing when plugging/unplugging on some screens.
+```
+
+---
+
 # Kindle Clone UI for KOReader
 
 Makes KOReader look and work like a Kindle. Both list and grid view and in-book features like bookmarks etc. 

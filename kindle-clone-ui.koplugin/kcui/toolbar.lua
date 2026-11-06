@@ -435,21 +435,18 @@ local function showSort(fm)
     require("kcui/library").showOptions(fm)
 end
 
-local function allSelected(menu)
-    local any = false
-    for _i, item in ipairs(menu.item_table) do
-        if item.is_file then
-            if not item.dim then return false end
-            any = true
-        end
+local function allSelected(fm, menu)
+    local files = require("kcui/library").listedFiles(menu)
+    for _i, file in ipairs(files) do
+        if not fm.selected_files[file] then return false end
     end
-    return any
+    return files[1] ~= nil
 end
 
 local function toggleAll(fm, menu)
-    if allSelected(menu) then
-        for _i, item in ipairs(menu.item_table) do
-            if item.is_file then fm.selected_files[item.path] = nil end
+    if allSelected(fm, menu) then
+        for _i, file in ipairs(require("kcui/library").listedFiles(menu)) do
+            fm.selected_files[file] = nil
         end
         menu:selectAllFilesInFolder(false)
     else
@@ -638,7 +635,9 @@ function Toolbar.new(menu, w)
     local sort_x = w - pad - sort:getSize().w
     local spacing = U(28.5)
     local plus_x = sort_x - spacing - plus_size + plus_inset
-    local search_x = plus_x + plus_inset - spacing - search:getSize().w
+    local hide_plus = in_folder and not selecting and require("kcui/library").inSeries(menu)
+    local search_x = hide_plus and plus_x + plus_size - plus_inset - search:getSize().w
+        or plus_x + plus_inset - spacing - search:getSize().w
     local pill_x = filter_x + filter:getSize().w + spacing
     local pill_w = plus_x + plus_inset - U(20) - pill_x
     local close_x
@@ -664,7 +663,6 @@ function Toolbar.new(menu, w)
     local layout = OverlapGroup:new{
         dimen = Geom:new{ w = w, h = h },
         place(filter, filter_x),
-        place(plus, plus_x),
         place(sort, sort_x),
         LineWidget:new{
             dimen = Geom:new{ w = w, h = line_h },
@@ -672,6 +670,10 @@ function Toolbar.new(menu, w)
             overlap_offset = { 0, h - line_h },
         },
     }
+
+    if not hide_plus then
+        table.insert(layout, place(plus, plus_x))
+    end
 
     local middle_end = plus_x
     local done_x, all_x, all_w
@@ -683,7 +685,7 @@ function Toolbar.new(menu, w)
             align = "center",
             all_text,
             HorizontalSpan:new{ width = U(6) },
-            icon(allSelected(menu) and "circle-checked.svg" or "circle-empty.svg", box, box),
+            icon(allSelected(fm, menu) and "circle-checked.svg" or "circle-empty.svg", box, box),
         }
         local done = TextWidget:new{ text = _("Done"), face = all_face, bold = true }
         done_x = plus_x + plus_inset - U(6) - done:getSize().w
@@ -739,7 +741,7 @@ function Toolbar.new(menu, w)
             if x >= all_x - U(8) and x <= all_x + all_w + U(8) then
                 toggleAll(fm, menu)
             end
-        elseif in_folder and not selecting and x < plus_x then
+        elseif in_folder and not selecting and x < (hide_plus and sort_x - math.floor(gap / 2) or plus_x) then
             enterSearch()
         elseif selecting and x >= close_x - U(6) and x < sort_x - math.floor(gap / 2) then
             fm:onToggleSelectMode(true)

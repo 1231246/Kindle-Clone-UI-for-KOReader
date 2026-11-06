@@ -951,7 +951,9 @@ function Series.install()
         chooser._kcui_listing = nil
         if not ok then error(items, 0) end
         local match = listing.match or listing.focus and { path = listing.focus } or nil
-        chooser:switchItemTable(nil, items, chooser.path_items[Series.key(chooser)], match)
+        local number = chooser.path_items[Series.key(chooser)]
+        chooser.itemnumber = number
+        chooser:switchItemTable(nil, items, number, match)
     end
     local changeToPath = FileChooser.changeToPath
     FileChooser.changeToPath = function(chooser, ...)

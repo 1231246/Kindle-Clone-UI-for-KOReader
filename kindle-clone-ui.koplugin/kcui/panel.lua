@@ -39,6 +39,8 @@ local DEFAULT_PROGRESS = "page"
 local TIMED_PROGRESS = "chapter_time"
 local DEFAULT_POSITION = "percentage"
 local CHARGING_RECHECK = 5
+local CHARGING_EVENTS = { onCharging = true, onNotCharging = false }
+local charging_listeners = setmetatable({}, { __mode = "k" })
 local PROGRESS_OPTIONS = {
     { id = "chapter_time", text = _("Time left in chapter"), timed = true },
     { id = "book_time", text = _("Time left in book"), timed = true },
@@ -203,8 +205,10 @@ local function keepCurrent(bar, window, update)
     local scheduled, painted = false, false
     local tick
     local function redraw(charging)
+        local shown = window()
+        if not (shown and UIManager:isWidgetShown(shown)) then return end
         update(charging)
-        UIManager:setDirty(window(), "ui", bar.dimen)
+        UIManager:setDirty(shown, "ui", bar.dimen)
     end
     local function recheck()
         redraw()
@@ -225,12 +229,8 @@ local function keepCurrent(bar, window, update)
         redraw()
         schedule()
     end
-    function bar:onCharging()
-        chargingChanged(true)
-    end
-    function bar:onNotCharging()
-        chargingChanged(false)
-    end
+    bar.kcui_charging_changed = chargingChanged
+    charging_listeners[bar] = true
     local paintTo = bar.paintTo
     function bar:paintTo(bb, x, y)
         painted = true
@@ -248,6 +248,7 @@ local function keepCurrent(bar, window, update)
     function bar:onCloseWidget()
         UIManager:unschedule(tick)
         UIManager:unschedule(recheck)
+        charging_listeners[bar] = nil
         scheduled = false
     end
     update()
@@ -1438,6 +1439,17 @@ function Panel.install()
     local FileManagerMenu = require("apps/filemanager/filemanagermenu")
     if FileManagerMenu._kcui_panel then return end
     FileManagerMenu._kcui_panel = true
+    local broadcastEvent = UIManager.broadcastEvent
+    UIManager.broadcastEvent = function(manager, event, ...)
+        local handled = broadcastEvent(manager, event, ...)
+        local charging = CHARGING_EVENTS[event.handler]
+        if charging ~= nil then
+            for bar in pairs(charging_listeners) do
+                bar.kcui_charging_changed(charging)
+            end
+        end
+        return handled
+    end
     local orig_fm_show = FileManagerMenu.onShowMenu
     FileManagerMenu.onShowMenu = function(menu, tab_index, do_not_show)
         if do_not_show or menu._kcui_bypass then
